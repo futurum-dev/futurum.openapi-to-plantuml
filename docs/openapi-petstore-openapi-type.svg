@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="694px" preserveAspectRatio="none" style="width:8033px;height:694px;background:#003153;" version="1.1" viewBox="0 0 8033 694" width="8033px" zoomAndPan="magnify"><defs/><g><rect fill="#003153" height="36.7373" style="stroke:#003153;stroke-width:0.0;" width="318" x="3853.25" y="10"/><text fill="#D9D3D0" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="308" x="3858.25" y="37.1182">Swagger Petstore v1.0.6</text><!--MD5=[5ac1ca181ef4f0ae884ffc798383edd5]
+class POST /pet/{petId}/uploadImage--><g id="elem_POST /pet/{petId}/uploadImage"><rect codeLine="12" fill="#003153" height="66.6133" id="POST /pet/{petId}/uploadImage" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="238" x="28" y="68.2373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="125.5" y="85.3018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="232" x="31" y="101.8965">POST /pet/{petId}/uploadImage</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="29" x2="265" y1="109.8359" y2="109.8359"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="104" x="34" y="127.9111">petId : integer</text></g><!--MD5=[c480ebf0c710837dec21822efc88bb07]
+class POST /pet/{petId}/uploadImage 200--><g id="elem_POST /pet/{petId}/uploadImage 200"><rect codeLine="15" fill="#003153" height="41.5986" id="POST /pet/{petId}/uploadImage 200" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="270" x="12" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="111" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="264" x="15" y="254.3965">POST /pet/{petId}/uploadImage 200</text></g><!--MD5=[f978d69acfb988807de5d9816f7a677e]
+class POST /pet--><g id="elem_POST /pet"><rect codeLine="16" fill="#003153" height="41.5986" id="POST /pet" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="78" x="333" y="80.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="350.5" y="97.8018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="72" x="336" y="114.3965">POST /pet</text></g><!--MD5=[cf99619fe37111de49a8df85a87956cb]
+class POST /pet 405--><g id="elem_POST /pet 405"><rect codeLine="18" fill="#003153" height="41.5986" id="POST /pet 405" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="110" x="317" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="336" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="104" x="320" y="254.3965">POST /pet 405</text></g><!--MD5=[5d1d69f5ec7b08ba5ce85c348748dbaf]
+class PUT /pet--><g id="elem_PUT /pet"><rect codeLine="19" fill="#003153" height="41.5986" id="PUT /pet" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="67" x="612.5" y="80.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="624.5" y="97.8018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="61" x="615.5" y="114.3965">PUT /pet</text></g><!--MD5=[1fba7d61a8f108b75d82869538f44918]
+class PUT /pet 400--><g id="elem_PUT /pet 400"><rect codeLine="21" fill="#003153" height="41.5986" id="PUT /pet 400" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="99" x="462.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="476" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="93" x="465.5" y="254.3965">PUT /pet 400</text></g><!--MD5=[adfb579263e1eeb1ec8de3f4d07a0aab]
+class PUT /pet 404--><g id="elem_PUT /pet 404"><rect codeLine="22" fill="#003153" height="41.5986" id="PUT /pet 404" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="99" x="596.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="610" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="93" x="599.5" y="254.3965">PUT /pet 404</text></g><!--MD5=[a2267768fdc64da074807805819c557b]
+class PUT /pet 405--><g id="elem_PUT /pet 405"><rect codeLine="23" fill="#003153" height="41.5986" id="PUT /pet 405" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="99" x="730.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="744" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="93" x="733.5" y="254.3965">PUT /pet 405</text></g><!--MD5=[2a06051cd63ac62ae7e0c7ccebb52947]
+class GET /pet/findByStatus--><g id="elem_GET /pet/findByStatus"><rect codeLine="24" fill="#003153" height="66.6133" id="GET /pet/findByStatus" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="170" x="1037" y="68.2373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="1100.5" y="85.3018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="160" x="1042" y="101.8965">GET /pet/findByStatus</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="1038" x2="1206" y1="109.8359" y2="109.8359"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="158" x="1043" y="127.9111">status : array&lt;string&gt;</text></g><!--MD5=[14051081089e383b595aebdb33fc8213]
+class GET /pet/findByStatus 200--><g id="elem_GET /pet/findByStatus 200"><rect codeLine="27" fill="#003153" height="41.5986" id="GET /pet/findByStatus 200" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="198" x="865" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="928" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="192" x="868" y="254.3965">GET /pet/findByStatus 200</text></g><!--MD5=[b6b4fc391e3362113e6795d30c6bfdeb]
+class GET /pet/findByStatus 400--><g id="elem_GET /pet/findByStatus 400"><rect codeLine="28" fill="#003153" height="41.5986" id="GET /pet/findByStatus 400" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="198" x="1098" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="1161" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="192" x="1101" y="254.3965">GET /pet/findByStatus 400</text></g><!--MD5=[b0ff9a2c0499c752a533d3c7ea418cbe]
+class GET /pet/findByTags--><g id="elem_GET /pet/findByTags"><rect codeLine="29" fill="#003153" height="66.6133" id="GET /pet/findByTags" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="157" x="1493.5" y="68.2373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="1550.5" y="85.3018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="147" x="1498.5" y="101.8965">GET /pet/findByTags</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="1494.5" x2="1649.5" y1="109.8359" y2="109.8359"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="145" x="1499.5" y="127.9111">tags : array&lt;string&gt;</text></g><!--MD5=[72ca7c62f581281c6fd90ae3cbb696ff]
+class GET /pet/findByTags 200--><g id="elem_GET /pet/findByTags 200"><rect codeLine="32" fill="#003153" height="41.5986" id="GET /pet/findByTags 200" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="185" x="1331.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="1388" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="179" x="1334.5" y="254.3965">GET /pet/findByTags 200</text></g><!--MD5=[ce73e155fa6859e2c4cc79f6b639b4fd]
+class GET /pet/findByTags 400--><g id="elem_GET /pet/findByTags 400"><rect codeLine="33" fill="#003153" height="41.5986" id="GET /pet/findByTags 400" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="185" x="1551.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="1608" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="179" x="1554.5" y="254.3965">GET /pet/findByTags 400</text></g><!--MD5=[7a27cdf1777331d8991253c21139c58b]
+class GET /pet/{petId}--><g id="elem_GET /pet/{petId}"><rect codeLine="34" fill="#003153" height="66.6133" id="GET /pet/{petId}" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="131" x="1985.5" y="68.2373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="2029.5" y="85.3018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="125" x="1988.5" y="101.8965">GET /pet/{petId}</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="1986.5" x2="2115.5" y1="109.8359" y2="109.8359"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="104" x="1991.5" y="127.9111">petId : integer</text></g><!--MD5=[9daa183f656959af7be617e0319dbc87]
+class GET /pet/{petId} 200--><g id="elem_GET /pet/{petId} 200"><rect codeLine="37" fill="#003153" height="41.5986" id="GET /pet/{petId} 200" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="163" x="1771.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="1817" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="157" x="1774.5" y="254.3965">GET /pet/{petId} 200</text></g><!--MD5=[a45ba01a90eaa10c95a877541a006bfd]
+class GET /pet/{petId} 400--><g id="elem_GET /pet/{petId} 400"><rect codeLine="38" fill="#003153" height="41.5986" id="GET /pet/{petId} 400" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="163" x="1969.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="2015" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="157" x="1972.5" y="254.3965">GET /pet/{petId} 400</text></g><!--MD5=[f7b0c1a2f815093e95677620baa8658b]
+class GET /pet/{petId} 404--><g id="elem_GET /pet/{petId} 404"><rect codeLine="39" fill="#003153" height="41.5986" id="GET /pet/{petId} 404" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="163" x="2167.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="2213" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="157" x="2170.5" y="254.3965">GET /pet/{petId} 404</text></g><!--MD5=[a543888eeb604caf031c185ad440f4e5]
+class POST /pet/{petId}--><g id="elem_POST /pet/{petId}"><rect codeLine="40" fill="#003153" height="66.6133" id="POST /pet/{petId}" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="140" x="2382" y="68.2373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="2430.5" y="85.3018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="134" x="2385" y="101.8965">POST /pet/{petId}</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="2383" x2="2521" y1="109.8359" y2="109.8359"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="104" x="2388" y="127.9111">petId : integer</text></g><!--MD5=[f6763bc8d3f784f014cdd9ed0b77e588]
+class POST /pet/{petId} 405--><g id="elem_POST /pet/{petId} 405"><rect codeLine="43" fill="#003153" height="41.5986" id="POST /pet/{petId} 405" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="172" x="2366" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="2416" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="166" x="2369" y="254.3965">POST /pet/{petId} 405</text></g><!--MD5=[f677f754e2804ea299537fbfae86f68d]
+class DELETE /pet/{petId}--><g id="elem_DELETE /pet/{petId}"><rect codeLine="44" fill="#003153" height="83.6279" id="DELETE /pet/{petId}" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="157" x="2701.5" y="59.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="2758.5" y="76.8018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="151" x="2704.5" y="93.3965">DELETE /pet/{petId}</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="2702.5" x2="2857.5" y1="101.3359" y2="101.3359"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="145" x="2707.5" y="119.4111">api_key : string {O}</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="104" x="2707.5" y="136.4258">petId : integer</text></g><!--MD5=[c49ae5d409ec648bb7e8ac44d2a1b5e4]
+class DELETE /pet/{petId} 400--><g id="elem_DELETE /pet/{petId} 400"><rect codeLine="48" fill="#003153" height="41.5986" id="DELETE /pet/{petId} 400" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="189" x="2573.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="2632" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="183" x="2576.5" y="254.3965">DELETE /pet/{petId} 400</text></g><!--MD5=[15f53303964ac23a433238b9659f30b8]
+class DELETE /pet/{petId} 404--><g id="elem_DELETE /pet/{petId} 404"><rect codeLine="49" fill="#003153" height="41.5986" id="DELETE /pet/{petId} 404" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="189" x="2797.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="2856" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="183" x="2800.5" y="254.3965">DELETE /pet/{petId} 404</text></g><!--MD5=[c9db5466f8287c2146831e0c35419034]
+class POST /store/order--><g id="elem_POST /store/order"><rect codeLine="50" fill="#003153" height="41.5986" id="POST /store/order" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="133" x="3187.5" y="80.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="3232.5" y="97.8018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="127" x="3190.5" y="114.3965">POST /store/order</text></g><!--MD5=[cbd61a26739aa399869bc9cb3ff4babc]
+class POST /store/order 200--><g id="elem_POST /store/order 200"><rect codeLine="52" fill="#003153" height="41.5986" id="POST /store/order 200" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="165" x="3021.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="3068" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="159" x="3024.5" y="254.3965">POST /store/order 200</text></g><!--MD5=[f932a16cd2dcfceababdcf4c5af8659f]
+class POST /store/order 400--><g id="elem_POST /store/order 400"><rect codeLine="53" fill="#003153" height="41.5986" id="POST /store/order 400" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="165" x="3221.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="3268" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="159" x="3224.5" y="254.3965">POST /store/order 400</text></g><!--MD5=[3f8c89d9e70e182510739bed531835db]
+class GET /store/order/{orderId}--><g id="elem_GET /store/order/{orderId}"><rect codeLine="54" fill="#003153" height="66.6133" id="GET /store/order/{orderId}" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="200" x="3705" y="68.2373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="3783.5" y="85.3018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="194" x="3708" y="101.8965">GET /store/order/{orderId}</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="3706" x2="3904" y1="109.8359" y2="109.8359"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="118" x="3711" y="127.9111">orderId : integer</text></g><!--MD5=[1949560761c63ec2d1f053f2ab7831bd]
+class GET /store/order/{orderId} 200--><g id="elem_GET /store/order/{orderId} 200"><rect codeLine="57" fill="#003153" height="41.5986" id="GET /store/order/{orderId} 200" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="232" x="3422" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="3502" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="226" x="3425" y="254.3965">GET /store/order/{orderId} 200</text></g><!--MD5=[3928b716cedb0ba9e3c77f5522c210c1]
+class GET /store/order/{orderId} 400--><g id="elem_GET /store/order/{orderId} 400"><rect codeLine="58" fill="#003153" height="41.5986" id="GET /store/order/{orderId} 400" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="232" x="3689" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="3769" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="226" x="3692" y="254.3965">GET /store/order/{orderId} 400</text></g><!--MD5=[5079a39b9aac3469fb3b704a9dc7d917]
+class GET /store/order/{orderId} 404--><g id="elem_GET /store/order/{orderId} 404"><rect codeLine="59" fill="#003153" height="41.5986" id="GET /store/order/{orderId} 404" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="232" x="3956" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="4036" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="226" x="3959" y="254.3965">GET /store/order/{orderId} 404</text></g><!--MD5=[f331363acac77b24e04f119c24bf6260]
+class DELETE /store/order/{orderId}--><g id="elem_DELETE /store/order/{orderId}"><rect codeLine="60" fill="#003153" height="66.6133" id="DELETE /store/order/{orderId}" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="226" x="4385" y="68.2373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="4476.5" y="85.3018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="220" x="4388" y="101.8965">DELETE /store/order/{orderId}</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="4386" x2="4610" y1="109.8359" y2="109.8359"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="118" x="4391" y="127.9111">orderId : integer</text></g><!--MD5=[b3c9b999ae867a222f161ee14650ebe7]
+class DELETE /store/order/{orderId} 400--><g id="elem_DELETE /store/order/{orderId} 400"><rect codeLine="63" fill="#003153" height="41.5986" id="DELETE /store/order/{orderId} 400" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="258" x="4223" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="4316" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="252" x="4226" y="254.3965">DELETE /store/order/{orderId} 400</text></g><!--MD5=[178b0af2c33a08006d9e819e3f62affc]
+class DELETE /store/order/{orderId} 404--><g id="elem_DELETE /store/order/{orderId} 404"><rect codeLine="64" fill="#003153" height="41.5986" id="DELETE /store/order/{orderId} 404" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="258" x="4516" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="4609" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="252" x="4519" y="254.3965">DELETE /store/order/{orderId} 404</text></g><!--MD5=[0c2013ed1597ad5211d0f0a5a5c0c472]
+class GET /store/inventory--><g id="elem_GET /store/inventory"><rect codeLine="65" fill="#003153" height="41.5986" id="GET /store/inventory" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="153" x="4825.5" y="80.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="4880.5" y="97.8018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="147" x="4828.5" y="114.3965">GET /store/inventory</text></g><!--MD5=[25462be7738feb1573e9ea7c26299c33]
+class GET /store/inventory 200--><g id="elem_GET /store/inventory 200"><rect codeLine="67" fill="#003153" height="41.5986" id="GET /store/inventory 200" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="185" x="4809.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="4866" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="179" x="4812.5" y="254.3965">GET /store/inventory 200</text></g><!--MD5=[7a263b6790b4e058db668d57125d68b2]
+class POST /user/createWithArray--><g id="elem_POST /user/createWithArray"><rect codeLine="68" fill="#003153" height="41.5986" id="POST /user/createWithArray" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="205" x="5056.5" y="80.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="5137.5" y="97.8018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="199" x="5059.5" y="114.3965">POST /user/createWithArray</text></g><!--MD5=[8bbf4f6a1d01597e956cf02cbe1808cb]
+class POST /user/createWithArray default--><g id="elem_POST /user/createWithArray default"><rect codeLine="70" fill="#003153" height="41.5986" id="POST /user/createWithArray default" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="259" x="5029.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="5123" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="253" x="5032.5" y="254.3965">POST /user/createWithArray default</text></g><!--MD5=[38cbeb7a87e2dbe01e24941dd43d1b96]
+class POST /user/createWithList--><g id="elem_POST /user/createWithList"><rect codeLine="71" fill="#003153" height="41.5986" id="POST /user/createWithList" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="192" x="5351" y="80.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="5425.5" y="97.8018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="186" x="5354" y="114.3965">POST /user/createWithList</text></g><!--MD5=[8aa5afa0333055febecf194da2811d9b]
+class POST /user/createWithList default--><g id="elem_POST /user/createWithList default"><rect codeLine="73" fill="#003153" height="41.5986" id="POST /user/createWithList default" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="246" x="5324" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="5411" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="240" x="5327" y="254.3965">POST /user/createWithList default</text></g><!--MD5=[c9ae2dd855e36f3e04df6e0999e4e65e]
+class GET /user/{username}--><g id="elem_GET /user/{username}"><rect codeLine="74" fill="#003153" height="66.6133" id="GET /user/{username}" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="169" x="5857.5" y="68.2373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="5920.5" y="85.3018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="163" x="5860.5" y="101.8965">GET /user/{username}</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="5858.5" x2="6025.5" y1="109.8359" y2="109.8359"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="126" x="5863.5" y="127.9111">username : string</text></g><!--MD5=[45268befc32a9bfff47ab359cfe7a20b]
+class GET /user/{username} 200--><g id="elem_GET /user/{username} 200"><rect codeLine="77" fill="#003153" height="41.5986" id="GET /user/{username} 200" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="201" x="5605.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="5670" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="195" x="5608.5" y="254.3965">GET /user/{username} 200</text></g><!--MD5=[67c8295763ed863ec1da73ff86ad7645]
+class GET /user/{username} 400--><g id="elem_GET /user/{username} 400"><rect codeLine="78" fill="#003153" height="41.5986" id="GET /user/{username} 400" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="201" x="5841.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="5906" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="195" x="5844.5" y="254.3965">GET /user/{username} 400</text></g><!--MD5=[24770bfc62ce07c47040475353acb0cd]
+class GET /user/{username} 404--><g id="elem_GET /user/{username} 404"><rect codeLine="79" fill="#003153" height="41.5986" id="GET /user/{username} 404" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="201" x="6077.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="6142" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="195" x="6080.5" y="254.3965">GET /user/{username} 404</text></g><!--MD5=[93461bb6e1526a23cdef058a3262b477]
+class PUT /user/{username}--><g id="elem_PUT /user/{username}"><rect codeLine="80" fill="#003153" height="66.6133" id="PUT /user/{username}" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="167" x="6446.5" y="68.2373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="6508.5" y="85.3018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="161" x="6449.5" y="101.8965">PUT /user/{username}</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="6447.5" x2="6612.5" y1="109.8359" y2="109.8359"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="126" x="6452.5" y="127.9111">username : string</text></g><!--MD5=[74db8c88fd8c9d763a1456dc4bc2f544]
+class PUT /user/{username} 400--><g id="elem_PUT /user/{username} 400"><rect codeLine="83" fill="#003153" height="41.5986" id="PUT /user/{username} 400" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="199" x="6313.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="6377" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="193" x="6316.5" y="254.3965">PUT /user/{username} 400</text></g><!--MD5=[a35d998eaaa67e5347bbcd6c563e6812]
+class PUT /user/{username} 404--><g id="elem_PUT /user/{username} 404"><rect codeLine="84" fill="#003153" height="41.5986" id="PUT /user/{username} 404" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="199" x="6547.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="6611" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="193" x="6550.5" y="254.3965">PUT /user/{username} 404</text></g><!--MD5=[51435e47b414595a4931bc649c38f140]
+class DELETE /user/{username}--><g id="elem_DELETE /user/{username}"><rect codeLine="85" fill="#003153" height="66.6133" id="DELETE /user/{username}" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="195" x="6928.5" y="68.2373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="7004.5" y="85.3018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="189" x="6931.5" y="101.8965">DELETE /user/{username}</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="6929.5" x2="7122.5" y1="109.8359" y2="109.8359"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="126" x="6934.5" y="127.9111">username : string</text></g><!--MD5=[58bd874568c3c99fb557f37950975993]
+class DELETE /user/{username} 400--><g id="elem_DELETE /user/{username} 400"><rect codeLine="88" fill="#003153" height="41.5986" id="DELETE /user/{username} 400" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="227" x="6781.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="6859" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="221" x="6784.5" y="254.3965">DELETE /user/{username} 400</text></g><!--MD5=[ecfc6eb45fa1aedc1438fb3ac0b36284]
+class DELETE /user/{username} 404--><g id="elem_DELETE /user/{username} 404"><rect codeLine="89" fill="#003153" height="41.5986" id="DELETE /user/{username} 404" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="227" x="7043.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="7121" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="221" x="7046.5" y="254.3965">DELETE /user/{username} 404</text></g><!--MD5=[eace2f9f95d31cddd69911c79f4c5cfc]
+class GET /user/login--><g id="elem_GET /user/login"><rect codeLine="90" fill="#003153" height="83.6279" id="GET /user/login" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="138" x="7402" y="59.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="7449.5" y="76.8018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="110" x="7416" y="93.3965">GET /user/login</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="7403" x2="7539" y1="101.3359" y2="101.3359"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="126" x="7408" y="119.4111">username : string</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="122" x="7408" y="136.4258">password : string</text></g><!--MD5=[667a184f7f69ed8addefad817817396b]
+class GET /user/login 200--><g id="elem_GET /user/login 200"><rect codeLine="94" fill="#003153" height="41.5986" id="GET /user/login 200" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="148" x="7306" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="7344" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="142" x="7309" y="254.3965">GET /user/login 200</text></g><!--MD5=[feeafa48e0a2c96ecff397e8bf0d0216]
+class GET /user/login 400--><g id="elem_GET /user/login 400"><rect codeLine="95" fill="#003153" height="41.5986" id="GET /user/login 400" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="148" x="7489" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="7527" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="142" x="7492" y="254.3965">GET /user/login 400</text></g><!--MD5=[1044a3d32af9eb73a82185447bb36fce]
+class GET /user/logout--><g id="elem_GET /user/logout"><rect codeLine="96" fill="#003153" height="41.5986" id="GET /user/logout" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="126" x="7699" y="80.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="7740.5" y="97.8018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="120" x="7702" y="114.3965">GET /user/logout</text></g><!--MD5=[5d7965ff584c91fb9103b03ee1d1dfdd]
+class GET /user/logout default--><g id="elem_GET /user/logout default"><rect codeLine="98" fill="#003153" height="41.5986" id="GET /user/logout default" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="180" x="7672" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="7726" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="174" x="7675" y="254.3965">GET /user/logout default</text></g><!--MD5=[8b077c34202b4d476566b898d022be41]
+class POST /user--><g id="elem_POST /user"><rect codeLine="99" fill="#003153" height="41.5986" id="POST /user" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="85" x="7914.5" y="80.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="7935.5" y="97.8018">«Path»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="79" x="7917.5" y="114.3965">POST /user</text></g><!--MD5=[070afdabe5d11706c8cd3e08d8c644c8]
+class POST /user default--><g id="elem_POST /user default"><rect codeLine="101" fill="#003153" height="41.5986" id="POST /user default" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="139" x="7887.5" y="220.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="7921" y="237.8018">«Response»</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="133" x="7890.5" y="254.3965">POST /user default</text></g><!--MD5=[1b97144616e9018ba89e14d9883978ec]
+class ApiResponse--><g id="elem_ApiResponse"><rect codeLine="102" fill="#003153" height="87.0439" id="ApiResponse" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="130" x="82" y="382.2373"/><ellipse cx="100.85" cy="396.2373" fill="#003153" rx="9" ry="9" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M102.5531,391.6665 Q102.7191,391.3677 102.8935,391.2432 Q103.0678,391.1187 103.3334,391.1187 Q103.7401,391.1187 103.9103,391.3345 Q104.0805,391.5503 104.0805,392.0732 L104.0971,394.2314 Q104.0971,394.8042 103.9103,395.0034 Q103.7235,395.2026 103.2338,395.2026 Q102.8852,395.2026 102.6984,395.0366 Q102.5116,394.8706 102.3788,394.4224 Q102.163,393.6338 101.6898,393.2893 Q101.2167,392.9448 100.3783,392.9448 Q99.1,392.9448 98.4193,393.8081 Q97.7387,394.6714 97.7387,396.3066 Q97.7387,397.9336 98.4276,398.8052 Q99.1166,399.6768 100.3949,399.6768 Q101.2665,399.6768 102.3166,399.0957 Q103.3666,398.5146 103.6405,398.5146 Q103.9643,398.5146 104.1842,398.7886 Q104.4042,399.0625 104.4042,399.4692 Q104.4042,400.1997 103.1176,400.8472 Q101.831,401.4946 100.2206,401.4946 Q98.0458,401.4946 96.7011,400.0586 Q95.3563,398.6226 95.3563,396.3066 Q95.3563,394.0737 96.7177,392.5962 Q98.079,391.1187 100.1708,391.1187 Q100.7602,391.1187 101.3329,391.2515 Q101.9057,391.3843 102.5531,391.6665 Z " fill="#D9D3D0"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="89" x="114.15" y="401.8052">ApiResponse</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="83" x2="211" y1="410.2373" y2="410.2373"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="98" x="88" y="428.3125">code : integer</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="88" x="88" y="445.3271">type : string</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="118" x="88" y="462.3418">message : string</text></g><!--MD5=[a96594a83e2ecdc78cbf17c2ddf01934]
+class Category--><g id="elem_Category"><rect codeLine="107" fill="#003153" height="70.0293" id="Category" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="108" x="1298" y="588.7373"/><ellipse cx="1318.65" cy="602.7373" fill="#003153" rx="9" ry="9" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M1320.3531,598.1665 Q1320.5191,597.8677 1320.6935,597.7432 Q1320.8678,597.6187 1321.1334,597.6187 Q1321.5401,597.6187 1321.7103,597.8345 Q1321.8805,598.0503 1321.8805,598.5732 L1321.8971,600.7314 Q1321.8971,601.3042 1321.7103,601.5034 Q1321.5235,601.7026 1321.0338,601.7026 Q1320.6852,601.7026 1320.4984,601.5366 Q1320.3116,601.3706 1320.1788,600.9224 Q1319.963,600.1338 1319.4898,599.7893 Q1319.0167,599.4448 1318.1783,599.4448 Q1316.9,599.4448 1316.2193,600.3081 Q1315.5387,601.1714 1315.5387,602.8066 Q1315.5387,604.4336 1316.2276,605.3052 Q1316.9166,606.1768 1318.1949,606.1768 Q1319.0665,606.1768 1320.1166,605.5957 Q1321.1666,605.0146 1321.4405,605.0146 Q1321.7643,605.0146 1321.9842,605.2886 Q1322.2042,605.5625 1322.2042,605.9692 Q1322.2042,606.6997 1320.9176,607.3472 Q1319.631,607.9946 1318.0206,607.9946 Q1315.8458,607.9946 1314.5011,606.5586 Q1313.1563,605.1226 1313.1563,602.8066 Q1313.1563,600.5737 1314.5177,599.0962 Q1315.879,597.6187 1317.9708,597.6187 Q1318.5602,597.6187 1319.1329,597.7515 Q1319.7057,597.8843 1320.3531,598.1665 Z " fill="#D9D3D0"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="63" x="1332.35" y="608.3052">Category</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="1299" x2="1405" y1="616.7373" y2="616.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="79" x="1304" y="634.8125">id : integer</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="96" x="1304" y="651.8271">name : string</text></g><!--MD5=[9cfa872a99fa8e70a8c023fe905238fd]
+class Pet--><g id="elem_Pet"><rect codeLine="111" fill="#003153" height="138.0879" id="Pet" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="194" x="1327" y="356.7373"/><ellipse cx="1409.25" cy="370.7373" fill="#003153" rx="9" ry="9" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M1410.9531,366.1665 Q1411.1191,365.8677 1411.2935,365.7432 Q1411.4678,365.6187 1411.7334,365.6187 Q1412.1401,365.6187 1412.3103,365.8345 Q1412.4805,366.0503 1412.4805,366.5732 L1412.4971,368.7314 Q1412.4971,369.3042 1412.3103,369.5034 Q1412.1235,369.7026 1411.6338,369.7026 Q1411.2852,369.7026 1411.0984,369.5366 Q1410.9116,369.3706 1410.7788,368.9224 Q1410.563,368.1338 1410.0898,367.7893 Q1409.6167,367.4448 1408.7783,367.4448 Q1407.5,367.4448 1406.8193,368.3081 Q1406.1387,369.1714 1406.1387,370.8066 Q1406.1387,372.4336 1406.8276,373.3052 Q1407.5166,374.1768 1408.7949,374.1768 Q1409.6665,374.1768 1410.7166,373.5957 Q1411.7666,373.0146 1412.0405,373.0146 Q1412.3643,373.0146 1412.5842,373.2886 Q1412.8042,373.5625 1412.8042,373.9692 Q1412.8042,374.6997 1411.5176,375.3472 Q1410.231,375.9946 1408.6206,375.9946 Q1406.4458,375.9946 1405.1011,374.5586 Q1403.7563,373.1226 1403.7563,370.8066 Q1403.7563,368.5737 1405.1177,367.0962 Q1406.479,365.6187 1408.5708,365.6187 Q1409.1602,365.6187 1409.7329,365.7515 Q1410.3057,365.8843 1410.9531,366.1665 Z " fill="#D9D3D0"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="22" x="1426.75" y="376.3052">Pet</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="1328" x2="1520" y1="384.7373" y2="384.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="79" x="1333" y="402.8125">id : integer</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="139" x="1333" y="419.8271">category : Category</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="96" x="1333" y="436.8418">name : string</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="182" x="1333" y="453.8564">photoUrls : array&lt;string&gt;</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="130" x="1333" y="470.8711">tags : array&lt;Tag&gt;</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="100" x="1333" y="487.8857">status : string</text></g><!--MD5=[39d6d2ea03de602dbf4d534e70c872a9]
+class Tag--><g id="elem_Tag"><rect codeLine="119" fill="#003153" height="70.0293" id="Tag" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="108" x="1441" y="588.7373"/><ellipse cx="1478.3" cy="602.7373" fill="#003153" rx="9" ry="9" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M1480.0031,598.1665 Q1480.1691,597.8677 1480.3435,597.7432 Q1480.5178,597.6187 1480.7834,597.6187 Q1481.1901,597.6187 1481.3603,597.8345 Q1481.5305,598.0503 1481.5305,598.5732 L1481.5471,600.7314 Q1481.5471,601.3042 1481.3603,601.5034 Q1481.1735,601.7026 1480.6838,601.7026 Q1480.3352,601.7026 1480.1484,601.5366 Q1479.9616,601.3706 1479.8288,600.9224 Q1479.613,600.1338 1479.1398,599.7893 Q1478.6667,599.4448 1477.8283,599.4448 Q1476.55,599.4448 1475.8693,600.3081 Q1475.1887,601.1714 1475.1887,602.8066 Q1475.1887,604.4336 1475.8776,605.3052 Q1476.5666,606.1768 1477.8449,606.1768 Q1478.7165,606.1768 1479.7666,605.5957 Q1480.8166,605.0146 1481.0905,605.0146 Q1481.4143,605.0146 1481.6342,605.2886 Q1481.8542,605.5625 1481.8542,605.9692 Q1481.8542,606.6997 1480.5676,607.3472 Q1479.281,607.9946 1477.6706,607.9946 Q1475.4958,607.9946 1474.1511,606.5586 Q1472.8063,605.1226 1472.8063,602.8066 Q1472.8063,600.5737 1474.1677,599.0962 Q1475.529,597.6187 1477.6208,597.6187 Q1478.2102,597.6187 1478.7829,597.7515 Q1479.3557,597.8843 1480.0031,598.1665 Z " fill="#D9D3D0"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="26" x="1495.7" y="608.3052">Tag</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="1442" x2="1548" y1="616.7373" y2="616.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="79" x="1447" y="634.8125">id : integer</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="96" x="1447" y="651.8271">name : string</text></g><!--MD5=[cf4d6237fcae255cd2e1656cf84a30e2]
+class Order--><g id="elem_Order"><rect codeLine="123" fill="#003153" height="138.0879" id="Order" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="146" x="3189" y="356.7373"/><ellipse cx="3238.25" cy="370.7373" fill="#003153" rx="9" ry="9" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M3239.9531,366.1665 Q3240.1191,365.8677 3240.2935,365.7432 Q3240.4678,365.6187 3240.7334,365.6187 Q3241.1401,365.6187 3241.3103,365.8345 Q3241.4805,366.0503 3241.4805,366.5732 L3241.4971,368.7314 Q3241.4971,369.3042 3241.3103,369.5034 Q3241.1235,369.7026 3240.6338,369.7026 Q3240.2852,369.7026 3240.0984,369.5366 Q3239.9116,369.3706 3239.7788,368.9224 Q3239.563,368.1338 3239.0898,367.7893 Q3238.6167,367.4448 3237.7783,367.4448 Q3236.5,367.4448 3235.8193,368.3081 Q3235.1387,369.1714 3235.1387,370.8066 Q3235.1387,372.4336 3235.8276,373.3052 Q3236.5166,374.1768 3237.7949,374.1768 Q3238.6665,374.1768 3239.7166,373.5957 Q3240.7666,373.0146 3241.0405,373.0146 Q3241.3643,373.0146 3241.5842,373.2886 Q3241.8042,373.5625 3241.8042,373.9692 Q3241.8042,374.6997 3240.5176,375.3472 Q3239.231,375.9946 3237.6206,375.9946 Q3235.4458,375.9946 3234.1011,374.5586 Q3232.7563,373.1226 3232.7563,370.8066 Q3232.7563,368.5737 3234.1177,367.0962 Q3235.479,365.6187 3237.5708,365.6187 Q3238.1602,365.6187 3238.7329,365.7515 Q3239.3057,365.8843 3239.9531,366.1665 Z " fill="#D9D3D0"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="40" x="3255.75" y="376.3052">Order</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="3190" x2="3334" y1="384.7373" y2="384.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="79" x="3195" y="402.8125">id : integer</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="104" x="3195" y="419.8271">petId : integer</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="125" x="3195" y="436.8418">quantity : integer</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="119" x="3195" y="453.8564">shipDate : string</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="100" x="3195" y="470.8711">status : string</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="134" x="3195" y="487.8857">complete : boolean</text></g><!--MD5=[3fd616f346a44cd59a91eb10b19e157c]
+class User--><g id="elem_User"><rect codeLine="131" fill="#003153" height="172.1172" id="User" rx="2.5" ry="2.5" style="stroke:#D9D3D0;stroke-width:1.0;" width="154" x="5629" y="339.7373"/><ellipse cx="5686.75" cy="353.7373" fill="#003153" rx="9" ry="9" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M5688.4531,349.1665 Q5688.6191,348.8677 5688.7935,348.7432 Q5688.9678,348.6187 5689.2334,348.6187 Q5689.6401,348.6187 5689.8103,348.8345 Q5689.9805,349.0503 5689.9805,349.5732 L5689.9971,351.7314 Q5689.9971,352.3042 5689.8103,352.5034 Q5689.6235,352.7026 5689.1338,352.7026 Q5688.7852,352.7026 5688.5984,352.5366 Q5688.4116,352.3706 5688.2788,351.9224 Q5688.063,351.1338 5687.5898,350.7893 Q5687.1167,350.4448 5686.2783,350.4448 Q5685,350.4448 5684.3193,351.3081 Q5683.6387,352.1714 5683.6387,353.8066 Q5683.6387,355.4336 5684.3276,356.3052 Q5685.0166,357.1768 5686.2949,357.1768 Q5687.1665,357.1768 5688.2166,356.5957 Q5689.2666,356.0146 5689.5405,356.0146 Q5689.8643,356.0146 5690.0842,356.2886 Q5690.3042,356.5625 5690.3042,356.9692 Q5690.3042,357.6997 5689.0176,358.3472 Q5687.731,358.9946 5686.1206,358.9946 Q5683.9458,358.9946 5682.6011,357.5586 Q5681.2563,356.1226 5681.2563,353.8066 Q5681.2563,351.5737 5682.6177,350.0962 Q5683.979,348.6187 5686.0708,348.6187 Q5686.6602,348.6187 5687.2329,348.7515 Q5687.8057,348.8843 5688.4531,349.1665 Z " fill="#D9D3D0"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="31" x="5704.25" y="359.3052">User</text><line style="stroke:#D9D3D0;stroke-width:1.0;" x1="5630" x2="5782" y1="367.7373" y2="367.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="79" x="5635" y="385.8125">id : integer</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="126" x="5635" y="402.8271">username : string</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="125" x="5635" y="419.8418">firstName : string</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="122" x="5635" y="436.8564">lastName : string</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="95" x="5635" y="453.8711">email : string</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="122" x="5635" y="470.8857">password : string</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="100" x="5635" y="487.9004">phone : string</text><text fill="#D9D3D0" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="142" x="5635" y="504.915">userStatus : integer</text></g><!--MD5=[1ab78b4256223941327d982826d4d39b]
+link POST /pet/{petId}/uploadImage to POST /pet/{petId}/uploadImage 200--><g id="link_POST /pet/{petId}/uploadImage_POST /pet/{petId}/uploadImage 200"><path codeLine="141" d="M147,135.4373 C147,159.9373 147,192.9673 147,215.4573 " fill="none" id="POST /pet/{petId}/uploadImage-to-POST /pet/{petId}/uploadImage 200" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="147,220.6573,151,211.6573,147,215.6573,143,211.6573,147,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="148" y="187.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="137.775" y="210.1584">1</text></g><!--MD5=[03e301269a6efc5705660472a06fe03e]
+link POST /pet/{petId}/uploadImage 200 to ApiResponse--><g id="link_POST /pet/{petId}/uploadImage 200_ApiResponse"><path codeLine="142" d="M147,262.9073 C147,290.1673 147,339.6173 147,376.6973 " fill="none" id="POST /pet/{petId}/uploadImage 200-to-ApiResponse" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="147,382.0773,151,373.0773,147,377.0773,143,373.0773,147,382.0773" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="148" y="306.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="138.3125" y="371.4189">1</text></g><!--MD5=[29651dec38730e607ba51e86b574dc5b]
+link POST /pet to POST /pet 405--><g id="link_POST /pet_POST /pet 405"><path codeLine="143" d="M372,122.8073 C372,147.3273 372,188.8573 372,215.5173 " fill="none" id="POST /pet-to-POST /pet 405" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="372,220.6473,376,211.6473,372,215.6473,368,211.6473,372,220.6473" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="373" y="187.8071">405</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="362.775" y="210.1453">1</text></g><!--MD5=[1be6da65b2bbaa82a1a5fde53a7cddd0]
+link PUT /pet to PUT /pet 400--><g id="link_PUT /pet_PUT /pet 400"><path codeLine="144" d="M626.52,122.8073 C602.3,147.7373 561.03,190.2473 535.2,216.8473 " fill="none" id="PUT /pet-to-PUT /pet 400" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="531.51,220.6473,540.6515,216.9821,534.9952,217.0621,534.9152,211.4058,531.51,220.6473" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="576" y="187.8071">400</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="528.2599" y="210.1453">1</text></g><!--MD5=[6aab0eed33d2cfbd6d6ed16d89866120]
+link PUT /pet to PUT /pet 404--><g id="link_PUT /pet_PUT /pet 404"><path codeLine="145" d="M646,122.8073 C646,147.3273 646,188.8573 646,215.5173 " fill="none" id="PUT /pet-to-PUT /pet 404" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="646,220.6473,650,211.6473,646,215.6473,642,211.6473,646,220.6473" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="647" y="187.8071">404</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="636.775" y="210.1453">1</text></g><!--MD5=[8dd203a0f32be85e04077d91d4340b36]
+link PUT /pet to PUT /pet 405--><g id="link_PUT /pet_PUT /pet 405"><path codeLine="146" d="M665.48,122.8073 C689.7,147.7373 730.97,190.2473 756.8,216.8473 " fill="none" id="PUT /pet-to-PUT /pet 405" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="760.49,220.6473,757.0848,211.4058,757.0048,217.0621,751.3485,216.9821,760.49,220.6473" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="730" y="187.8071">405</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="745.2901" y="210.1453">1</text></g><!--MD5=[65ad622220b5b7b8f8585d1675a1fdbf]
+link GET /pet/findByStatus to GET /pet/findByStatus 200--><g id="link_GET /pet/findByStatus_GET /pet/findByStatus 200"><path codeLine="147" d="M1084.56,135.4373 C1055.8,160.5573 1016.77,194.6473 991.01,217.1473 " fill="none" id="GET /pet/findByStatus-to-GET /pet/findByStatus 200" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="986.99,220.6573,996.4035,217.7613,990.76,217.3729,991.1484,211.7294,986.99,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="1040" y="187.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="984.8057" y="210.1584">1</text></g><!--MD5=[d49a6b48955d9b5be408c3a4fd9078e5]
+link GET /pet/findByStatus 200 to Pet--><g id="link_GET /pet/findByStatus 200_Pet"><path codeLine="148" d="M1006.61,262.9073 C1078.13,293.1973 1223.27,350.8973 1322.2,388.5773 " fill="none" id="GET /pet/findByStatus 200-to-Pet" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="1326.88,390.3573,1319.883,383.4261,1322.2048,388.5845,1317.0465,390.9063,1326.88,390.3573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1311.138" y="385.1714">*</text></g><!--MD5=[d49a6b48955d9b5be408c3a4fd9078e5]
+link GET /pet/findByStatus 200 to Pet--><g id="link_GET /pet/findByStatus 200_Pet"><path codeLine="149" d="M1023.85,262.9073 C1099.57,290.9173 1230.54,342.3373 1322.06,379.7173 " fill="none" id="GET /pet/findByStatus 200-to-Pet-1" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="1326.93,381.7173,1320.1044,374.6173,1322.2995,379.8308,1317.086,382.026,1326.93,381.7173" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1310.876" y="375.71">*</text></g><!--MD5=[9192c2d2f3e4f19f00381331baa0ae43]
+link GET /pet/findByStatus to GET /pet/findByStatus 400--><g id="link_GET /pet/findByStatus_GET /pet/findByStatus 400"><path codeLine="150" d="M1139.77,135.4373 C1153.2,160.1473 1171.34,193.5273 1183.57,216.0273 " fill="none" id="GET /pet/findByStatus-to-GET /pet/findByStatus 400" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="1186.09,220.6573,1185.3165,210.8389,1183.7067,216.2618,1178.2838,214.6521,1186.09,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="1170" y="187.8071">400</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1173.5238" y="210.1584">1</text></g><!--MD5=[b2010d2f3d1d9638e2a7f25e48e6246c]
+link GET /pet/findByTags to GET /pet/findByTags 200--><g id="link_GET /pet/findByTags_GET /pet/findByTags 200"><path codeLine="151" d="M1536.93,135.4373 C1509.99,160.5573 1473.43,194.6473 1449.3,217.1473 " fill="none" id="GET /pet/findByTags-to-GET /pet/findByTags 200" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="1445.54,220.6573,1454.8483,217.4394,1449.1948,217.2452,1449.389,211.5917,1445.54,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="1495" y="187.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1442.9116" y="210.1584">1</text></g><!--MD5=[8767656dc260a846e3802dbf94b51cb7]
+link GET /pet/findByTags 200 to Pet--><g id="link_GET /pet/findByTags 200_Pet"><path codeLine="152" d="M1415.63,262.9073 C1412.05,284.3473 1410.67,319.5073 1411.47,351.5773 " fill="none" id="GET /pet/findByTags 200-to-Pet" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="1411.62,356.6973,1415.3353,347.5761,1411.4629,351.6998,1407.3393,347.8274,1411.62,356.6973" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1401.7261" y="345.9583">*</text></g><!--MD5=[8767656dc260a846e3802dbf94b51cb7]
+link GET /pet/findByTags 200 to Pet--><g id="link_GET /pet/findByTags 200_Pet"><path codeLine="153" d="M1432.87,262.9073 C1436.65,284.3473 1438.12,319.5073 1437.27,351.5773 " fill="none" id="GET /pet/findByTags 200-to-Pet-1" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="1437.11,356.6973,1441.3907,347.8274,1437.2671,351.6998,1433.3947,347.5761,1437.11,356.6973" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1430.1633" y="345.9583">*</text></g><!--MD5=[6bae749f91d7da19da0501029813232e]
+link GET /pet/findByTags to GET /pet/findByTags 400--><g id="link_GET /pet/findByTags_GET /pet/findByTags 400"><path codeLine="154" d="M1589.06,135.4373 C1601.95,160.1473 1619.37,193.5273 1631.11,216.0273 " fill="none" id="GET /pet/findByTags-to-GET /pet/findByTags 400" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="1633.52,220.6573,1632.8967,210.8282,1631.2042,216.2259,1625.8065,214.5334,1633.52,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="1618" y="187.8071">400</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1621.0855" y="210.1584">1</text></g><!--MD5=[7ce4f3ffca1e4d5c8026351ac1791cb6]
+link GET /pet/{petId} to GET /pet/{petId} 200--><g id="link_GET /pet/{petId}_GET /pet/{petId} 200"><path codeLine="155" d="M2004.33,135.2673 C1968,160.5873 1918.48,195.0973 1886.14,217.6473 " fill="none" id="GET /pet/{petId}-to-GET /pet/{petId} 200" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="1881.89,220.6073,1891.5609,218.7435,1885.9922,217.7486,1886.987,212.1799,1881.89,220.6073" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="1948" y="187.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1881.5126" y="210.093">1</text></g><!--MD5=[74ec93de8fbcd3f1a3de627292ed18fa]
+link GET /pet/{petId} 200 to Pet--><g id="link_GET /pet/{petId} 200_Pet"><path codeLine="156" d="M1771.4,259.1073 C1721.87,269.5773 1663.76,282.9773 1640,292.7373 C1600.54,308.9373 1559.96,331.8273 1524.77,354.0073 " fill="none" id="GET /pet/{petId} 200-to-Pet" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="1520.51,356.7073,1530.2517,355.2586,1524.7307,354.0266,1525.9626,348.5055,1520.51,356.7073" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="1641" y="306.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1523.2065" y="345.9695">1</text></g><!--MD5=[74ec93de8fbcd3f1a3de627292ed18fa]
+link GET /pet/{petId} 200 to Pet--><g id="link_GET /pet/{petId} 200_Pet"><path codeLine="157" d="M1805.45,262.9073 C1738.37,291.3673 1614.27,344.0173 1525.85,381.5273 " fill="none" id="GET /pet/{petId} 200-to-Pet-1" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="1521.13,383.5273,1530.9776,383.6845,1525.7309,381.5698,1527.8456,376.3231,1521.13,383.5273" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="1728" y="306.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1528.8728" y="377.8184">1</text></g><!--MD5=[54248f9d8833cc81e5136916d3a98222]
+link GET /pet/{petId} to GET /pet/{petId} 400--><g id="link_GET /pet/{petId}_GET /pet/{petId} 400"><path codeLine="158" d="M2051,135.4373 C2051,159.9373 2051,192.9673 2051,215.4573 " fill="none" id="GET /pet/{petId}-to-GET /pet/{petId} 400" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="2051,220.6573,2055,211.6573,2051,215.6573,2047,211.6573,2051,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="2052" y="187.8071">400</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="2041.775" y="210.1584">1</text></g><!--MD5=[5e6963d2978b879aeee68ffc573c2ac2]
+link GET /pet/{petId} to GET /pet/{petId} 404--><g id="link_GET /pet/{petId}_GET /pet/{petId} 404"><path codeLine="159" d="M2097.67,135.2673 C2134,160.5873 2183.52,195.0973 2215.86,217.6473 " fill="none" id="GET /pet/{petId}-to-GET /pet/{petId} 404" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="2220.11,220.6073,2215.013,212.1799,2216.0078,217.7486,2210.4391,218.7435,2220.11,220.6073" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="2175" y="187.8071">404</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="2202.0374" y="210.093">1</text></g><!--MD5=[3fd9b7877de6cd0082c940bef2a7bb87]
+link POST /pet/{petId} to POST /pet/{petId} 405--><g id="link_POST /pet/{petId}_POST /pet/{petId} 405"><path codeLine="160" d="M2452,135.4373 C2452,159.9373 2452,192.9673 2452,215.4573 " fill="none" id="POST /pet/{petId}-to-POST /pet/{petId} 405" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="2452,220.6573,2456,211.6573,2452,215.6573,2448,211.6573,2452,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="2453" y="187.8071">405</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="2442.775" y="210.1584">1</text></g><!--MD5=[f6119edc8cda517184610507c1f07af6]
+link DELETE /pet/{petId} to DELETE /pet/{petId} 400--><g id="link_DELETE /pet/{petId}_DELETE /pet/{petId} 400"><path codeLine="161" d="M2746.7,143.7673 C2727.48,167.4573 2703.96,196.4373 2687.66,216.5073 " fill="none" id="DELETE /pet/{petId}-to-DELETE /pet/{petId} 400" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="2684.5,220.4073,2693.2798,215.9446,2687.653,216.5267,2687.0709,210.8999,2684.5,220.4073" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="2722" y="187.8071">400</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="2680.3281" y="209.8318">1</text></g><!--MD5=[f48890e897ca35c62579821f70f838eb]
+link DELETE /pet/{petId} to DELETE /pet/{petId} 404--><g id="link_DELETE /pet/{petId}_DELETE /pet/{petId} 404"><path codeLine="162" d="M2813.3,143.7673 C2832.52,167.4573 2856.04,196.4373 2872.34,216.5073 " fill="none" id="DELETE /pet/{petId}-to-DELETE /pet/{petId} 404" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="2875.5,220.4073,2872.9291,210.8999,2872.347,216.5267,2866.7202,215.9446,2875.5,220.4073" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="2851" y="187.8071">404</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="2861.2219" y="209.8318">1</text></g><!--MD5=[b2f818a1236b24afd21a46287663fbf2]
+link POST /store/order to POST /store/order 200--><g id="link_POST /store/order_POST /store/order 200"><path codeLine="163" d="M3232.19,122.8073 C3204.97,147.8473 3158.5,190.5973 3129.62,217.1673 " fill="none" id="POST /store/order-to-POST /store/order 200" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="3125.84,220.6473,3135.1679,217.4865,3129.5157,217.2577,3129.7445,211.6055,3125.84,220.6473" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="3176" y="187.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="3123.3035" y="210.1453">1</text></g><!--MD5=[267c96b1000f1dc7fe806d06ff52fa95]
+link POST /store/order 200 to Order--><g id="link_POST /store/order 200_Order"><path codeLine="164" d="M3109.45,263.0173 C3113.82,276.9873 3120.92,295.5173 3131,309.7373 C3145.93,330.7973 3165.46,350.5973 3184.86,367.6273 " fill="none" id="POST /store/order 200-to-Order" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="3188.74,370.9973,3184.5624,362.0784,3184.963,367.721,3179.3203,368.1216,3188.74,370.9973" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="3132" y="306.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="3172.7726" y="362.6853">1</text></g><!--MD5=[267c96b1000f1dc7fe806d06ff52fa95]
+link POST /store/order 200 to Order--><g id="link_POST /store/order 200_Order"><path codeLine="165" d="M3129.1,262.8973 C3139.41,271.6373 3151.2,282.2573 3161,292.7373 C3178.28,311.2073 3195.56,332.5073 3210.83,352.5373 " fill="none" id="POST /store/order 200-to-Order-1" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="3213.85,356.5173,3211.5732,346.9352,3210.8181,352.5415,3205.2118,351.7863,3213.85,356.5173" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="3178" y="306.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="3200.1461" y="346.2348">1</text></g><!--MD5=[3671a93d3ba6b83a251a8bcab713d4fc]
+link POST /store/order to POST /store/order 400--><g id="link_POST /store/order_POST /store/order 400"><path codeLine="166" d="M3261.27,122.8073 C3270.19,147.4373 3285.33,189.2073 3294.98,215.8573 " fill="none" id="POST /store/order-to-POST /store/order 400" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="3296.72,220.6473,3297.4203,210.8234,3295.0193,215.9454,3289.8973,213.5445,3296.72,220.6473" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="3286" y="187.8071">400</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="3285.2655" y="210.1453">1</text></g><!--MD5=[dee2e70d1cd36bd6d285de52163ddee7]
+link GET /store/order/{orderId} to GET /store/order/{orderId} 200--><g id="link_GET /store/order/{orderId}_GET /store/order/{orderId} 200"><path codeLine="167" d="M3742.06,135.2673 C3692.68,160.7873 3625.21,195.6573 3581.62,218.1973 " fill="none" id="GET /store/order/{orderId}-to-GET /store/order/{orderId} 200" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="3576.95,220.6073,3586.7814,220.0219,3581.3903,218.3086,3583.1036,212.9175,3576.95,220.6073" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="3665" y="187.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="3579.6534" y="210.093">1</text></g><!--MD5=[4844bf6ace51e33bc0f4c1d19aca369e]
+link GET /store/order/{orderId} 200 to Order--><g id="link_GET /store/order/{orderId} 200_Order"><path codeLine="168" d="M3421.99,259.9973 C3397.05,267.3373 3371.93,277.8073 3351,292.7373 C3329.48,308.0773 3311.62,330.3773 3297.69,352.2973 " fill="none" id="GET /store/order/{orderId} 200-to-Order" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="3294.95,356.6773,3303.1036,351.153,3297.5936,352.4333,3296.3132,346.9232,3294.95,356.6773" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="3352" y="306.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="3290.2973" y="345.936">1</text></g><!--MD5=[4844bf6ace51e33bc0f4c1d19aca369e]
+link GET /store/order/{orderId} 200 to Order--><g id="link_GET /store/order/{orderId} 200_Order"><path codeLine="169" d="M3507.41,262.9073 C3467.19,289.4273 3395.13,336.9473 3339.46,373.6573 " fill="none" id="GET /store/order/{orderId} 200-to-Order-1" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="3335.14,376.5073,3344.8563,374.8969,3339.3155,373.7569,3340.4556,368.2161,3335.14,376.5073" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="3458" y="306.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="3343.0951" y="368.7635">1</text></g><!--MD5=[542bc72fed42b47bfd67b69e7eee032c]
+link GET /store/order/{orderId} to GET /store/order/{orderId} 400--><g id="link_GET /store/order/{orderId}_GET /store/order/{orderId} 400"><path codeLine="170" d="M3805,135.4373 C3805,159.9373 3805,192.9673 3805,215.4573 " fill="none" id="GET /store/order/{orderId}-to-GET /store/order/{orderId} 400" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="3805,220.6573,3809,211.6573,3805,215.6573,3801,211.6573,3805,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="3806" y="187.8071">400</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="3795.775" y="210.1584">1</text></g><!--MD5=[ade483ef809c1624db7035259b599e7d]
+link GET /store/order/{orderId} to GET /store/order/{orderId} 404--><g id="link_GET /store/order/{orderId}_GET /store/order/{orderId} 404"><path codeLine="171" d="M3867.94,135.2673 C3917.32,160.7873 3984.79,195.6573 4028.38,218.1973 " fill="none" id="GET /store/order/{orderId}-to-GET /store/order/{orderId} 404" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="4033.05,220.6073,4026.8964,212.9175,4028.6097,218.3086,4023.2186,220.0219,4033.05,220.6073" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="3972" y="187.8071">404</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="4011.8966" y="210.093">1</text></g><!--MD5=[ee23ab5d7bc58f147835acf7516f72ec]
+link DELETE /store/order/{orderId} to DELETE /store/order/{orderId} 400--><g id="link_DELETE /store/order/{orderId}_DELETE /store/order/{orderId} 400"><path codeLine="172" d="M4463.4,135.4373 C4436.83,160.5573 4400.76,194.6473 4376.96,217.1473 " fill="none" id="DELETE /store/order/{orderId}-to-DELETE /store/order/{orderId} 400" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="4373.24,220.6573,4382.5353,217.4018,4376.881,217.2305,4377.0523,211.5762,4373.24,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="4422" y="187.8071">400</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="4370.5197" y="210.1584">1</text></g><!--MD5=[47dfc20dbbc9b3155151cf1c5f3a72ac]
+link DELETE /store/order/{orderId} to DELETE /store/order/{orderId} 404--><g id="link_DELETE /store/order/{orderId}_DELETE /store/order/{orderId} 404"><path codeLine="173" d="M4532.84,135.4373 C4559.59,160.5573 4595.91,194.6473 4619.87,217.1473 " fill="none" id="DELETE /store/order/{orderId}-to-DELETE /store/order/{orderId} 404" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="4623.61,220.6573,4619.7787,211.5842,4619.9619,217.2381,4614.308,217.4212,4623.61,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="4590" y="187.8071">404</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="4607.8343" y="210.1584">1</text></g><!--MD5=[71353f5131e8195a8ce12872fb6304b2]
+link GET /store/inventory to GET /store/inventory 200--><g id="link_GET /store/inventory_GET /store/inventory 200"><path codeLine="174" d="M4902,122.8073 C4902,147.3273 4902,188.8573 4902,215.5173 " fill="none" id="GET /store/inventory-to-GET /store/inventory 200" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="4902,220.6473,4906,211.6473,4902,215.6473,4898,211.6473,4902,220.6473" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="4903" y="187.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="4892.775" y="210.1453">1</text></g><!--MD5=[66bdb5301d43f05b334ad429b8220215]
+link POST /user/createWithArray to POST /user/createWithArray default--><g id="link_POST /user/createWithArray_POST /user/createWithArray default"><path codeLine="175" d="M5159,122.8073 C5159,147.3273 5159,188.8573 5159,215.5173 " fill="none" id="POST /user/createWithArray-to-POST /user/createWithArray default" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="5159,220.6473,5163,211.6473,5159,215.6473,5155,211.6473,5159,220.6473" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="46" x="5160" y="187.8071">default</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="5149.775" y="210.1453">1</text></g><!--MD5=[dc80a0714754e2163a51046636c93ce5]
+link POST /user/createWithList to POST /user/createWithList default--><g id="link_POST /user/createWithList_POST /user/createWithList default"><path codeLine="176" d="M5447,122.8073 C5447,147.3273 5447,188.8573 5447,215.5173 " fill="none" id="POST /user/createWithList-to-POST /user/createWithList default" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="5447,220.6473,5451,211.6473,5447,215.6473,5443,211.6473,5447,220.6473" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="46" x="5448" y="187.8071">default</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="5437.775" y="210.1453">1</text></g><!--MD5=[a7371288bbd4d89b104c32e6d4362161]
+link GET /user/{username} to GET /user/{username} 200--><g id="link_GET /user/{username}_GET /user/{username} 200"><path codeLine="177" d="M5886.37,135.2673 C5842.89,160.6873 5783.57,195.3773 5745.02,217.9173 " fill="none" id="GET /user/{username}-to-GET /user/{username} 200" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="5740.43,220.6073,5750.2173,219.5075,5744.7437,218.0791,5746.1721,212.6055,5740.43,220.6073" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="5818" y="187.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="5741.7492" y="210.093">1</text></g><!--MD5=[5fd423c8ce24d33706af8b9793ed261f]
+link GET /user/{username} 200 to User--><g id="link_GET /user/{username} 200_User"><path codeLine="178" d="M5686.99,263.0073 C5680.25,271.5173 5673.48,281.9473 5670,292.7373 C5665.68,306.1273 5665.29,320.3873 5667.23,334.3973 " fill="none" id="GET /user/{username} 200-to-User" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="5668.05,339.5473,5670.5875,330.0309,5667.2651,334.6093,5662.6867,331.2869,5668.05,339.5473" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="5671" y="306.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="5656.1827" y="329.0115">1</text></g><!--MD5=[5fd423c8ce24d33706af8b9793ed261f]
+link GET /user/{username} 200 to User--><g id="link_GET /user/{username} 200_User"><path codeLine="179" d="M5706,262.9073 C5706,280.5973 5706,307.6273 5706,334.5573 " fill="none" id="GET /user/{username} 200-to-User-1" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="5706,339.5873,5710,330.5873,5706,334.5873,5702,330.5873,5706,339.5873" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="5707" y="306.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="5697.6313" y="329.0552">1</text></g><!--MD5=[bc58c56f9acfd03edac90b1ca9dfce40]
+link GET /user/{username} to GET /user/{username} 400--><g id="link_GET /user/{username}_GET /user/{username} 400"><path codeLine="180" d="M5942,135.4373 C5942,159.9373 5942,192.9673 5942,215.4573 " fill="none" id="GET /user/{username}-to-GET /user/{username} 400" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="5942,220.6573,5946,211.6573,5942,215.6573,5938,211.6573,5942,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="5943" y="187.8071">400</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="5932.775" y="210.1584">1</text></g><!--MD5=[c31f898670e24e095f42bbbcbbbdaf71]
+link GET /user/{username} to GET /user/{username} 404--><g id="link_GET /user/{username}_GET /user/{username} 404"><path codeLine="181" d="M5997.63,135.2673 C6041.11,160.6873 6100.43,195.3773 6138.98,217.9173 " fill="none" id="GET /user/{username}-to-GET /user/{username} 404" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="6143.57,220.6073,6137.8279,212.6055,6139.2563,218.0791,6133.7827,219.5075,6143.57,220.6073" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="6090" y="187.8071">404</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="6123.8008" y="210.093">1</text></g><!--MD5=[81c3a00e18a7319b35d838d9057cdf85]
+link PUT /user/{username} to PUT /user/{username} 400--><g id="link_PUT /user/{username}_PUT /user/{username} 400"><path codeLine="182" d="M6502.27,135.4373 C6481.15,160.3573 6452.55,194.0873 6433.47,216.5873 " fill="none" id="PUT /user/{username}-to-PUT /user/{username} 400" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="6430.02,220.6573,6438.8971,216.3914,6433.2587,216.848,6432.8021,211.2096,6430.02,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="6469" y="187.8071">400</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="6426.0074" y="210.1584">1</text></g><!--MD5=[6db5c51259f9fcbed01ad00eea1439f6]
+link PUT /user/{username} to PUT /user/{username} 404--><g id="link_PUT /user/{username}_PUT /user/{username} 404"><path codeLine="183" d="M6557.73,135.4373 C6578.85,160.3573 6607.45,194.0873 6626.53,216.5873 " fill="none" id="PUT /user/{username}-to-PUT /user/{username} 404" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="6629.98,220.6573,6627.1979,211.2096,6626.7413,216.848,6621.1029,216.3914,6629.98,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="6604" y="187.8071">404</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="6615.5426" y="210.1584">1</text></g><!--MD5=[0b0e44e12bd7c85146b3a6272e80af44]
+link DELETE /user/{username} to DELETE /user/{username} 400--><g id="link_DELETE /user/{username}_DELETE /user/{username} 400"><path codeLine="184" d="M6994.95,135.4373 C6971.21,160.4573 6939.02,194.3673 6917.66,216.8673 " fill="none" id="DELETE /user/{username}-to-DELETE /user/{username} 400" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="6914.06,220.6573,6923.1564,216.8817,6917.5015,217.0302,6917.353,211.3753,6914.06,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="6958" y="187.8071">400</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="6910.6721" y="210.1584">1</text></g><!--MD5=[43d6bbd14666bd4f82ad3f9c8c7b1d32]
+link DELETE /user/{username} to DELETE /user/{username} 404--><g id="link_DELETE /user/{username}_DELETE /user/{username} 404"><path codeLine="185" d="M7057.05,135.4373 C7080.79,160.4573 7112.98,194.3673 7134.34,216.8673 " fill="none" id="DELETE /user/{username}-to-DELETE /user/{username} 404" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="7137.94,220.6573,7134.647,211.3753,7134.4985,217.0302,7128.8436,216.8817,7137.94,220.6573" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="7109" y="187.8071">404</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="7122.8779" y="210.1584">1</text></g><!--MD5=[72652344df371dce503c7bacf9304050]
+link GET /user/login to GET /user/login 200--><g id="link_GET /user/login_GET /user/login 200"><path codeLine="186" d="M7443.94,143.7673 C7428.45,167.2573 7409.53,195.9473 7396.31,216.0073 " fill="none" id="GET /user/login-to-GET /user/login 200" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="7393.41,220.4073,7401.7096,215.1047,7396.167,216.2361,7395.0356,210.6935,7393.41,220.4073" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="7424" y="187.8071">200</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="7388.2918" y="209.8318">1</text></g><!--MD5=[fda0267c68fb38df79382cb994f7fef7]
+link GET /user/login to GET /user/login 400--><g id="link_GET /user/login_GET /user/login 400"><path codeLine="187" d="M7498.35,143.7673 C7514.01,167.2573 7533.14,195.9473 7546.51,216.0073 " fill="none" id="GET /user/login-to-GET /user/login 400" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="7549.44,220.4073,7547.7913,210.6974,7546.6731,216.2427,7541.1278,215.1245,7549.44,220.4073" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="24" x="7529" y="187.8071">400</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="7536.0622" y="209.8318">1</text></g><!--MD5=[f862bf5efaf3e4af08a9e03465fe5df3]
+link GET /user/logout to GET /user/logout default--><g id="link_GET /user/logout_GET /user/logout default"><path codeLine="188" d="M7762,122.8073 C7762,147.3273 7762,188.8573 7762,215.5173 " fill="none" id="GET /user/logout-to-GET /user/logout default" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="7762,220.6473,7766,211.6473,7762,215.6473,7758,211.6473,7762,220.6473" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="46" x="7763" y="187.8071">default</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="7752.775" y="210.1453">1</text></g><!--MD5=[6dde6ddb3a673f8bf0a749b0d62e28af]
+link POST /user to POST /user default--><g id="link_POST /user_POST /user default"><path codeLine="189" d="M7957,122.8073 C7957,147.3273 7957,188.8573 7957,215.5173 " fill="none" id="POST /user-to-POST /user default" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="7957,220.6473,7961,211.6473,7957,215.6473,7953,211.6473,7957,220.6473" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="46" x="7958" y="187.8071">default</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="7947.775" y="210.1453">1</text></g><!--MD5=[ff14ff5f66529c95d528bd1de65c8929]
+link Pet to Category--><g id="link_Pet_Category"><path codeLine="190" d="M1399.02,494.7373 C1388.09,524.4873 1375.66,558.3173 1366.33,583.7273 " fill="none" id="Pet-to-Category" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="1364.51,588.6873,1371.3587,581.6095,1366.2279,583.9917,1363.8457,578.8609,1364.51,588.6873" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="58" x="1383" y="555.8071">category</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1358.2652" y="578.0606">1</text></g><!--MD5=[b41504b01d5a0af8b5206dd26f2a7651]
+link Pet to Tag--><g id="link_Pet_Tag"><path codeLine="191" d="M1448.63,494.7373 C1459.41,524.4873 1471.66,558.3173 1480.87,583.7273 " fill="none" id="Pet-to-Tag" style="stroke:#D9D3D0;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#D9D3D0" points="1482.67,588.6873,1483.3703,578.8634,1480.9693,583.9854,1475.8473,581.5845,1482.67,588.6873" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="28" x="1472" y="555.8071">tags</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="8" x="1471.3019" y="578.0606">1</text></g><rect fill="#003153" height="12.1533" style="stroke:#003153;stroke-width:0.0;" width="275" x="3874.75" y="669.7666"/><text fill="#D9D3D0" font-family="Verdana" font-size="10" lengthAdjust="spacing" textLength="275" x="3874.75" y="679.8203">OpenApi Type diagram - futurum.openapi-to-plantuml</text><!--MD5=[2c8f701e8ba265d2ba5666df48dd27eb]
+@startuml OpenApi Type diagram
+!theme blueprint
+
+hide <<Path>> circle
+hide <<Response>> circle
+hide <<Parameter>> circle
+hide empty methods
+hide empty fields
+set namespaceSeparator none
+
+title Swagger Petstore v1.0.6
+footer OpenApi Type diagram - futurum.openapi-to-plantuml
+class "POST /pet/{petId}/uploadImage" <<Path>> {
+{field} petId : integer
+}
+class "POST /pet/{petId}/uploadImage 200" <<Response>> { }
+class "POST /pet" <<Path>> {
+}
+class "POST /pet 405" <<Response>> { }
+class "PUT /pet" <<Path>> {
+}
+class "PUT /pet 400" <<Response>> { }
+class "PUT /pet 404" <<Response>> { }
+class "PUT /pet 405" <<Response>> { }
+class "GET /pet/findByStatus" <<Path>> {
+{field} status : array<string>
+}
+class "GET /pet/findByStatus 200" <<Response>> { }
+class "GET /pet/findByStatus 400" <<Response>> { }
+class "GET /pet/findByTags" <<Path>> {
+{field} tags : array<string>
+}
+class "GET /pet/findByTags 200" <<Response>> { }
+class "GET /pet/findByTags 400" <<Response>> { }
+class "GET /pet/{petId}" <<Path>> {
+{field} petId : integer
+}
+class "GET /pet/{petId} 200" <<Response>> { }
+class "GET /pet/{petId} 400" <<Response>> { }
+class "GET /pet/{petId} 404" <<Response>> { }
+class "POST /pet/{petId}" <<Path>> {
+{field} petId : integer
+}
+class "POST /pet/{petId} 405" <<Response>> { }
+class "DELETE /pet/{petId}" <<Path>> {
+{field} api_key : string {O}
+{field} petId : integer
+}
+class "DELETE /pet/{petId} 400" <<Response>> { }
+class "DELETE /pet/{petId} 404" <<Response>> { }
+class "POST /store/order" <<Path>> {
+}
+class "POST /store/order 200" <<Response>> { }
+class "POST /store/order 400" <<Response>> { }
+class "GET /store/order/{orderId}" <<Path>> {
+{field} orderId : integer
+}
+class "GET /store/order/{orderId} 200" <<Response>> { }
+class "GET /store/order/{orderId} 400" <<Response>> { }
+class "GET /store/order/{orderId} 404" <<Response>> { }
+class "DELETE /store/order/{orderId}" <<Path>> {
+{field} orderId : integer
+}
+class "DELETE /store/order/{orderId} 400" <<Response>> { }
+class "DELETE /store/order/{orderId} 404" <<Response>> { }
+class "GET /store/inventory" <<Path>> {
+}
+class "GET /store/inventory 200" <<Response>> { }
+class "POST /user/createWithArray" <<Path>> {
+}
+class "POST /user/createWithArray default" <<Response>> { }
+class "POST /user/createWithList" <<Path>> {
+}
+class "POST /user/createWithList default" <<Response>> { }
+class "GET /user/{username}" <<Path>> {
+{field} username : string
+}
+class "GET /user/{username} 200" <<Response>> { }
+class "GET /user/{username} 400" <<Response>> { }
+class "GET /user/{username} 404" <<Response>> { }
+class "PUT /user/{username}" <<Path>> {
+{field} username : string
+}
+class "PUT /user/{username} 400" <<Response>> { }
+class "PUT /user/{username} 404" <<Response>> { }
+class "DELETE /user/{username}" <<Path>> {
+{field} username : string
+}
+class "DELETE /user/{username} 400" <<Response>> { }
+class "DELETE /user/{username} 404" <<Response>> { }
+class "GET /user/login" <<Path>> {
+{field} username : string
+{field} password : string
+}
+class "GET /user/login 200" <<Response>> { }
+class "GET /user/login 400" <<Response>> { }
+class "GET /user/logout" <<Path>> {
+}
+class "GET /user/logout default" <<Response>> { }
+class "POST /user" <<Path>> {
+}
+class "POST /user default" <<Response>> { }
+class ApiResponse {
+{field} code : integer
+{field} type : string
+{field} message : string
+}
+class Category {
+{field} id : integer
+{field} name : string
+}
+class Pet {
+{field} id : integer
+{field} category : Category
+{field} name : string
+{field} photoUrls : array<string>
+{field} tags : array<Tag>
+{field} status : string
+}
+class Tag {
+{field} id : integer
+{field} name : string
+}
+class Order {
+{field} id : integer
+{field} petId : integer
+{field} quantity : integer
+{field} shipDate : string
+{field} status : string
+{field} complete : boolean
+}
+class User {
+{field} id : integer
+{field} username : string
+{field} firstName : string
+{field} lastName : string
+{field} email : string
+{field} password : string
+{field} phone : string
+{field} userStatus : integer
+}
+"POST /pet/{petId}/uploadImage" ..> "1" "POST /pet/{petId}/uploadImage 200" : 200
+"POST /pet/{petId}/uploadImage 200" ..> "1" "ApiResponse" : 200
+"POST /pet" ..> "1" "POST /pet 405" : 405
+"PUT /pet" ..> "1" "PUT /pet 400" : 400
+"PUT /pet" ..> "1" "PUT /pet 404" : 404
+"PUT /pet" ..> "1" "PUT /pet 405" : 405
+"GET /pet/findByStatus" ..> "1" "GET /pet/findByStatus 200" : 200
+"GET /pet/findByStatus 200" ..> "*" "Pet"
+"GET /pet/findByStatus 200" ..> "*" "Pet"
+"GET /pet/findByStatus" ..> "1" "GET /pet/findByStatus 400" : 400
+"GET /pet/findByTags" ..> "1" "GET /pet/findByTags 200" : 200
+"GET /pet/findByTags 200" ..> "*" "Pet"
+"GET /pet/findByTags 200" ..> "*" "Pet"
+"GET /pet/findByTags" ..> "1" "GET /pet/findByTags 400" : 400
+"GET /pet/{petId}" ..> "1" "GET /pet/{petId} 200" : 200
+"GET /pet/{petId} 200" ..> "1" "Pet" : 200
+"GET /pet/{petId} 200" ..> "1" "Pet" : 200
+"GET /pet/{petId}" ..> "1" "GET /pet/{petId} 400" : 400
+"GET /pet/{petId}" ..> "1" "GET /pet/{petId} 404" : 404
+"POST /pet/{petId}" ..> "1" "POST /pet/{petId} 405" : 405
+"DELETE /pet/{petId}" ..> "1" "DELETE /pet/{petId} 400" : 400
+"DELETE /pet/{petId}" ..> "1" "DELETE /pet/{petId} 404" : 404
+"POST /store/order" ..> "1" "POST /store/order 200" : 200
+"POST /store/order 200" ..> "1" "Order" : 200
+"POST /store/order 200" ..> "1" "Order" : 200
+"POST /store/order" ..> "1" "POST /store/order 400" : 400
+"GET /store/order/{orderId}" ..> "1" "GET /store/order/{orderId} 200" : 200
+"GET /store/order/{orderId} 200" ..> "1" "Order" : 200
+"GET /store/order/{orderId} 200" ..> "1" "Order" : 200
+"GET /store/order/{orderId}" ..> "1" "GET /store/order/{orderId} 400" : 400
+"GET /store/order/{orderId}" ..> "1" "GET /store/order/{orderId} 404" : 404
+"DELETE /store/order/{orderId}" ..> "1" "DELETE /store/order/{orderId} 400" : 400
+"DELETE /store/order/{orderId}" ..> "1" "DELETE /store/order/{orderId} 404" : 404
+"GET /store/inventory" ..> "1" "GET /store/inventory 200" : 200
+"POST /user/createWithArray" ..> "1" "POST /user/createWithArray default" : default
+"POST /user/createWithList" ..> "1" "POST /user/createWithList default" : default
+"GET /user/{username}" ..> "1" "GET /user/{username} 200" : 200
+"GET /user/{username} 200" ..> "1" "User" : 200
+"GET /user/{username} 200" ..> "1" "User" : 200
+"GET /user/{username}" ..> "1" "GET /user/{username} 400" : 400
+"GET /user/{username}" ..> "1" "GET /user/{username} 404" : 404
+"PUT /user/{username}" ..> "1" "PUT /user/{username} 400" : 400
+"PUT /user/{username}" ..> "1" "PUT /user/{username} 404" : 404
+"DELETE /user/{username}" ..> "1" "DELETE /user/{username} 400" : 400
+"DELETE /user/{username}" ..> "1" "DELETE /user/{username} 404" : 404
+"GET /user/login" ..> "1" "GET /user/login 200" : 200
+"GET /user/login" ..> "1" "GET /user/login 400" : 400
+"GET /user/logout" ..> "1" "GET /user/logout default" : default
+"POST /user" ..> "1" "POST /user default" : default
+"Pet" ..> "1" "Category" : "category"
+"Pet" ..> "1" "Tag" : "tags"
+
+
+@enduml
+
+@startuml OpenApi Type diagram
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor #003153
+    FontColor #D9D3D0
+    FontName Verdana
+    HyperLinkColor #D9D3D0
+    LineColor #D9D3D0
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor #D9D3D0
+skinparam BackgroundColor #003153
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor #D9D3D0
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor #003153
+  BarColor #D9D3D0
+  BorderColor #D9D3D0
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor #D9D3D0
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor #D9D3D0
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam Header {
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color #D9D3D0
+}
+skinparam IconPackage {
+  Color #D9D3D0
+  BackgroundColor #003153
+}
+skinparam IconPrivate {
+  Color #D9D3D0
+  BackgroundColor #003153
+}
+skinparam IconProtected {
+  Color #D9D3D0
+  BackgroundColor #003153
+}
+skinparam IconPublic {
+  Color #D9D3D0
+  BackgroundColor #003153
+}
+skinparam Note {
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor #D9D3D0
+}
+skinparam Package {
+  BorderColor #D9D3D0
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+}
+skinparam StereotypeA {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+}
+skinparam StereotypeC {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+}
+skinparam StereotypeE {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+}
+skinparam StereotypeI {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+}
+skinparam StereotypeN {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+}
+skinparam UseCaseStereoType {
+  FontColor #D9D3D0
+  FontName Verdana
+}
+
+hide <<Path>> circle
+hide <<Response>> circle
+hide <<Parameter>> circle
+hide empty methods
+hide empty fields
+set namespaceSeparator none
+
+title Swagger Petstore v1.0.6
+footer OpenApi Type diagram - futurum.openapi-to-plantuml
+class "POST /pet/{petId}/uploadImage" <<Path>> {
+{field} petId : integer
+}
+class "POST /pet/{petId}/uploadImage 200" <<Response>> { }
+class "POST /pet" <<Path>> {
+}
+class "POST /pet 405" <<Response>> { }
+class "PUT /pet" <<Path>> {
+}
+class "PUT /pet 400" <<Response>> { }
+class "PUT /pet 404" <<Response>> { }
+class "PUT /pet 405" <<Response>> { }
+class "GET /pet/findByStatus" <<Path>> {
+{field} status : array<string>
+}
+class "GET /pet/findByStatus 200" <<Response>> { }
+class "GET /pet/findByStatus 400" <<Response>> { }
+class "GET /pet/findByTags" <<Path>> {
+{field} tags : array<string>
+}
+class "GET /pet/findByTags 200" <<Response>> { }
+class "GET /pet/findByTags 400" <<Response>> { }
+class "GET /pet/{petId}" <<Path>> {
+{field} petId : integer
+}
+class "GET /pet/{petId} 200" <<Response>> { }
+class "GET /pet/{petId} 400" <<Response>> { }
+class "GET /pet/{petId} 404" <<Response>> { }
+class "POST /pet/{petId}" <<Path>> {
+{field} petId : integer
+}
+class "POST /pet/{petId} 405" <<Response>> { }
+class "DELETE /pet/{petId}" <<Path>> {
+{field} api_key : string {O}
+{field} petId : integer
+}
+class "DELETE /pet/{petId} 400" <<Response>> { }
+class "DELETE /pet/{petId} 404" <<Response>> { }
+class "POST /store/order" <<Path>> {
+}
+class "POST /store/order 200" <<Response>> { }
+class "POST /store/order 400" <<Response>> { }
+class "GET /store/order/{orderId}" <<Path>> {
+{field} orderId : integer
+}
+class "GET /store/order/{orderId} 200" <<Response>> { }
+class "GET /store/order/{orderId} 400" <<Response>> { }
+class "GET /store/order/{orderId} 404" <<Response>> { }
+class "DELETE /store/order/{orderId}" <<Path>> {
+{field} orderId : integer
+}
+class "DELETE /store/order/{orderId} 400" <<Response>> { }
+class "DELETE /store/order/{orderId} 404" <<Response>> { }
+class "GET /store/inventory" <<Path>> {
+}
+class "GET /store/inventory 200" <<Response>> { }
+class "POST /user/createWithArray" <<Path>> {
+}
+class "POST /user/createWithArray default" <<Response>> { }
+class "POST /user/createWithList" <<Path>> {
+}
+class "POST /user/createWithList default" <<Response>> { }
+class "GET /user/{username}" <<Path>> {
+{field} username : string
+}
+class "GET /user/{username} 200" <<Response>> { }
+class "GET /user/{username} 400" <<Response>> { }
+class "GET /user/{username} 404" <<Response>> { }
+class "PUT /user/{username}" <<Path>> {
+{field} username : string
+}
+class "PUT /user/{username} 400" <<Response>> { }
+class "PUT /user/{username} 404" <<Response>> { }
+class "DELETE /user/{username}" <<Path>> {
+{field} username : string
+}
+class "DELETE /user/{username} 400" <<Response>> { }
+class "DELETE /user/{username} 404" <<Response>> { }
+class "GET /user/login" <<Path>> {
+{field} username : string
+{field} password : string
+}
+class "GET /user/login 200" <<Response>> { }
+class "GET /user/login 400" <<Response>> { }
+class "GET /user/logout" <<Path>> {
+}
+class "GET /user/logout default" <<Response>> { }
+class "POST /user" <<Path>> {
+}
+class "POST /user default" <<Response>> { }
+class ApiResponse {
+{field} code : integer
+{field} type : string
+{field} message : string
+}
+class Category {
+{field} id : integer
+{field} name : string
+}
+class Pet {
+{field} id : integer
+{field} category : Category
+{field} name : string
+{field} photoUrls : array<string>
+{field} tags : array<Tag>
+{field} status : string
+}
+class Tag {
+{field} id : integer
+{field} name : string
+}
+class Order {
+{field} id : integer
+{field} petId : integer
+{field} quantity : integer
+{field} shipDate : string
+{field} status : string
+{field} complete : boolean
+}
+class User {
+{field} id : integer
+{field} username : string
+{field} firstName : string
+{field} lastName : string
+{field} email : string
+{field} password : string
+{field} phone : string
+{field} userStatus : integer
+}
+"POST /pet/{petId}/uploadImage" ..> "1" "POST /pet/{petId}/uploadImage 200" : 200
+"POST /pet/{petId}/uploadImage 200" ..> "1" "ApiResponse" : 200
+"POST /pet" ..> "1" "POST /pet 405" : 405
+"PUT /pet" ..> "1" "PUT /pet 400" : 400
+"PUT /pet" ..> "1" "PUT /pet 404" : 404
+"PUT /pet" ..> "1" "PUT /pet 405" : 405
+"GET /pet/findByStatus" ..> "1" "GET /pet/findByStatus 200" : 200
+"GET /pet/findByStatus 200" ..> "*" "Pet"
+"GET /pet/findByStatus 200" ..> "*" "Pet"
+"GET /pet/findByStatus" ..> "1" "GET /pet/findByStatus 400" : 400
+"GET /pet/findByTags" ..> "1" "GET /pet/findByTags 200" : 200
+"GET /pet/findByTags 200" ..> "*" "Pet"
+"GET /pet/findByTags 200" ..> "*" "Pet"
+"GET /pet/findByTags" ..> "1" "GET /pet/findByTags 400" : 400
+"GET /pet/{petId}" ..> "1" "GET /pet/{petId} 200" : 200
+"GET /pet/{petId} 200" ..> "1" "Pet" : 200
+"GET /pet/{petId} 200" ..> "1" "Pet" : 200
+"GET /pet/{petId}" ..> "1" "GET /pet/{petId} 400" : 400
+"GET /pet/{petId}" ..> "1" "GET /pet/{petId} 404" : 404
+"POST /pet/{petId}" ..> "1" "POST /pet/{petId} 405" : 405
+"DELETE /pet/{petId}" ..> "1" "DELETE /pet/{petId} 400" : 400
+"DELETE /pet/{petId}" ..> "1" "DELETE /pet/{petId} 404" : 404
+"POST /store/order" ..> "1" "POST /store/order 200" : 200
+"POST /store/order 200" ..> "1" "Order" : 200
+"POST /store/order 200" ..> "1" "Order" : 200
+"POST /store/order" ..> "1" "POST /store/order 400" : 400
+"GET /store/order/{orderId}" ..> "1" "GET /store/order/{orderId} 200" : 200
+"GET /store/order/{orderId} 200" ..> "1" "Order" : 200
+"GET /store/order/{orderId} 200" ..> "1" "Order" : 200
+"GET /store/order/{orderId}" ..> "1" "GET /store/order/{orderId} 400" : 400
+"GET /store/order/{orderId}" ..> "1" "GET /store/order/{orderId} 404" : 404
+"DELETE /store/order/{orderId}" ..> "1" "DELETE /store/order/{orderId} 400" : 400
+"DELETE /store/order/{orderId}" ..> "1" "DELETE /store/order/{orderId} 404" : 404
+"GET /store/inventory" ..> "1" "GET /store/inventory 200" : 200
+"POST /user/createWithArray" ..> "1" "POST /user/createWithArray default" : default
+"POST /user/createWithList" ..> "1" "POST /user/createWithList default" : default
+"GET /user/{username}" ..> "1" "GET /user/{username} 200" : 200
+"GET /user/{username} 200" ..> "1" "User" : 200
+"GET /user/{username} 200" ..> "1" "User" : 200
+"GET /user/{username}" ..> "1" "GET /user/{username} 400" : 400
+"GET /user/{username}" ..> "1" "GET /user/{username} 404" : 404
+"PUT /user/{username}" ..> "1" "PUT /user/{username} 400" : 400
+"PUT /user/{username}" ..> "1" "PUT /user/{username} 404" : 404
+"DELETE /user/{username}" ..> "1" "DELETE /user/{username} 400" : 400
+"DELETE /user/{username}" ..> "1" "DELETE /user/{username} 404" : 404
+"GET /user/login" ..> "1" "GET /user/login 200" : 200
+"GET /user/login" ..> "1" "GET /user/login 400" : 400
+"GET /user/logout" ..> "1" "GET /user/logout default" : default
+"POST /user" ..> "1" "POST /user default" : default
+"Pet" ..> "1" "Category" : "category"
+"Pet" ..> "1" "Tag" : "tags"
+
+
+@enduml
+
+PlantUML version 1.2022.6(Tue Jun 21 18:34:49 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Dynamic Code Evolution 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

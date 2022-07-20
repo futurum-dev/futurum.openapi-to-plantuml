@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="400px" preserveAspectRatio="none" style="width:5245px;height:400px;background:#003153;" version="1.1" viewBox="0 0 5245 400" width="5245px" zoomAndPan="magnify"><defs/><g><rect fill="#003153" height="36.7373" style="stroke:#003153;stroke-width:0.0;" width="318" x="2459" y="10"/><text fill="#D9D3D0" font-family="Verdana" font-size="22" font-weight="bold" lengthAdjust="spacing" textLength="308" x="2464" y="37.1182">Swagger Petstore v1.0.6</text><!--MD5=[5d2282a7b898a18b419fb9ec6a9ee4a3]
+cluster petpetIduploadImage--><g id="cluster_petpetIduploadImage"><rect height="157" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="397" x="12" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="191" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="381" x="20" y="95.8662">/pet/{petId}/uploadImage</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="170.5" y="112.9697">[Container]</text></g><!--MD5=[48cef1dc12ecd6e402731a75bc56093b]
+cluster pet--><g id="cluster_pet"><rect height="157" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="419" x="433" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="623" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="61" x="612" y="95.8662">/pet</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="602.5" y="112.9697">[Container]</text></g><!--MD5=[d8acbe5270c66683a5c95c5c56ae5983]
+cluster petfindByStatus--><g id="cluster_petfindByStatus"><rect height="290" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="266" x="876" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="989.5" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="250" x="884" y="95.8662">/pet/findByStatus</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="969" y="112.9697">[Container]</text></g><!--MD5=[9aa59278a66a2396b350a97a85f4e3a7]
+cluster petfindByTags--><g id="cluster_petfindByTags"><rect height="298" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="250" x="1166" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="1271.5" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="227" x="1177.5" y="95.8662">/pet/findByTags</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="1251" y="112.9697">[Container]</text></g><!--MD5=[399db7f64d288d2ece5c527b025afe12]
+cluster petpetId--><g id="cluster_petpetId"><rect height="274.5" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="671" x="1440" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="1756" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="186" x="1682.5" y="95.8662">/pet/{petId}</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="1735.5" y="112.9697">[Container]</text></g><!--MD5=[28dacb06f69a9abbcfad208d9dbba919]
+cluster storeorder--><g id="cluster_storeorder"><rect height="157" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="212" x="2135" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="2221.5" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="176" x="2153" y="95.8662">/store/order</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="2201" y="112.9697">[Container]</text></g><!--MD5=[28e9e8da77c1f78da2e6d738f6c479b8]
+cluster storeorderorderId--><g id="cluster_storeorderorderId"><rect height="306" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="507" x="2371" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="2605" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="330" x="2459.5" y="95.8662">/store/order/{orderId}</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="2584.5" y="112.9697">[Container]</text></g><!--MD5=[519099af0393265402445d0b986e88e2]
+cluster storeinventory--><g id="cluster_storeinventory"><rect height="282.5" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="248" x="2902" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="3006.5" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="232" x="2910" y="95.8662">/store/inventory</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="2986" y="112.9697">[Container]</text></g><!--MD5=[84510c02538e1cb24c80fccf00263da2]
+cluster usercreateWithArray--><g id="cluster_usercreateWithArray"><rect height="157" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="332" x="3174" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="3320.5" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="316" x="3182" y="95.8662">/user/createWithArray</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="3300" y="112.9697">[Container]</text></g><!--MD5=[f66b2cc821202fbc7bd3b31376cbed78]
+cluster usercreateWithList--><g id="cluster_usercreateWithList"><rect height="157" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="305" x="3530" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="3663" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="289" x="3538" y="95.8662">/user/createWithList</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="3642.5" y="112.9697">[Container]</text></g><!--MD5=[96d1de1f9f4673d641a86f76166e9fa5]
+cluster userusername--><g id="cluster_userusername"><rect height="282.5" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="644" x="3859" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="4161.5" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="260" x="4051" y="95.8662">/user/{username}</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="4141" y="112.9697">[Container]</text></g><!--MD5=[3b9f7d1dee2648338c60157b6e230fde]
+cluster userlogin--><g id="cluster_userlogin"><rect height="157" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="206" x="4527" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="4610.5" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="159" x="4550.5" y="95.8662">/user/login</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="4590" y="112.9697">[Container]</text></g><!--MD5=[42ec43f060cfd3d3a85033836fb0da89]
+cluster userlogout--><g id="cluster_userlogout"><rect height="157" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="206" x="4757" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="4840.5" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="178" x="4771" y="95.8662">/user/logout</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="4820" y="112.9697">[Container]</text></g><!--MD5=[cb8ac4b308bf29cccff4fabd2ec04d9c]
+cluster user--><g id="cluster_user"><rect height="282.5" rx="2.5" ry="2.5" style="stroke:#444444;stroke-width:1.0;fill:none;stroke-dasharray:7.0,7.0;" width="252" x="4987" y="59.7373"/><text fill="#444444" font-family="Verdana" font-size="6" font-style="italic" lengthAdjust="spacing" textLength="39" x="5093.5" y="67.7695">«boundary»</text><text fill="#444444" font-family="Verdana" font-size="24" font-weight="bold" lengthAdjust="spacing" textLength="76" x="5075" y="95.8662">/user</text><text fill="#444444" font-family="Verdana" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="80" x="5073" y="112.9697">[Container]</text></g><!--MD5=[77ab22a9cb3dd525e216b7a807ad8c43]
+entity petpetIduploadImage_post--><g id="elem_petpetIduploadImage_post"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="180" x="120" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="168.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="91" x="164.5" y="172.4072">uploadFile</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="160" x="130" y="187.8311">[REST ApiEndpoint - POST]</text></g><!--MD5=[eb2a3ae7a613d4fc82fbe38d86a1927d]
+entity pet_post--><g id="elem_pet_post"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="180" x="656" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="704.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="63" x="714.5" y="172.4072">addPet</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="160" x="666" y="187.8311">[REST ApiEndpoint - POST]</text></g><!--MD5=[5481deac4fc0ea7dc4308cf5b9f6c874]
+entity pet_put--><g id="elem_pet_put"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="172" x="449" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="493.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="92" x="489" y="172.4072">updatePet</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="152" x="459" y="187.8311">[REST ApiEndpoint - PUT]</text></g><!--MD5=[4ed0ba9f886b5d8a2424d8d1fa287b86]
+entity petfindByStatus_get--><g id="elem_petfindByStatus_get"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="173" x="922.5" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="967.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="151" x="933.5" y="172.4072">findPetsByStatus</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="153" x="932.5" y="187.8311">[REST ApiEndpoint - GET]</text></g><g id="elem_GMN4124"><path d="M899,276.7373 L899,334.1353 A0,0 0 0 0 899,334.1353 L1119,334.1353 A0,0 0 0 0 1119,334.1353 L1119,286.7373 L1109,276.7373 L1013,276.7373 L1009,200.7473 L1005,276.7373 L899,276.7373 A0,0 0 0 0 899,276.7373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M1109,276.7373 L1109,286.7373 L1119,286.7373 L1109,276.7373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="194" x="905" y="294.8071">Multiple status values can be</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="145" x="929.5" y="310.6064">provided with comma</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="116" x="946.5" y="326.4058">separated strings</text></g><!--MD5=[9f06cdc1c365f679d44850fd89808828]
+entity petfindByTags_get--><g id="elem_petfindByTags_get"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="173" x="1204.5" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="1249.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="137" x="1222.5" y="172.4072">findPetsByTags</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="153" x="1214.5" y="187.8311">[REST ApiEndpoint - GET]</text></g><g id="elem_GMN4129"><path d="M1182,268.7373 L1182,341.9346 A0,0 0 0 0 1182,341.9346 L1400,341.9346 A0,0 0 0 0 1400,341.9346 L1400,278.7373 L1390,268.7373 L1295,268.7373 L1291,200.7473 L1287,268.7373 L1182,268.7373 A0,0 0 0 0 1182,268.7373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M1390,268.7373 L1390,278.7373 L1400,278.7373 L1390,268.7373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="197" x="1188" y="286.8071">Multiple tags can be provided</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="153" x="1207.5" y="302.6064">with comma separated</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="192" x="1188" y="318.4058">strings. Use tag1, tag2, tag3</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="74" x="1249.5" y="334.2051">for testing.</text></g><!--MD5=[373d9c329dc956b05a4a390f4de205ab]
+entity petpetId_get--><g id="elem_petpetId_get"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="173" x="1921.5" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="1966.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="101" x="1957.5" y="172.4072">getPetById</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="153" x="1931.5" y="187.8311">[REST ApiEndpoint - GET]</text></g><g id="elem_GMN4134"><path d="M1930.5,292.2373 L1930.5,318.0366 A0,0 0 0 0 1930.5,318.0366 L2085.5,318.0366 A0,0 0 0 0 2085.5,318.0366 L2085.5,302.2373 L2075.5,292.2373 L2012,292.2373 L2008,200.7473 L2004,292.2373 L1930.5,292.2373 A0,0 0 0 0 1930.5,292.2373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M2075.5,292.2373 L2075.5,302.2373 L2085.5,302.2373 L2075.5,292.2373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="134" x="1936.5" y="310.3071">Returns a single pet</text></g><!--MD5=[b73d1638152badf150cb6491d21b8acc]
+entity petpetId_post--><g id="elem_petpetId_post"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="199" x="1687.5" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="1745.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="179" x="1697.5" y="172.4072">updatePetWithForm</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="160" x="1707" y="187.8311">[REST ApiEndpoint - POST]</text></g><!--MD5=[b3d964bf490d1f65750ffd83a3bc9acd]
+entity petpetId_delete--><g id="elem_petpetId_delete"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="196" x="1456" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="1512.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="86" x="1511" y="172.4072">deletePet</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="176" x="1466" y="187.8311">[REST ApiEndpoint - DELETE]</text></g><!--MD5=[cb41c159b193b61f7e310953154f2b57]
+entity storeorder_post--><g id="elem_storeorder_post"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="180" x="2151" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="2199.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="99" x="2191.5" y="172.4072">placeOrder</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="160" x="2161" y="187.8311">[REST ApiEndpoint - POST]</text></g><!--MD5=[529fa4a53ff9849155912c237a4a7db5]
+entity storeorderorderId_get--><g id="elem_storeorderorderId_get"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="173" x="2665.5" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="2710.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="123" x="2690.5" y="172.4072">getOrderById</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="153" x="2675.5" y="187.8311">[REST ApiEndpoint - GET]</text></g><g id="elem_GMN4143"><path d="M2642,268.7373 L2642,341.9346 A0,0 0 0 0 2642,341.9346 L2862,341.9346 A0,0 0 0 0 2862,341.9346 L2862,278.7373 L2852,268.7373 L2756,268.7373 L2752,200.7473 L2748,268.7373 L2642,268.7373 A0,0 0 0 0 2642,268.7373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M2852,268.7373 L2852,278.7373 L2862,278.7373 L2852,268.7373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="199" x="2648" y="286.8071">For valid response try integer</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="192" x="2649" y="302.6064">IDs with value &gt;= 1 and &lt;=</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="139" x="2675.5" y="318.4058">10. Other values will</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="143" x="2676" y="334.2051">generated exceptions</text></g><!--MD5=[83afe27f91ef2a40c0a4385a11601a4c]
+entity storeorderorderId_delete--><g id="elem_storeorderorderId_delete"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="196" x="2399" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="2455.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="108" x="2443" y="172.4072">deleteOrder</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="176" x="2409" y="187.8311">[REST ApiEndpoint - DELETE]</text></g><g id="elem_GMN4147"><path d="M2387,260.7373 L2387,349.7339 A0,0 0 0 0 2387,349.7339 L2607,349.7339 A0,0 0 0 0 2607,349.7339 L2607,270.7373 L2597,260.7373 L2501,260.7373 L2497,200.7473 L2493,260.7373 L2387,260.7373 A0,0 0 0 0 2387,260.7373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M2597,260.7373 L2597,270.7373 L2607,270.7373 L2597,260.7373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="199" x="2393" y="278.8071">For valid response try integer</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="164" x="2408" y="294.6064">IDs with positive integer</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="124" x="2428" y="310.4058">value. Negative or</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="153" x="2413.5" y="326.2051">non-integer values will</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="132" x="2426.5" y="342.0044">generate API errors</text></g><!--MD5=[f6d39fea7fde9ad5a5ef2c3223850b54]
+entity storeinventory_get--><g id="elem_storeinventory_get"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="173" x="2939.5" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="2984.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="117" x="2967.5" y="172.4072">getInventory</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="153" x="2949.5" y="187.8311">[REST ApiEndpoint - GET]</text></g><g id="elem_GMN4152"><path d="M2932.5,284.2373 L2932.5,325.8359 A0,0 0 0 0 2932.5,325.8359 L3119.5,325.8359 A0,0 0 0 0 3119.5,325.8359 L3119.5,294.2373 L3109.5,284.2373 L3030,284.2373 L3026,200.7473 L3022,284.2373 L2932.5,284.2373 A0,0 0 0 0 2932.5,284.2373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M3109.5,284.2373 L3109.5,294.2373 L3119.5,294.2373 L3109.5,284.2373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="161" x="2938.5" y="302.3071">Returns a map of status</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="126" x="2958.5" y="318.1064">codes to quantities</text></g><!--MD5=[f5e6261045b1e2749f95aa146c00cb7e]
+entity usercreateWithArray_post--><g id="elem_usercreateWithArray_post"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="266" x="3207" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="3298.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="246" x="3217" y="172.4072">createUsersWithArrayInput</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="160" x="3260" y="187.8311">[REST ApiEndpoint - POST]</text></g><!--MD5=[8b5f751658a800c3f8fb249f910df8fd]
+entity usercreateWithList_post--><g id="elem_usercreateWithList_post"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="248" x="3558" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="3640.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="228" x="3568" y="172.4072">createUsersWithListInput</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="160" x="3602" y="187.8311">[REST ApiEndpoint - POST]</text></g><!--MD5=[03b39c01ce2cc4e97c6c632dffcbdefd]
+entity userusername_get--><g id="elem_userusername_get"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="173" x="4313.5" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="4358.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="145" x="4327.5" y="172.4072">getUserByName</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="153" x="4323.5" y="187.8311">[REST ApiEndpoint - GET]</text></g><!--MD5=[e74f7ff9ae1e14da5eaecfdae7b23bfd]
+entity userusername_put--><g id="elem_userusername_put"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="172" x="4106" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="4150.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="103" x="4140.5" y="172.4072">updateUser</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="152" x="4116" y="187.8311">[REST ApiEndpoint - PUT]</text></g><g id="elem_GMN4162"><path d="M4129.5,284.2373 L4129.5,325.8359 A0,0 0 0 0 4129.5,325.8359 L4348.5,325.8359 A0,0 0 0 0 4348.5,325.8359 L4348.5,294.2373 L4338.5,284.2373 L4236.13,284.2373 L4203.5,200.7473 L4228.13,284.2373 L4129.5,284.2373 A0,0 0 0 0 4129.5,284.2373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M4338.5,284.2373 L4338.5,294.2373 L4348.5,294.2373 L4338.5,284.2373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="193" x="4135.5" y="302.3071">This can only be done by the</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="100" x="4184.5" y="318.1064">logged in user.</text></g><!--MD5=[444644c2426e00b7d06231112ad0b68f]
+entity userusername_delete--><g id="elem_userusername_delete"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="196" x="3875" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="3931.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="97" x="3924.5" y="172.4072">deleteUser</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="176" x="3885" y="187.8311">[REST ApiEndpoint - DELETE]</text></g><g id="elem_GMN4166"><path d="M3875.5,284.2373 L3875.5,325.8359 A0,0 0 0 0 3875.5,325.8359 L4094.5,325.8359 A0,0 0 0 0 4094.5,325.8359 L4094.5,294.2373 L4084.5,284.2373 L3987.25,284.2373 L3975.94,200.7473 L3979.25,284.2373 L3875.5,284.2373 A0,0 0 0 0 3875.5,284.2373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M4084.5,284.2373 L4084.5,294.2373 L4094.5,294.2373 L4084.5,284.2373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="193" x="3881.5" y="302.3071">This can only be done by the</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="100" x="3930.5" y="318.1064">logged in user.</text></g><!--MD5=[10745f2ab5717aeebb03abbbdfe65604]
+entity userlogin_get--><g id="elem_userlogin_get"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="173" x="4543.5" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="4588.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="84" x="4588" y="172.4072">loginUser</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="153" x="4553.5" y="187.8311">[REST ApiEndpoint - GET]</text></g><!--MD5=[c17c0b05dedbd0c084b2d22185ae60ff]
+entity userlogout_get--><g id="elem_userlogout_get"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="173" x="4773.5" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="4818.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="97" x="4811.5" y="172.4072">logoutUser</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="153" x="4783.5" y="187.8311">[REST ApiEndpoint - GET]</text></g><!--MD5=[3f3541b62361913695a46eb08b27b749]
+entity user_post--><g id="elem_user_post"><rect fill="#85BBF0" height="68.6133" rx="2.5" ry="2.5" style="stroke:#78A8D8;stroke-width:1.0;" width="180" x="5023" y="131.7373"/><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="83" x="5071.5" y="153.8018">«component»</text><text fill="#000000" font-family="Verdana" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="98" x="5064" y="172.4072">createUser</text><text fill="#000000" font-family="Verdana" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="160" x="5033" y="187.8311">[REST ApiEndpoint - POST]</text></g><g id="elem_GMN4175"><path d="M5003.5,284.2373 L5003.5,325.8359 A0,0 0 0 0 5003.5,325.8359 L5222.5,325.8359 A0,0 0 0 0 5222.5,325.8359 L5222.5,294.2373 L5212.5,284.2373 L5117,284.2373 L5113,200.7473 L5109,284.2373 L5003.5,284.2373 A0,0 0 0 0 5003.5,284.2373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><path d="M5212.5,284.2373 L5212.5,294.2373 L5222.5,294.2373 L5212.5,284.2373 " fill="#003153" style="stroke:#D9D3D0;stroke-width:1.0;"/><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="193" x="5009.5" y="302.3071">This can only be done by the</text><text fill="#D9D3D0" font-family="Verdana" font-size="13" lengthAdjust="spacing" textLength="100" x="5058.5" y="318.1064">logged in user.</text></g><rect fill="#003153" height="12.1533" style="stroke:#003153;stroke-width:0.0;" width="247" x="2494.5" y="375.7373"/><text fill="#D9D3D0" font-family="Verdana" font-size="10" lengthAdjust="spacing" textLength="247" x="2494.5" y="385.791">OpenApi diagram - futurum.openapi-to-plantuml</text><!--MD5=[9f56699f83510d496704d73ef2626585]
+@startuml OpenApi diagram
+!theme blueprint
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Swagger Petstore v1.0.6
+footer OpenApi diagram - futurum.openapi-to-plantuml
+Container_Boundary(petpetIduploadImage, "/pet/{petId}/uploadImage") {
+Component(petpetIduploadImage_post, "uploadFile", "REST ApiEndpoint - POST", "")
+}
+Container_Boundary(pet, "/pet") {
+Component(pet_post, "addPet", "REST ApiEndpoint - POST", "")
+Component(pet_put, "updatePet", "REST ApiEndpoint - PUT", "")
+}
+Container_Boundary(petfindByStatus, "/pet/findByStatus") {
+Component(petfindByStatus_get, "findPetsByStatus", "REST ApiEndpoint - GET", "")
+note bottom of petfindByStatus_get
+Multiple status values can be provided with comma separated strings
+end note
+}
+Container_Boundary(petfindByTags, "/pet/findByTags") {
+Component(petfindByTags_get, "findPetsByTags", "REST ApiEndpoint - GET", "")
+note bottom of petfindByTags_get
+Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.
+end note
+}
+Container_Boundary(petpetId, "/pet/{petId}") {
+Component(petpetId_get, "getPetById", "REST ApiEndpoint - GET", "")
+note bottom of petpetId_get
+Returns a single pet
+end note
+Component(petpetId_post, "updatePetWithForm", "REST ApiEndpoint - POST", "")
+Component(petpetId_delete, "deletePet", "REST ApiEndpoint - DELETE", "")
+}
+Container_Boundary(storeorder, "/store/order") {
+Component(storeorder_post, "placeOrder", "REST ApiEndpoint - POST", "")
+}
+Container_Boundary(storeorderorderId, "/store/order/{orderId}") {
+Component(storeorderorderId_get, "getOrderById", "REST ApiEndpoint - GET", "")
+note bottom of storeorderorderId_get
+For valid response try integer IDs with value >= 1 and <= 10. Other values will generated exceptions
+end note
+Component(storeorderorderId_delete, "deleteOrder", "REST ApiEndpoint - DELETE", "")
+note bottom of storeorderorderId_delete
+For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors
+end note
+}
+Container_Boundary(storeinventory, "/store/inventory") {
+Component(storeinventory_get, "getInventory", "REST ApiEndpoint - GET", "")
+note bottom of storeinventory_get
+Returns a map of status codes to quantities
+end note
+}
+Container_Boundary(usercreateWithArray, "/user/createWithArray") {
+Component(usercreateWithArray_post, "createUsersWithArrayInput", "REST ApiEndpoint - POST", "")
+}
+Container_Boundary(usercreateWithList, "/user/createWithList") {
+Component(usercreateWithList_post, "createUsersWithListInput", "REST ApiEndpoint - POST", "")
+}
+Container_Boundary(userusername, "/user/{username}") {
+Component(userusername_get, "getUserByName", "REST ApiEndpoint - GET", "")
+Component(userusername_put, "updateUser", "REST ApiEndpoint - PUT", "")
+note bottom of userusername_put
+This can only be done by the logged in user.
+end note
+Component(userusername_delete, "deleteUser", "REST ApiEndpoint - DELETE", "")
+note bottom of userusername_delete
+This can only be done by the logged in user.
+end note
+}
+Container_Boundary(userlogin, "/user/login") {
+Component(userlogin_get, "loginUser", "REST ApiEndpoint - GET", "")
+}
+Container_Boundary(userlogout, "/user/logout") {
+Component(userlogout_get, "logoutUser", "REST ApiEndpoint - GET", "")
+}
+Container_Boundary(user, "/user") {
+Component(user_post, "createUser", "REST ApiEndpoint - POST", "")
+note bottom of user_post
+This can only be done by the logged in user.
+end note
+}
+
+
+@enduml
+
+@startuml OpenApi diagram
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor #003153
+    FontColor #D9D3D0
+    FontName Verdana
+    HyperLinkColor #D9D3D0
+    LineColor #D9D3D0
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor #D9D3D0
+skinparam BackgroundColor #003153
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor #D9D3D0
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor #003153
+  BarColor #D9D3D0
+  BorderColor #D9D3D0
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor #D9D3D0
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor #D9D3D0
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam Header {
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color #D9D3D0
+}
+skinparam IconPackage {
+  Color #D9D3D0
+  BackgroundColor #003153
+}
+skinparam IconPrivate {
+  Color #D9D3D0
+  BackgroundColor #003153
+}
+skinparam IconProtected {
+  Color #D9D3D0
+  BackgroundColor #003153
+}
+skinparam IconPublic {
+  Color #D9D3D0
+  BackgroundColor #003153
+}
+skinparam Note {
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam Object {
+  BorderColor #D9D3D0
+}
+skinparam Package {
+  BorderColor #D9D3D0
+  FontColor #D9D3D0
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+}
+skinparam StereotypeA {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+}
+skinparam StereotypeC {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+}
+skinparam StereotypeE {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+}
+skinparam StereotypeI {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+}
+skinparam StereotypeN {
+  BackgroundColor #003153
+  BorderColor #D9D3D0
+}
+skinparam UseCaseStereoType {
+  FontColor #D9D3D0
+  FontName Verdana
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam database<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam queue<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam actor<<component>> {
+    StereotypeFontColor #85BBF0
+    FontColor #85BBF0
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+skinparam person<<component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #85BBF0
+    BorderColor #78A8D8
+}
+
+
+skinparam rectangle<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam database<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam queue<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam actor<<external_component>> {
+    StereotypeFontColor #CCCCCC
+    FontColor #CCCCCC
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+skinparam person<<external_component>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #CCCCCC
+    BorderColor #BFBFBF
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+title Swagger Petstore v1.0.6
+footer OpenApi diagram - futurum.openapi-to-plantuml
+rectangle "==/pet/{petId}/uploadImage\n<size:12>[Container]</size>" <<boundary>> as petpetIduploadImage  {
+rectangle "==uploadFile\n//<size:12>[REST ApiEndpoint - POST]</size>//" <<component>> as petpetIduploadImage_post 
+}
+rectangle "==/pet\n<size:12>[Container]</size>" <<boundary>> as pet  {
+rectangle "==addPet\n//<size:12>[REST ApiEndpoint - POST]</size>//" <<component>> as pet_post 
+rectangle "==updatePet\n//<size:12>[REST ApiEndpoint - PUT]</size>//" <<component>> as pet_put 
+}
+rectangle "==/pet/findByStatus\n<size:12>[Container]</size>" <<boundary>> as petfindByStatus  {
+rectangle "==findPetsByStatus\n//<size:12>[REST ApiEndpoint - GET]</size>//" <<component>> as petfindByStatus_get 
+note bottom of petfindByStatus_get
+Multiple status values can be provided with comma separated strings
+end note
+}
+rectangle "==/pet/findByTags\n<size:12>[Container]</size>" <<boundary>> as petfindByTags  {
+rectangle "==findPetsByTags\n//<size:12>[REST ApiEndpoint - GET]</size>//" <<component>> as petfindByTags_get 
+note bottom of petfindByTags_get
+Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.
+end note
+}
+rectangle "==/pet/{petId}\n<size:12>[Container]</size>" <<boundary>> as petpetId  {
+rectangle "==getPetById\n//<size:12>[REST ApiEndpoint - GET]</size>//" <<component>> as petpetId_get 
+note bottom of petpetId_get
+Returns a single pet
+end note
+rectangle "==updatePetWithForm\n//<size:12>[REST ApiEndpoint - POST]</size>//" <<component>> as petpetId_post 
+rectangle "==deletePet\n//<size:12>[REST ApiEndpoint - DELETE]</size>//" <<component>> as petpetId_delete 
+}
+rectangle "==/store/order\n<size:12>[Container]</size>" <<boundary>> as storeorder  {
+rectangle "==placeOrder\n//<size:12>[REST ApiEndpoint - POST]</size>//" <<component>> as storeorder_post 
+}
+rectangle "==/store/order/{orderId}\n<size:12>[Container]</size>" <<boundary>> as storeorderorderId  {
+rectangle "==getOrderById\n//<size:12>[REST ApiEndpoint - GET]</size>//" <<component>> as storeorderorderId_get 
+note bottom of storeorderorderId_get
+For valid response try integer IDs with value >= 1 and <= 10. Other values will generated exceptions
+end note
+rectangle "==deleteOrder\n//<size:12>[REST ApiEndpoint - DELETE]</size>//" <<component>> as storeorderorderId_delete 
+note bottom of storeorderorderId_delete
+For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors
+end note
+}
+rectangle "==/store/inventory\n<size:12>[Container]</size>" <<boundary>> as storeinventory  {
+rectangle "==getInventory\n//<size:12>[REST ApiEndpoint - GET]</size>//" <<component>> as storeinventory_get 
+note bottom of storeinventory_get
+Returns a map of status codes to quantities
+end note
+}
+rectangle "==/user/createWithArray\n<size:12>[Container]</size>" <<boundary>> as usercreateWithArray  {
+rectangle "==createUsersWithArrayInput\n//<size:12>[REST ApiEndpoint - POST]</size>//" <<component>> as usercreateWithArray_post 
+}
+rectangle "==/user/createWithList\n<size:12>[Container]</size>" <<boundary>> as usercreateWithList  {
+rectangle "==createUsersWithListInput\n//<size:12>[REST ApiEndpoint - POST]</size>//" <<component>> as usercreateWithList_post 
+}
+rectangle "==/user/{username}\n<size:12>[Container]</size>" <<boundary>> as userusername  {
+rectangle "==getUserByName\n//<size:12>[REST ApiEndpoint - GET]</size>//" <<component>> as userusername_get 
+rectangle "==updateUser\n//<size:12>[REST ApiEndpoint - PUT]</size>//" <<component>> as userusername_put 
+note bottom of userusername_put
+This can only be done by the logged in user.
+end note
+rectangle "==deleteUser\n//<size:12>[REST ApiEndpoint - DELETE]</size>//" <<component>> as userusername_delete 
+note bottom of userusername_delete
+This can only be done by the logged in user.
+end note
+}
+rectangle "==/user/login\n<size:12>[Container]</size>" <<boundary>> as userlogin  {
+rectangle "==loginUser\n//<size:12>[REST ApiEndpoint - GET]</size>//" <<component>> as userlogin_get 
+}
+rectangle "==/user/logout\n<size:12>[Container]</size>" <<boundary>> as userlogout  {
+rectangle "==logoutUser\n//<size:12>[REST ApiEndpoint - GET]</size>//" <<component>> as userlogout_get 
+}
+rectangle "==/user\n<size:12>[Container]</size>" <<boundary>> as user  {
+rectangle "==createUser\n//<size:12>[REST ApiEndpoint - POST]</size>//" <<component>> as user_post 
+note bottom of user_post
+This can only be done by the logged in user.
+end note
+}
+
+
+@enduml
+
+PlantUML version 1.2022.6(Tue Jun 21 18:34:49 BST 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: Dynamic Code Evolution 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: GB
+--></g></svg>

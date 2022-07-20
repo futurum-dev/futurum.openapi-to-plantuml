@@ -1,0 +1,85 @@
+@startuml OpenApi diagram
+!theme blueprint
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Swagger Petstore v1.0.6
+footer OpenApi diagram - futurum.openapi-to-plantuml
+Container_Boundary(petpetIduploadImage, "/pet/{petId}/uploadImage") {
+Component(petpetIduploadImage_post, "uploadFile", "REST ApiEndpoint - POST", "")
+}
+Container_Boundary(pet, "/pet") {
+Component(pet_post, "addPet", "REST ApiEndpoint - POST", "")
+Component(pet_put, "updatePet", "REST ApiEndpoint - PUT", "")
+}
+Container_Boundary(petfindByStatus, "/pet/findByStatus") {
+Component(petfindByStatus_get, "findPetsByStatus", "REST ApiEndpoint - GET", "")
+note bottom of petfindByStatus_get
+Multiple status values can be provided with comma separated strings
+end note
+}
+Container_Boundary(petfindByTags, "/pet/findByTags") {
+Component(petfindByTags_get, "findPetsByTags", "REST ApiEndpoint - GET", "")
+note bottom of petfindByTags_get
+Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.
+end note
+}
+Container_Boundary(petpetId, "/pet/{petId}") {
+Component(petpetId_get, "getPetById", "REST ApiEndpoint - GET", "")
+note bottom of petpetId_get
+Returns a single pet
+end note
+Component(petpetId_post, "updatePetWithForm", "REST ApiEndpoint - POST", "")
+Component(petpetId_delete, "deletePet", "REST ApiEndpoint - DELETE", "")
+}
+Container_Boundary(storeorder, "/store/order") {
+Component(storeorder_post, "placeOrder", "REST ApiEndpoint - POST", "")
+}
+Container_Boundary(storeorderorderId, "/store/order/{orderId}") {
+Component(storeorderorderId_get, "getOrderById", "REST ApiEndpoint - GET", "")
+note bottom of storeorderorderId_get
+For valid response try integer IDs with value >= 1 and <= 10. Other values will generated exceptions
+end note
+Component(storeorderorderId_delete, "deleteOrder", "REST ApiEndpoint - DELETE", "")
+note bottom of storeorderorderId_delete
+For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors
+end note
+}
+Container_Boundary(storeinventory, "/store/inventory") {
+Component(storeinventory_get, "getInventory", "REST ApiEndpoint - GET", "")
+note bottom of storeinventory_get
+Returns a map of status codes to quantities
+end note
+}
+Container_Boundary(usercreateWithArray, "/user/createWithArray") {
+Component(usercreateWithArray_post, "createUsersWithArrayInput", "REST ApiEndpoint - POST", "")
+}
+Container_Boundary(usercreateWithList, "/user/createWithList") {
+Component(usercreateWithList_post, "createUsersWithListInput", "REST ApiEndpoint - POST", "")
+}
+Container_Boundary(userusername, "/user/{username}") {
+Component(userusername_get, "getUserByName", "REST ApiEndpoint - GET", "")
+Component(userusername_put, "updateUser", "REST ApiEndpoint - PUT", "")
+note bottom of userusername_put
+This can only be done by the logged in user.
+end note
+Component(userusername_delete, "deleteUser", "REST ApiEndpoint - DELETE", "")
+note bottom of userusername_delete
+This can only be done by the logged in user.
+end note
+}
+Container_Boundary(userlogin, "/user/login") {
+Component(userlogin_get, "loginUser", "REST ApiEndpoint - GET", "")
+}
+Container_Boundary(userlogout, "/user/logout") {
+Component(userlogout_get, "logoutUser", "REST ApiEndpoint - GET", "")
+}
+Container_Boundary(user, "/user") {
+Component(user_post, "createUser", "REST ApiEndpoint - POST", "")
+note bottom of user_post
+This can only be done by the logged in user.
+end note
+}
+
+
+@enduml

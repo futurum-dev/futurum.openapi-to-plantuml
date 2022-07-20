@@ -1,0 +1,17 @@
+@startuml OpenApi diagram
+!theme blueprint
+
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+title Swagger Petstore v1.0.0
+footer OpenApi diagram - futurum.openapi-to-plantuml
+Container_Boundary(pets, "/pets") {
+Component(pets_get, "listPets", "REST ApiEndpoint - GET", "")
+Component(pets_post, "createPets", "REST ApiEndpoint - POST", "")
+}
+Container_Boundary(petspetId, "/pets/{petId}") {
+Component(petspetId_get, "showPetById", "REST ApiEndpoint - GET", "")
+}
+
+
+@enduml

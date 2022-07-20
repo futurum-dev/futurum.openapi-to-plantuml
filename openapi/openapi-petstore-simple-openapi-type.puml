@@ -1,0 +1,53 @@
+@startuml OpenApi Type diagram
+!theme blueprint
+
+hide <<Path>> circle
+hide <<Response>> circle
+hide <<Parameter>> circle
+hide empty methods
+hide empty fields
+set namespaceSeparator none
+
+title Swagger Petstore v1.0.0
+footer OpenApi Type diagram - futurum.openapi-to-plantuml
+class "GET /pets" <<Path>> {
+{field} limit : integer {O}
+}
+class "GET /pets 200" <<Response>> { }
+class "GET /pets default" <<Response>> { }
+class "POST /pets" <<Path>> {
+}
+class "POST /pets 201" <<Response>> { }
+class "POST /pets default" <<Response>> { }
+class "GET /pets/{petId}" <<Path>> {
+{field} petId : string
+}
+class "GET /pets/{petId} 200" <<Response>> { }
+class "GET /pets/{petId} default" <<Response>> { }
+class Pet {
+{field} id : integer
+{field} name : string
+{field} tag : string
+}
+class Pets {
+{field} value : array
+}
+class Error {
+{field} code : integer
+{field} message : string
+}
+"GET /pets" ..> "1" "GET /pets 200" : 200
+"GET /pets 200" ..> "1" "Pets" : 200
+"GET /pets" ..> "1" "GET /pets default" : default
+"GET /pets default" ..> "1" "Error" : default
+"POST /pets" ..> "1" "POST /pets 201" : 201
+"POST /pets" ..> "1" "POST /pets default" : default
+"POST /pets default" ..> "1" "Error" : default
+"GET /pets/{petId}" ..> "1" "GET /pets/{petId} 200" : 200
+"GET /pets/{petId} 200" ..> "1" "Pet" : 200
+"GET /pets/{petId}" ..> "1" "GET /pets/{petId} default" : default
+"GET /pets/{petId} default" ..> "1" "Error" : default
+"Pets" ..> "*" "Pet"
+
+
+@enduml
