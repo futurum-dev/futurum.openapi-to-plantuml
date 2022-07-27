@@ -140,7 +140,7 @@ class User {
 {field} userStatus : integer
 }
 "POST /pet/{petId}/uploadImage" ..> "1" "POST /pet/{petId}/uploadImage 200" : 200
-"POST /pet/{petId}/uploadImage 200" ..> "1" "ApiResponse" : 200
+"POST /pet/{petId}/uploadImage 200" ..> "1" "ApiResponse" : "200"
 "POST /pet" ..> "1" "POST /pet 405" : 405
 "PUT /pet" ..> "1" "PUT /pet 400" : 400
 "PUT /pet" ..> "1" "PUT /pet 404" : 404
@@ -154,20 +154,20 @@ class User {
 "GET /pet/findByTags 200" ..> "*" "Pet"
 "GET /pet/findByTags" ..> "1" "GET /pet/findByTags 400" : 400
 "GET /pet/{petId}" ..> "1" "GET /pet/{petId} 200" : 200
-"GET /pet/{petId} 200" ..> "1" "Pet" : 200
-"GET /pet/{petId} 200" ..> "1" "Pet" : 200
+"GET /pet/{petId} 200" ..> "1" "Pet" : "200"
+"GET /pet/{petId} 200" ..> "1" "Pet" : "200"
 "GET /pet/{petId}" ..> "1" "GET /pet/{petId} 400" : 400
 "GET /pet/{petId}" ..> "1" "GET /pet/{petId} 404" : 404
 "POST /pet/{petId}" ..> "1" "POST /pet/{petId} 405" : 405
 "DELETE /pet/{petId}" ..> "1" "DELETE /pet/{petId} 400" : 400
 "DELETE /pet/{petId}" ..> "1" "DELETE /pet/{petId} 404" : 404
 "POST /store/order" ..> "1" "POST /store/order 200" : 200
-"POST /store/order 200" ..> "1" "Order" : 200
-"POST /store/order 200" ..> "1" "Order" : 200
+"POST /store/order 200" ..> "1" "Order" : "200"
+"POST /store/order 200" ..> "1" "Order" : "200"
 "POST /store/order" ..> "1" "POST /store/order 400" : 400
 "GET /store/order/{orderId}" ..> "1" "GET /store/order/{orderId} 200" : 200
-"GET /store/order/{orderId} 200" ..> "1" "Order" : 200
-"GET /store/order/{orderId} 200" ..> "1" "Order" : 200
+"GET /store/order/{orderId} 200" ..> "1" "Order" : "200"
+"GET /store/order/{orderId} 200" ..> "1" "Order" : "200"
 "GET /store/order/{orderId}" ..> "1" "GET /store/order/{orderId} 400" : 400
 "GET /store/order/{orderId}" ..> "1" "GET /store/order/{orderId} 404" : 404
 "DELETE /store/order/{orderId}" ..> "1" "DELETE /store/order/{orderId} 400" : 400
@@ -176,8 +176,8 @@ class User {
 "POST /user/createWithArray" ..> "1" "POST /user/createWithArray default" : default
 "POST /user/createWithList" ..> "1" "POST /user/createWithList default" : default
 "GET /user/{username}" ..> "1" "GET /user/{username} 200" : 200
-"GET /user/{username} 200" ..> "1" "User" : 200
-"GET /user/{username} 200" ..> "1" "User" : 200
+"GET /user/{username} 200" ..> "1" "User" : "200"
+"GET /user/{username} 200" ..> "1" "User" : "200"
 "GET /user/{username}" ..> "1" "GET /user/{username} 400" : 400
 "GET /user/{username}" ..> "1" "GET /user/{username} 404" : 404
 "PUT /user/{username}" ..> "1" "PUT /user/{username} 400" : 400

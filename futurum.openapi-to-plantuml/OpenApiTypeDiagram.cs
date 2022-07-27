@@ -144,7 +144,23 @@ set namespaceSeparator none
                                 stringBuilder.AppendLine($"\"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}\"" +
                                                          $" ..> \"1\"" +
                                                          $" \"{openApiMediaType.Schema.Reference.Id}\"" +
-                                                         $" : {openApiResponseKey}");
+                                                         $" : \"{openApiResponseKey}\"");
+                            }
+
+                            foreach (var anyOfOpenApiSchema in openApiMediaType.Schema.AnyOf)
+                            {
+                                stringBuilder.AppendLine($"\"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}\"" +
+                                                         $" ..> \"1\"" +
+                                                         $" \"{anyOfOpenApiSchema.Reference.Id}\"" +
+                                                         $" : \"[AnyOf]\"");
+                            }
+
+                            foreach (var allOfOpenApiSchema in openApiMediaType.Schema.AllOf)
+                            {
+                                stringBuilder.AppendLine($"\"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}\"" +
+                                                         $" --> \"1\"" +
+                                                         $" \"{allOfOpenApiSchema.Reference.Id}\"" +
+                                                         $" : \"[AllOf]\"");
                             }
                         }
                     }

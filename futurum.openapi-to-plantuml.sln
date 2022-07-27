@@ -23,7 +23,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "openapi", "openapi", "{FCB3
 		openapi-petstore-openapi.puml = openapi/openapi-petstore-openapi.puml
 		openapi-petstore-type.puml = openapi/openapi-petstore-openapi-type.puml
 		openapi-petstore.yaml = openapi/openapi-petstore.json
-		openapi\openapi-pet-simple.yaml = openapi\openapi-pet-simple.yaml
 		openapi\openapi-petstore-simple-openapi-type.puml = openapi\openapi-petstore-simple-openapi-type.puml
 		openapi\openapi-petstore-simple-openapi.puml = openapi\openapi-petstore-simple-openapi.puml
 		openapi\openapi-petstore-simple.yaml = openapi\openapi-petstore-simple.yaml
