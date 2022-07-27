@@ -18,9 +18,6 @@ public class OpenApiTypeDiagram
                 .Replace("{", "")
                 .Replace("}", "");
 
-        string FieldRequired(bool required) =>
-            required ? "" : " {O}";
-
         const string boilerplateStart = @"@startuml OpenApi Type diagram
 !theme blueprint
 
@@ -40,8 +37,8 @@ set namespaceSeparator none
         var stringBuilder = new StringBuilder();
         stringBuilder.Append(boilerplateStart);
 
-        stringBuilder.AppendLine($"title {openApiDocument.Info.Title} v{openApiDocument.Info.Version}");
-        stringBuilder.AppendLine("footer OpenApi Type diagram - futurum.openapi-to-plantuml");
+        stringBuilder.Write(new Title(openApiDocument));
+        stringBuilder.Write(new Footer("OpenApi Type"));
 
         foreach (var (openApiPathItemKey, openApiPathItem) in openApiDocument.Paths)
         {
@@ -53,15 +50,15 @@ set namespaceSeparator none
                 {
                     if (openApiParameter.Schema.Items != null && openApiParameter.Schema.Items.Reference != null && openApiParameter.Schema.Type == "array")
                     {
-                        stringBuilder.AppendLine($"{{field}} {openApiParameter.Name} : {openApiParameter.Schema.Type}<{openApiParameter.Schema.Items.Reference.Id}>{FieldRequired(openApiParameter.Required)}");
+                        stringBuilder.Write(new ClassField(openApiParameter.Name, $"{openApiParameter.Schema.Type}<{openApiParameter.Schema.Items.Reference.Id}>", openApiParameter.Required));
                     }
                     else if (openApiParameter.Schema.Items != null && openApiParameter.Schema.Type == "array")
                     {
-                        stringBuilder.AppendLine($"{{field}} {openApiParameter.Name} : {openApiParameter.Schema.Type}<{openApiParameter.Schema.Items.Type}>{FieldRequired(openApiParameter.Required)}");
+                        stringBuilder.Write(new ClassField(openApiParameter.Name, $"{openApiParameter.Schema.Type}<{openApiParameter.Schema.Items.Type}>", openApiParameter.Required));
                     }
                     else
                     {
-                        stringBuilder.AppendLine($"{{field}} {openApiParameter.Name} : {openApiParameter.Schema.Type}{FieldRequired(openApiParameter.Required)}");
+                        stringBuilder.Write(new ClassField(openApiParameter.Name, openApiParameter.Schema.Type, openApiParameter.Required));
                     }
                 }
 
@@ -84,37 +81,35 @@ set namespaceSeparator none
                 {
                     if (!Constants.OpenApiBuiltInTypes.Contains(openApiSchema.Type) && propertyOpenApiSchema.Reference != null)
                     {
-                        stringBuilder.AppendLine($"{{field}} {propertyOpenApiSchemaKey} : {propertyOpenApiSchema.Reference.Id}");
+                        stringBuilder.Write(new ClassField(propertyOpenApiSchemaKey, propertyOpenApiSchema.Reference.Id));
                     }
                     else
                     {
                         if (propertyOpenApiSchema.Items != null && propertyOpenApiSchema.Items.Reference != null && propertyOpenApiSchema.Type == "array")
                         {
-                            stringBuilder.AppendLine($"{{field}} {propertyOpenApiSchemaKey} : {propertyOpenApiSchema.Type}<{propertyOpenApiSchema.Items.Reference.Id}>");
+                            stringBuilder.Write(new ClassField(propertyOpenApiSchemaKey, $"{propertyOpenApiSchema.Type}<{propertyOpenApiSchema.Items.Reference.Id}>"));
                         }
                         else if (propertyOpenApiSchema.Items != null && propertyOpenApiSchema.Type == "array")
                         {
-                            stringBuilder.AppendLine($"{{field}} {propertyOpenApiSchemaKey} : {propertyOpenApiSchema.Type}<{propertyOpenApiSchema.Items.Type}>");
+                            stringBuilder.Write(new ClassField(propertyOpenApiSchemaKey, $"{propertyOpenApiSchema.Type}<{propertyOpenApiSchema.Items.Type}>"));
                         }
                         else
                         {
-                            stringBuilder.AppendLine($"{{field}} {propertyOpenApiSchemaKey} : {propertyOpenApiSchema.Type}");
+                            stringBuilder.Write(new ClassField(propertyOpenApiSchemaKey, propertyOpenApiSchema.Type));
                         }
                     }
                 }
             }
             else
             {
-                stringBuilder.AppendLine($"{{field}} value : {openApiSchema.Type}");
+                stringBuilder.Write(new ClassField("value", openApiSchema.Type));
             }
 
             stringBuilder.AppendLine($"}}");
 
             if (!string.IsNullOrEmpty(openApiSchema.Description))
             {
-                stringBuilder.AppendLine($"note bottom of {SanitiseOpenApiSchemaKey(openApiSchemaKey)}");
-                stringBuilder.AppendLine(SanitiseOpenApiOperationDescription(openApiSchema.Description));
-                stringBuilder.AppendLine("end note");
+                stringBuilder.Write(new Note(SanitiseOpenApiSchemaKey(openApiSchemaKey), SanitiseOpenApiOperationDescription(openApiSchema.Description)));
             }
         }
 
@@ -124,10 +119,10 @@ set namespaceSeparator none
             {
                 foreach (var (openApiResponseKey, openApiResponse) in openApiOperation.Responses)
                 {
-                    stringBuilder.AppendLine($"\"{operationType.ToString().ToUpper()} {openApiPathItemKey}\"" +
-                                             $" ..> \"1\"" +
-                                             $" \"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}\"" +
-                                             $" : {openApiResponseKey}");
+                    stringBuilder.Write(new ClassRelationship($"{operationType.ToString().ToUpper()} {openApiPathItemKey}",
+                                                              ClassRelationshipType.Reference, ClassRelationshipCardinality.One,
+                                                              $"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}",
+                                                              openApiResponseKey));
 
                     foreach (var (_, openApiMediaType) in openApiResponse.Content)
                     {
@@ -135,32 +130,28 @@ set namespaceSeparator none
                         {
                             if (openApiMediaType.Schema.Type == "array")
                             {
-                                stringBuilder.AppendLine($"\"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}\"" +
-                                                         $" ..> \"*\"" +
-                                                         $" \"{openApiMediaType.Schema.Items.Reference.Id}\"");
+                                stringBuilder.Write(new ClassRelationship($"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}",
+                                                                          ClassRelationshipType.Reference, ClassRelationshipCardinality.Many,
+                                                                          openApiMediaType.Schema.Items.Reference.Id));
                             }
                             else if (openApiMediaType.Schema.Reference != null)
                             {
-                                stringBuilder.AppendLine($"\"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}\"" +
-                                                         $" ..> \"1\"" +
-                                                         $" \"{openApiMediaType.Schema.Reference.Id}\"" +
-                                                         $" : \"{openApiResponseKey}\"");
+                                stringBuilder.Write(new ClassRelationship($"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}",
+                                                                          ClassRelationshipType.Reference, ClassRelationshipCardinality.One,
+                                                                          openApiMediaType.Schema.Reference.Id, openApiResponseKey));
                             }
 
                             foreach (var anyOfOpenApiSchema in openApiMediaType.Schema.AnyOf)
                             {
-                                stringBuilder.AppendLine($"\"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}\"" +
-                                                         $" ..> \"1\"" +
-                                                         $" \"{anyOfOpenApiSchema.Reference.Id}\"" +
-                                                         $" : \"[AnyOf]\"");
+                                stringBuilder.Write(new ClassRelationship($"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}",
+                                                                          ClassRelationshipType.AllOf, ClassRelationshipCardinality.One, anyOfOpenApiSchema.Reference.Id, "[AnyOf]"));
                             }
 
                             foreach (var allOfOpenApiSchema in openApiMediaType.Schema.AllOf)
                             {
-                                stringBuilder.AppendLine($"\"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}\"" +
-                                                         $" --> \"1\"" +
-                                                         $" \"{allOfOpenApiSchema.Reference.Id}\"" +
-                                                         $" : \"[AllOf]\"");
+                                stringBuilder.Write(new ClassRelationship($"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}",
+                                                                          ClassRelationshipType.AllOf, ClassRelationshipCardinality.One,
+                                                                          allOfOpenApiSchema.Reference.Id, "[AllOf]"));
                             }
                         }
                     }
@@ -172,9 +163,8 @@ set namespaceSeparator none
         {
             if (openApiSchema.Type == "array")
             {
-                stringBuilder.AppendLine($"\"{SanitiseOpenApiSchemaKey(openApiSchemaKey)}\"" +
-                                         $" ..> \"*\"" +
-                                         $" \"{openApiSchema.Items.Reference.Id}\"");
+                stringBuilder.Write(new ClassRelationship(SanitiseOpenApiSchemaKey(openApiSchemaKey), ClassRelationshipType.Reference, ClassRelationshipCardinality.Many,
+                                                          openApiSchema.Items.Reference.Id));
             }
             else
             {
@@ -186,27 +176,21 @@ set namespaceSeparator none
                         {
                             if (propertyOpenApiSchema.Items.Reference != null)
                             {
-                                stringBuilder.AppendLine($"\"{SanitiseOpenApiSchemaKey(openApiSchemaKey)}\"" +
-                                                         $" ..> \"1\"" +
-                                                         $" \"{propertyOpenApiSchema.Items.Reference.Id}\"" +
-                                                         $" : \"{propertyOpenApiSchemaKey}\"");
+                                stringBuilder.Write(new ClassRelationship(SanitiseOpenApiSchemaKey(openApiSchemaKey), ClassRelationshipType.Reference, ClassRelationshipCardinality.One,
+                                                                          propertyOpenApiSchema.Items.Reference.Id, propertyOpenApiSchemaKey));
                             }
                         }
                         else
                         {
                             if (propertyOpenApiSchema.Type != null && !Constants.OpenApiBuiltInTypes.Contains(propertyOpenApiSchema.Type))
                             {
-                                stringBuilder.AppendLine($"\"{SanitiseOpenApiSchemaKey(openApiSchemaKey)}\"" +
-                                                         $" ..> \"1\"" +
-                                                         $" \"{propertyOpenApiSchema.Reference.Id}\"" +
-                                                         $" : \"{propertyOpenApiSchemaKey}\"");
+                                stringBuilder.Write(new ClassRelationship(SanitiseOpenApiSchemaKey(openApiSchemaKey), ClassRelationshipType.Reference, ClassRelationshipCardinality.One,
+                                                                          propertyOpenApiSchema.Reference.Id, propertyOpenApiSchemaKey));
                             }
-                            else if(propertyOpenApiSchema.Reference != null)
+                            else if (propertyOpenApiSchema.Reference != null)
                             {
-                                stringBuilder.AppendLine($"\"{SanitiseOpenApiSchemaKey(openApiSchemaKey)}\"" +
-                                                         $" ..> \"1\"" +
-                                                         $" \"{propertyOpenApiSchema.Reference.Id}\"" +
-                                                         $" : \"{propertyOpenApiSchemaKey}\"");
+                                stringBuilder.Write(new ClassRelationship(SanitiseOpenApiSchemaKey(openApiSchemaKey), ClassRelationshipType.Reference, ClassRelationshipCardinality.One,
+                                                                          propertyOpenApiSchema.Reference.Id, propertyOpenApiSchemaKey));
                             }
                         }
                     }
@@ -218,21 +202,17 @@ set namespaceSeparator none
         {
             foreach (var allOf in openApiSchema.AllOf)
             {
-                stringBuilder.AppendLine($"\"{SanitiseOpenApiSchemaKey(openApiSchemaKey)}\"" +
-                                         $" --> \"1\"" +
-                                         $" \"{allOf.Reference.Id}\"");
+                stringBuilder.Write(new ClassRelationship(SanitiseOpenApiSchemaKey(openApiSchemaKey), ClassRelationshipType.AllOf, ClassRelationshipCardinality.One, allOf.Reference.Id));
             }
+
             foreach (var anyOf in openApiSchema.AnyOf)
             {
-                stringBuilder.AppendLine($"\"{SanitiseOpenApiSchemaKey(openApiSchemaKey)}\"" +
-                                         $" --|>" +
-                                         $" \"{anyOf.Reference.Id}\"");
+                stringBuilder.Write(new ClassRelationship(SanitiseOpenApiSchemaKey(openApiSchemaKey), ClassRelationshipType.AnyOf, ClassRelationshipCardinality.None, anyOf.Reference.Id));
             }
+
             foreach (var oneOf in openApiSchema.OneOf)
             {
-                stringBuilder.AppendLine($"\"{SanitiseOpenApiSchemaKey(openApiSchemaKey)}\"" +
-                                         $" --|>" +
-                                         $" \"{oneOf.Reference.Id}\"");
+                stringBuilder.Write(new ClassRelationship(SanitiseOpenApiSchemaKey(openApiSchemaKey), ClassRelationshipType.AnyOf, ClassRelationshipCardinality.None, oneOf.Reference.Id));
             }
         }
 

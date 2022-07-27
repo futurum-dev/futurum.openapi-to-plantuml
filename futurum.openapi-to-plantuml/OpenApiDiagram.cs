@@ -10,13 +10,13 @@ public class OpenApiDiagram
     {
         string SanitiseOpenApiPathKey(string openApiPathKey) =>
             openApiPathKey
-                        .Replace("/", "")
-                        .Replace("{", "")
-                        .Replace("}", "");
+                .Replace("/", "")
+                .Replace("{", "")
+                .Replace("}", "");
 
         string SanitiseOpenApiOperationDescription(OpenApiOperation openApiOperation) =>
             openApiOperation.Description
-                             .Replace(Environment.NewLine, " ");
+                            .Replace(Environment.NewLine, " ");
 
         const string boilerplateStart = @"@startuml OpenApi diagram
 !theme blueprint
@@ -32,24 +32,24 @@ public class OpenApiDiagram
         var stringBuilder = new StringBuilder();
         stringBuilder.Append(boilerplateStart);
 
-        stringBuilder.AppendLine($"title {openApiDocument.Info.Title} v{openApiDocument.Info.Version}");
-        stringBuilder.AppendLine("footer OpenApi diagram - futurum.openapi-to-plantuml");
+        stringBuilder.Write(new Title(openApiDocument));
+        stringBuilder.Write(new Footer("OpenApi"));
 
         foreach (var (openApiPathItemKey, openApiPathItem) in openApiDocument.Paths)
         {
             stringBuilder.AppendLine($"Container_Boundary({SanitiseOpenApiPathKey(openApiPathItemKey)}, \"{openApiPathItemKey}\") {{");
             foreach (var (operationType, openApiOperation) in openApiPathItem.Operations)
             {
-                stringBuilder.AppendLine($"Component({SanitiseOpenApiPathKey(openApiPathItemKey)}_{operationType.ToString().ToLower()}, " +
-                                         $"\"{openApiOperation.OperationId}\", " +
-                                         $"\"REST ApiEndpoint - {operationType.ToString().ToUpper()}\", " +
-                                         $"\"\")");
+                var component = new Component($"{SanitiseOpenApiPathKey(openApiPathItemKey)}_{operationType.ToString().ToLower()}",
+                                              openApiOperation.OperationId,
+                                              $"REST ApiEndpoint - {operationType.ToString().ToUpper()}",
+                                              string.Empty);
+
+                stringBuilder.Write(component);
 
                 if (!string.IsNullOrEmpty(openApiOperation.Description))
                 {
-                    stringBuilder.AppendLine($"note bottom of {SanitiseOpenApiPathKey(openApiPathItemKey)}_{operationType.ToString().ToLower()}");
-                    stringBuilder.AppendLine(SanitiseOpenApiOperationDescription(openApiOperation));
-                    stringBuilder.AppendLine("end note");
+                    stringBuilder.Write(new Note($"{SanitiseOpenApiPathKey(openApiPathItemKey)}_{operationType.ToString().ToLower()}", SanitiseOpenApiOperationDescription(openApiOperation)));
                 }
             }
 

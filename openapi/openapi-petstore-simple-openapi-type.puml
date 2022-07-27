@@ -36,16 +36,16 @@ class Error {
 {field} code : integer
 {field} message : string
 }
-"GET /pets" ..> "1" "GET /pets 200" : 200
+"GET /pets" ..> "1" "GET /pets 200" : "200"
 "GET /pets 200" ..> "1" "Pets" : "200"
-"GET /pets" ..> "1" "GET /pets default" : default
+"GET /pets" ..> "1" "GET /pets default" : "default"
 "GET /pets default" ..> "1" "Error" : "default"
-"POST /pets" ..> "1" "POST /pets 201" : 201
-"POST /pets" ..> "1" "POST /pets default" : default
+"POST /pets" ..> "1" "POST /pets 201" : "201"
+"POST /pets" ..> "1" "POST /pets default" : "default"
 "POST /pets default" ..> "1" "Error" : "default"
-"GET /pets/{petId}" ..> "1" "GET /pets/{petId} 200" : 200
+"GET /pets/{petId}" ..> "1" "GET /pets/{petId} 200" : "200"
 "GET /pets/{petId} 200" ..> "1" "Pet" : "200"
-"GET /pets/{petId}" ..> "1" "GET /pets/{petId} default" : default
+"GET /pets/{petId}" ..> "1" "GET /pets/{petId} default" : "default"
 "GET /pets/{petId} default" ..> "1" "Error" : "default"
 "Pets" ..> "*" "Pet"
 
