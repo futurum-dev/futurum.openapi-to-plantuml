@@ -124,34 +124,38 @@ set namespaceSeparator none
                                                               $"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}",
                                                               openApiResponseKey));
 
-                    foreach (var (_, openApiMediaType) in openApiResponse.Content)
+                    foreach (var (openApiMediaTypeKey, openApiMediaType) in openApiResponse.Content)
                     {
                         if (openApiMediaType.Schema != null)
                         {
+                            var label = openApiResponse.Content.Count > 1
+                                ? openApiMediaTypeKey
+                                : string.Empty;
+                            
                             if (openApiMediaType.Schema.Type == "array")
                             {
                                 stringBuilder.Write(new ClassRelationship($"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}",
                                                                           ClassRelationshipType.Reference, ClassRelationshipCardinality.Many,
-                                                                          openApiMediaType.Schema.Items.Reference.Id));
+                                                                          openApiMediaType.Schema.Items.Reference.Id, label));
                             }
                             else if (openApiMediaType.Schema.Reference != null)
                             {
                                 stringBuilder.Write(new ClassRelationship($"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}",
                                                                           ClassRelationshipType.Reference, ClassRelationshipCardinality.One,
-                                                                          openApiMediaType.Schema.Reference.Id, openApiResponseKey));
+                                                                          openApiMediaType.Schema.Reference.Id, label));
                             }
 
                             foreach (var anyOfOpenApiSchema in openApiMediaType.Schema.AnyOf)
                             {
                                 stringBuilder.Write(new ClassRelationship($"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}",
-                                                                          ClassRelationshipType.AllOf, ClassRelationshipCardinality.One, anyOfOpenApiSchema.Reference.Id, "[AnyOf]"));
+                                                                          ClassRelationshipType.AllOf, ClassRelationshipCardinality.One, anyOfOpenApiSchema.Reference.Id, label));
                             }
 
                             foreach (var allOfOpenApiSchema in openApiMediaType.Schema.AllOf)
                             {
                                 stringBuilder.Write(new ClassRelationship($"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}",
                                                                           ClassRelationshipType.AllOf, ClassRelationshipCardinality.One,
-                                                                          allOfOpenApiSchema.Reference.Id, "[AllOf]"));
+                                                                          allOfOpenApiSchema.Reference.Id, label));
                             }
                         }
                     }
