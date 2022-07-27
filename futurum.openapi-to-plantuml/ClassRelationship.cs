@@ -6,18 +6,14 @@ public record ClassRelationship(string LeftId, ClassRelationshipType Type, Class
 {
     public override string ToString()
     {
-        var stringBuilder = new StringBuilder();
-
         var labelString = !string.IsNullOrEmpty(Label)
             ? $" : \"{Label}\""
             : string.Empty;
-        
-        stringBuilder.Append($"\"{LeftId}\"" +
-                             $" {TransformTypeToString(Type)} {TransformCardinalityToString(Cardinality)}" +
-                             $" \"{RightId}\"" +
-                             $"{labelString}");
 
-        return stringBuilder.ToString();
+        return $"\"{LeftId}\"" +
+               $" {TransformTypeToString(Type)} {TransformCardinalityToString(Cardinality)}" +
+               $" \"{RightId}\"" +
+               $"{labelString}";
     }
 
     private static string TransformTypeToString(ClassRelationshipType type) =>

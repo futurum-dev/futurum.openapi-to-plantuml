@@ -14,9 +14,9 @@ public class OpenApiTypeDiagram
 
         string SanitiseOpenApiSchemaKey(string openApiSchemaKey) =>
             openApiSchemaKey
-                .Replace("/", "")
-                .Replace("{", "")
-                .Replace("}", "");
+                .Replace("/", string.Empty)
+                .Replace("{", string.Empty)
+                .Replace("}", string.Empty);
 
         const string boilerplateStart = @"@startuml OpenApi Type diagram
 !theme blueprint
@@ -48,11 +48,11 @@ set namespaceSeparator none
 
                 foreach (var openApiParameter in openApiOperation.Parameters)
                 {
-                    if (openApiParameter.Schema.Items != null && openApiParameter.Schema.Items.Reference != null && openApiParameter.Schema.Type == "array")
+                    if (openApiParameter.Schema.Items != null && openApiParameter.Schema.Items.Reference != null && openApiParameter.Schema.Type == OpenApiConstants.ArrayType)
                     {
                         stringBuilder.Write(new ClassField(openApiParameter.Name, $"{openApiParameter.Schema.Type}<{openApiParameter.Schema.Items.Reference.Id}>", openApiParameter.Required));
                     }
-                    else if (openApiParameter.Schema.Items != null && openApiParameter.Schema.Type == "array")
+                    else if (openApiParameter.Schema.Items != null && openApiParameter.Schema.Type == OpenApiConstants.ArrayType)
                     {
                         stringBuilder.Write(new ClassField(openApiParameter.Name, $"{openApiParameter.Schema.Type}<{openApiParameter.Schema.Items.Type}>", openApiParameter.Required));
                     }
@@ -66,7 +66,7 @@ set namespaceSeparator none
 
                 foreach (var openApiResponse in openApiOperation.Responses)
                 {
-                    stringBuilder.AppendLine($"class \"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponse.Key}\" <<Response>> {{ }}");
+                    stringBuilder.Write(new ClassResponse($"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponse.Key}"));
                 }
             }
         }
@@ -79,17 +79,17 @@ set namespaceSeparator none
             {
                 foreach (var (propertyOpenApiSchemaKey, propertyOpenApiSchema) in openApiSchema.Properties)
                 {
-                    if (!Constants.OpenApiBuiltInTypes.Contains(openApiSchema.Type) && propertyOpenApiSchema.Reference != null)
+                    if (!OpenApiConstants.BuiltInTypes.Contains(openApiSchema.Type) && propertyOpenApiSchema.Reference != null)
                     {
                         stringBuilder.Write(new ClassField(propertyOpenApiSchemaKey, propertyOpenApiSchema.Reference.Id));
                     }
                     else
                     {
-                        if (propertyOpenApiSchema.Items != null && propertyOpenApiSchema.Items.Reference != null && propertyOpenApiSchema.Type == "array")
+                        if (propertyOpenApiSchema.Items != null && propertyOpenApiSchema.Items.Reference != null && propertyOpenApiSchema.Type == OpenApiConstants.ArrayType)
                         {
                             stringBuilder.Write(new ClassField(propertyOpenApiSchemaKey, $"{propertyOpenApiSchema.Type}<{propertyOpenApiSchema.Items.Reference.Id}>"));
                         }
-                        else if (propertyOpenApiSchema.Items != null && propertyOpenApiSchema.Type == "array")
+                        else if (propertyOpenApiSchema.Items != null && propertyOpenApiSchema.Type == OpenApiConstants.ArrayType)
                         {
                             stringBuilder.Write(new ClassField(propertyOpenApiSchemaKey, $"{propertyOpenApiSchema.Type}<{propertyOpenApiSchema.Items.Type}>"));
                         }
@@ -132,7 +132,7 @@ set namespaceSeparator none
                                 ? openApiMediaTypeKey
                                 : string.Empty;
                             
-                            if (openApiMediaType.Schema.Type == "array")
+                            if (openApiMediaType.Schema.Type == OpenApiConstants.ArrayType)
                             {
                                 stringBuilder.Write(new ClassRelationship($"{operationType.ToString().ToUpper()} {openApiPathItemKey} {openApiResponseKey}",
                                                                           ClassRelationshipType.Reference, ClassRelationshipCardinality.Many,
@@ -165,18 +165,18 @@ set namespaceSeparator none
 
         foreach (var (openApiSchemaKey, openApiSchema) in openApiDocument.Components.Schemas)
         {
-            if (openApiSchema.Type == "array")
+            if (openApiSchema.Type == OpenApiConstants.ArrayType)
             {
                 stringBuilder.Write(new ClassRelationship(SanitiseOpenApiSchemaKey(openApiSchemaKey), ClassRelationshipType.Reference, ClassRelationshipCardinality.Many,
                                                           openApiSchema.Items.Reference.Id));
             }
             else
             {
-                if (!Constants.OpenApiBuiltInTypes.Contains(openApiSchema.Type))
+                if (!OpenApiConstants.BuiltInTypes.Contains(openApiSchema.Type))
                 {
                     foreach (var (propertyOpenApiSchemaKey, propertyOpenApiSchema) in openApiSchema.Properties)
                     {
-                        if (propertyOpenApiSchema.Type == "array")
+                        if (propertyOpenApiSchema.Type == OpenApiConstants.ArrayType)
                         {
                             if (propertyOpenApiSchema.Items.Reference != null)
                             {
@@ -186,7 +186,7 @@ set namespaceSeparator none
                         }
                         else
                         {
-                            if (propertyOpenApiSchema.Type != null && !Constants.OpenApiBuiltInTypes.Contains(propertyOpenApiSchema.Type))
+                            if (propertyOpenApiSchema.Type != null && !OpenApiConstants.BuiltInTypes.Contains(propertyOpenApiSchema.Type))
                             {
                                 stringBuilder.Write(new ClassRelationship(SanitiseOpenApiSchemaKey(openApiSchemaKey), ClassRelationshipType.Reference, ClassRelationshipCardinality.One,
                                                                           propertyOpenApiSchema.Reference.Id, propertyOpenApiSchemaKey));

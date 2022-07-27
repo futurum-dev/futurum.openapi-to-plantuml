@@ -10,9 +10,9 @@ public class OpenApiDiagram
     {
         string SanitiseOpenApiPathKey(string openApiPathKey) =>
             openApiPathKey
-                .Replace("/", "")
-                .Replace("{", "")
-                .Replace("}", "");
+                .Replace("/", string.Empty)
+                .Replace("{", string.Empty)
+                .Replace("}", string.Empty);
 
         string SanitiseOpenApiOperationDescription(OpenApiOperation openApiOperation) =>
             openApiOperation.Description
@@ -40,7 +40,9 @@ public class OpenApiDiagram
             stringBuilder.AppendLine($"Container_Boundary({SanitiseOpenApiPathKey(openApiPathItemKey)}, \"{openApiPathItemKey}\") {{");
             foreach (var (operationType, openApiOperation) in openApiPathItem.Operations)
             {
-                var component = new Component($"{SanitiseOpenApiPathKey(openApiPathItemKey)}_{operationType.ToString().ToLower()}",
+                var id = $"{SanitiseOpenApiPathKey(openApiPathItemKey)}_{operationType.ToString().ToLower()}";
+                
+                var component = new Component(id,
                                               openApiOperation.OperationId,
                                               $"REST ApiEndpoint - {operationType.ToString().ToUpper()}",
                                               string.Empty);
@@ -49,7 +51,7 @@ public class OpenApiDiagram
 
                 if (!string.IsNullOrEmpty(openApiOperation.Description))
                 {
-                    stringBuilder.Write(new Note($"{SanitiseOpenApiPathKey(openApiPathItemKey)}_{operationType.ToString().ToLower()}", SanitiseOpenApiOperationDescription(openApiOperation)));
+                    stringBuilder.Write(new Note(id, SanitiseOpenApiOperationDescription(openApiOperation)));
                 }
             }
 
