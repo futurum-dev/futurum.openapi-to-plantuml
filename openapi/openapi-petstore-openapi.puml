@@ -1,85 +1,128 @@
 @startuml OpenApi diagram
-!theme blueprint
+'!theme blueprint
 
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
 title Swagger Petstore v1.0.6
 footer OpenApi diagram - futurum.openapi-to-plantuml
-Container_Boundary(petpetIduploadImage, "/pet/{petId}/uploadImage") {
-Component(petpetIduploadImage_post, "uploadFile", "REST ApiEndpoint - POST", "")
+Container_Boundary(pet_petId_uploadImage, "/pet/{petId}/uploadImage") {
+Component(pet_petId_uploadImage_post, "uploads an image\r[uploadFile]", "REST ApiEndpoint - POST", "")
+
 }
+
 Container_Boundary(pet, "/pet") {
-Component(pet_post, "addPet", "REST ApiEndpoint - POST", "")
-Component(pet_put, "updatePet", "REST ApiEndpoint - PUT", "")
+Component(pet_post, "Add a new pet to the store\r[addPet]", "REST ApiEndpoint - POST", "")
+
+Component(pet_put, "Update an existing pet\r[updatePet]", "REST ApiEndpoint - PUT", "")
+
 }
-Container_Boundary(petfindByStatus, "/pet/findByStatus") {
-Component(petfindByStatus_get, "findPetsByStatus", "REST ApiEndpoint - GET", "")
-note bottom of petfindByStatus_get
+
+Container_Boundary(pet_findByStatus, "/pet/findByStatus") {
+Component(pet_findByStatus_get, "Finds Pets by status\r[findPetsByStatus]", "REST ApiEndpoint - GET", "")
+note bottom of pet_findByStatus_get
 Multiple status values can be provided with comma separated strings
 end note
+
+
 }
-Container_Boundary(petfindByTags, "/pet/findByTags") {
-Component(petfindByTags_get, "findPetsByTags", "REST ApiEndpoint - GET", "")
-note bottom of petfindByTags_get
+
+Container_Boundary(pet_findByTags, "/pet/findByTags") {
+Component(pet_findByTags_get, "Finds Pets by tags\r[findPetsByTags]", "REST ApiEndpoint - GET", "")
+note bottom of pet_findByTags_get
 Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.
 end note
+
+
 }
-Container_Boundary(petpetId, "/pet/{petId}") {
-Component(petpetId_get, "getPetById", "REST ApiEndpoint - GET", "")
-note bottom of petpetId_get
+
+Container_Boundary(pet_petId, "/pet/{petId}") {
+Component(pet_petId_get, "Find pet by ID\r[getPetById]", "REST ApiEndpoint - GET", "")
+note bottom of pet_petId_get
 Returns a single pet
 end note
-Component(petpetId_post, "updatePetWithForm", "REST ApiEndpoint - POST", "")
-Component(petpetId_delete, "deletePet", "REST ApiEndpoint - DELETE", "")
+
+
+Component(pet_petId_post, "Updates a pet in the store with form data\r[updatePetWithForm]", "REST ApiEndpoint - POST", "")
+
+Component(pet_petId_delete, "Deletes a pet\r[deletePet]", "REST ApiEndpoint - DELETE", "")
+
 }
-Container_Boundary(storeorder, "/store/order") {
-Component(storeorder_post, "placeOrder", "REST ApiEndpoint - POST", "")
+
+Container_Boundary(store_order, "/store/order") {
+Component(store_order_post, "Place an order for a pet\r[placeOrder]", "REST ApiEndpoint - POST", "")
+
 }
-Container_Boundary(storeorderorderId, "/store/order/{orderId}") {
-Component(storeorderorderId_get, "getOrderById", "REST ApiEndpoint - GET", "")
-note bottom of storeorderorderId_get
+
+Container_Boundary(store_order_orderId, "/store/order/{orderId}") {
+Component(store_order_orderId_get, "Find purchase order by ID\r[getOrderById]", "REST ApiEndpoint - GET", "")
+note bottom of store_order_orderId_get
 For valid response try integer IDs with value >= 1 and <= 10. Other values will generated exceptions
 end note
-Component(storeorderorderId_delete, "deleteOrder", "REST ApiEndpoint - DELETE", "")
-note bottom of storeorderorderId_delete
+
+
+Component(store_order_orderId_delete, "Delete purchase order by ID\r[deleteOrder]", "REST ApiEndpoint - DELETE", "")
+note bottom of store_order_orderId_delete
 For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors
 end note
+
+
 }
-Container_Boundary(storeinventory, "/store/inventory") {
-Component(storeinventory_get, "getInventory", "REST ApiEndpoint - GET", "")
-note bottom of storeinventory_get
+
+Container_Boundary(store_inventory, "/store/inventory") {
+Component(store_inventory_get, "Returns pet inventories by status\r[getInventory]", "REST ApiEndpoint - GET", "")
+note bottom of store_inventory_get
 Returns a map of status codes to quantities
 end note
+
+
 }
-Container_Boundary(usercreateWithArray, "/user/createWithArray") {
-Component(usercreateWithArray_post, "createUsersWithArrayInput", "REST ApiEndpoint - POST", "")
+
+Container_Boundary(user_createWithArray, "/user/createWithArray") {
+Component(user_createWithArray_post, "Creates list of users with given input array\r[createUsersWithArrayInput]", "REST ApiEndpoint - POST", "")
+
 }
-Container_Boundary(usercreateWithList, "/user/createWithList") {
-Component(usercreateWithList_post, "createUsersWithListInput", "REST ApiEndpoint - POST", "")
+
+Container_Boundary(user_createWithList, "/user/createWithList") {
+Component(user_createWithList_post, "Creates list of users with given input array\r[createUsersWithListInput]", "REST ApiEndpoint - POST", "")
+
 }
-Container_Boundary(userusername, "/user/{username}") {
-Component(userusername_get, "getUserByName", "REST ApiEndpoint - GET", "")
-Component(userusername_put, "updateUser", "REST ApiEndpoint - PUT", "")
-note bottom of userusername_put
+
+Container_Boundary(user_username, "/user/{username}") {
+Component(user_username_get, "Get user by user name\r[getUserByName]", "REST ApiEndpoint - GET", "")
+
+Component(user_username_put, "Updated user\r[updateUser]", "REST ApiEndpoint - PUT", "")
+note bottom of user_username_put
 This can only be done by the logged in user.
 end note
-Component(userusername_delete, "deleteUser", "REST ApiEndpoint - DELETE", "")
-note bottom of userusername_delete
+
+
+Component(user_username_delete, "Delete user\r[deleteUser]", "REST ApiEndpoint - DELETE", "")
+note bottom of user_username_delete
 This can only be done by the logged in user.
 end note
+
+
 }
-Container_Boundary(userlogin, "/user/login") {
-Component(userlogin_get, "loginUser", "REST ApiEndpoint - GET", "")
+
+Container_Boundary(user_login, "/user/login") {
+Component(user_login_get, "Logs user into the system\r[loginUser]", "REST ApiEndpoint - GET", "")
+
 }
-Container_Boundary(userlogout, "/user/logout") {
-Component(userlogout_get, "logoutUser", "REST ApiEndpoint - GET", "")
+
+Container_Boundary(user_logout, "/user/logout") {
+Component(user_logout_get, "Logs out current logged in user session\r[logoutUser]", "REST ApiEndpoint - GET", "")
+
 }
+
 Container_Boundary(user, "/user") {
-Component(user_post, "createUser", "REST ApiEndpoint - POST", "")
+Component(user_post, "Create user\r[createUser]", "REST ApiEndpoint - POST", "")
 note bottom of user_post
 This can only be done by the logged in user.
 end note
+
+
 }
+
 
 
 @enduml

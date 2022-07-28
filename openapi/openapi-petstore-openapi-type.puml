@@ -1,5 +1,5 @@
 @startuml OpenApi Type diagram
-!theme blueprint
+'!theme blueprint
 
 hide <<Path>> circle
 hide <<Response>> circle
@@ -12,116 +12,144 @@ title Swagger Petstore v1.0.6
 footer OpenApi Type diagram - futurum.openapi-to-plantuml
 class "POST /pet/{petId}/uploadImage" <<Path>> {
 {field} petId : integer
+{field} additionalMetadata : string
+{field} file : file
 }
+
 class "POST /pet/{petId}/uploadImage 200" <<Response>> { }
 class "POST /pet" <<Path>> {
 }
+
 class "POST /pet 405" <<Response>> { }
 class "PUT /pet" <<Path>> {
 }
+
 class "PUT /pet 400" <<Response>> { }
 class "PUT /pet 404" <<Response>> { }
 class "PUT /pet 405" <<Response>> { }
 class "GET /pet/findByStatus" <<Path>> {
 {field} status : array<string>
 }
+
 class "GET /pet/findByStatus 200" <<Response>> { }
 class "GET /pet/findByStatus 400" <<Response>> { }
 class "GET /pet/findByTags" <<Path>> {
 {field} tags : array<string>
 }
+
 class "GET /pet/findByTags 200" <<Response>> { }
 class "GET /pet/findByTags 400" <<Response>> { }
 class "GET /pet/{petId}" <<Path>> {
 {field} petId : integer
 }
+
 class "GET /pet/{petId} 200" <<Response>> { }
 class "GET /pet/{petId} 400" <<Response>> { }
 class "GET /pet/{petId} 404" <<Response>> { }
 class "POST /pet/{petId}" <<Path>> {
 {field} petId : integer
+{field} name : string
+{field} status : string
 }
+
 class "POST /pet/{petId} 405" <<Response>> { }
 class "DELETE /pet/{petId}" <<Path>> {
 {field} api_key : string {O}
 {field} petId : integer
 }
+
 class "DELETE /pet/{petId} 400" <<Response>> { }
 class "DELETE /pet/{petId} 404" <<Response>> { }
 class "POST /store/order" <<Path>> {
 }
+
 class "POST /store/order 200" <<Response>> { }
 class "POST /store/order 400" <<Response>> { }
 class "GET /store/order/{orderId}" <<Path>> {
 {field} orderId : integer
 }
+
 class "GET /store/order/{orderId} 200" <<Response>> { }
 class "GET /store/order/{orderId} 400" <<Response>> { }
 class "GET /store/order/{orderId} 404" <<Response>> { }
 class "DELETE /store/order/{orderId}" <<Path>> {
 {field} orderId : integer
 }
+
 class "DELETE /store/order/{orderId} 400" <<Response>> { }
 class "DELETE /store/order/{orderId} 404" <<Response>> { }
 class "GET /store/inventory" <<Path>> {
 }
+
 class "GET /store/inventory 200" <<Response>> { }
 class "POST /user/createWithArray" <<Path>> {
 }
+
 class "POST /user/createWithArray default" <<Response>> { }
 class "POST /user/createWithList" <<Path>> {
 }
+
 class "POST /user/createWithList default" <<Response>> { }
 class "GET /user/{username}" <<Path>> {
 {field} username : string
 }
+
 class "GET /user/{username} 200" <<Response>> { }
 class "GET /user/{username} 400" <<Response>> { }
 class "GET /user/{username} 404" <<Response>> { }
 class "PUT /user/{username}" <<Path>> {
 {field} username : string
 }
+
 class "PUT /user/{username} 400" <<Response>> { }
 class "PUT /user/{username} 404" <<Response>> { }
 class "DELETE /user/{username}" <<Path>> {
 {field} username : string
 }
+
 class "DELETE /user/{username} 400" <<Response>> { }
 class "DELETE /user/{username} 404" <<Response>> { }
 class "GET /user/login" <<Path>> {
 {field} username : string
 {field} password : string
 }
+
 class "GET /user/login 200" <<Response>> { }
 class "GET /user/login 400" <<Response>> { }
 class "GET /user/logout" <<Path>> {
 }
+
 class "GET /user/logout default" <<Response>> { }
 class "POST /user" <<Path>> {
 }
+
 class "POST /user default" <<Response>> { }
-class ApiResponse {
+class "ApiResponse" {
 {field} code : integer
 {field} type : string
 {field} message : string
 }
-class Category {
+
+class "Category" {
 {field} id : integer
 {field} name : string
 }
-class Pet {
+
+class "Pet" {
 {field} id : integer
-{field} category : Category
+{field} category : 
 {field} name : string
 {field} photoUrls : array<string>
 {field} tags : array<Tag>
 {field} status : string
 }
-class Tag {
+
+class "Tag" {
 {field} id : integer
 {field} name : string
 }
-class Order {
+
+class "Order" {
 {field} id : integer
 {field} petId : integer
 {field} quantity : integer
@@ -129,7 +157,8 @@ class Order {
 {field} status : string
 {field} complete : boolean
 }
-class User {
+
+class "User" {
 {field} id : integer
 {field} username : string
 {field} firstName : string
@@ -139,6 +168,7 @@ class User {
 {field} phone : string
 {field} userStatus : integer
 }
+
 "POST /pet/{petId}/uploadImage" ..> "1" "POST /pet/{petId}/uploadImage 200" : "200"
 "POST /pet/{petId}/uploadImage 200" ..> "1" "ApiResponse"
 "POST /pet" ..> "1" "POST /pet 405" : "405"
@@ -188,8 +218,15 @@ class User {
 "GET /user/login" ..> "1" "GET /user/login 400" : "400"
 "GET /user/logout" ..> "1" "GET /user/logout default" : "default"
 "POST /user" ..> "1" "POST /user default" : "default"
-"Pet" ..> "1" "Category" : "category"
-"Pet" ..> "1" "Tag" : "tags"
+"POST /pet" ..> "1" "Pet" : "application/json"
+"POST /pet" ..> "1" "Pet" : "application/xml"
+"PUT /pet" ..> "1" "Pet" : "application/json"
+"PUT /pet" ..> "1" "Pet" : "application/xml"
+"POST /store/order" ..> "1" "Order"
+"POST /user/createWithArray" ..> "1" "User"
+"POST /user/createWithList" ..> "1" "User"
+"PUT /user/{username}" ..> "1" "User"
+"POST /user" ..> "1" "User"
 
 
 @enduml

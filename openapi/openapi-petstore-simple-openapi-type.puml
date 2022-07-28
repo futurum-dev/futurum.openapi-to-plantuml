@@ -1,5 +1,5 @@
 @startuml OpenApi Type diagram
-!theme blueprint
+'!theme blueprint
 
 hide <<Path>> circle
 hide <<Response>> circle
@@ -13,29 +13,35 @@ footer OpenApi Type diagram - futurum.openapi-to-plantuml
 class "GET /pets" <<Path>> {
 {field} limit : integer {O}
 }
+
 class "GET /pets 200" <<Response>> { }
 class "GET /pets default" <<Response>> { }
 class "POST /pets" <<Path>> {
 }
+
 class "POST /pets 201" <<Response>> { }
 class "POST /pets default" <<Response>> { }
 class "GET /pets/{petId}" <<Path>> {
 {field} petId : string
 }
+
 class "GET /pets/{petId} 200" <<Response>> { }
 class "GET /pets/{petId} default" <<Response>> { }
-class Pet {
+class "Pet" {
 {field} id : integer
 {field} name : string
 {field} tag : string
 }
-class Pets {
+
+class "Pets" {
 {field} value : array
 }
-class Error {
+
+class "Error" {
 {field} code : integer
 {field} message : string
 }
+
 "GET /pets" ..> "1" "GET /pets 200" : "200"
 "GET /pets 200" ..> "1" "Pets"
 "GET /pets" ..> "1" "GET /pets default" : "default"

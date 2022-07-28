@@ -1,5 +1,3 @@
-using System.Text;
-
 namespace Futurum.OpenApiToPlantuml;
 
 public record ClassField(string Title, string Type, bool IsRequired = true) : IPlantUmlWriter

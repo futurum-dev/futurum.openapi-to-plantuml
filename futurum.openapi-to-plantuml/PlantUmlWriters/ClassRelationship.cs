@@ -1,5 +1,3 @@
-using System.Text;
-
 namespace Futurum.OpenApiToPlantuml;
 
 public record ClassRelationship(string LeftId, ClassRelationshipType Type, ClassRelationshipCardinality Cardinality, string RightId, string? Label = null) : IPlantUmlWriter
