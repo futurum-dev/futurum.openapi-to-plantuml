@@ -26,6 +26,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "openapi", "openapi", "{FCB3
 		openapi\openapi-petstore-simple-openapi-type.puml = openapi\openapi-petstore-simple-openapi-type.puml
 		openapi\openapi-petstore-simple-openapi.puml = openapi\openapi-petstore-simple-openapi.puml
 		openapi\openapi-petstore-simple.yaml = openapi\openapi-petstore-simple.yaml
+		openapi\ebay_commerce_taxonomy_v1_oas3-openapi-type.puml = openapi\ebay_commerce_taxonomy_v1_oas3-openapi-type.puml
+		openapi\ebay_commerce_taxonomy_v1_oas3-openapi.puml = openapi\ebay_commerce_taxonomy_v1_oas3-openapi.puml
+		openapi\ebay_buy_browse_v1_oas3-openapi-type.puml = openapi\ebay_buy_browse_v1_oas3-openapi-type.puml
+		openapi\ebay_buy_browse_v1_oas3-openapi.puml = openapi\ebay_buy_browse_v1_oas3-openapi.puml
+		openapi\ebay_buy_browse_v1_oas3.json = openapi\ebay_buy_browse_v1_oas3.json
+		openapi\ebay_commerce_taxonomy_v1_oas3.json = openapi\ebay_commerce_taxonomy_v1_oas3.json
 	EndProjectSection
 EndProject
 Global
