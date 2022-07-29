@@ -59,6 +59,31 @@ Use *--shownotes* to specify if PlantUml should show notes
 docker run --rm -it -v $(pwd)/openapi:/openapi futurum.openapi-to-plantuml-directory
 ```
 
+#### Diagram Configuration
+#### Theme
+Use *--theme* to specify the PlantUml theme
+```
+--theme "blueprint"
+```
+*NOTE - defaults to no theme*
+
+e.g.
+```
+docker run --rm -it -v $(pwd)/openapi:/openapi futurum.openapi-to-plantuml-directory --theme "blueprint"
+```
+
+#### Show notes
+Use *--shownotes* to specify if PlantUml should show notes
+```
+--shownotes "true"
+```
+*NOTE - defaults to no notes*
+
+e.g.
+```
+docker run --rm -it -v $(pwd)/openapi:/openapi futurum.openapi-to-plantuml-directory --shownotes "true"
+```
+
 ### Docker - Use with individual OpenApi spec files
 #### OpenApi diagram
 ```

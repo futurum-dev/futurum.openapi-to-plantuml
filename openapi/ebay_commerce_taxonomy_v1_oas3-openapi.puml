@@ -2,7 +2,6 @@
 
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
-!theme blueprint
 title Taxonomy API v1.0.0
 footer OpenApi diagram - futurum.openapi-to-plantuml
 Container_Boundary(category_tree_category_tree_id_fetch_item_aspects, "/category_tree/{category_tree_id}/fetch_item_aspects") {

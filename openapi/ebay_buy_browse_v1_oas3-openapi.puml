@@ -2,7 +2,6 @@
 
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
-!theme blueprint
 title Browse API v1.16.0
 footer OpenApi diagram - futurum.openapi-to-plantuml
 Container_Boundary(item_summary_search, "/item_summary/search") {

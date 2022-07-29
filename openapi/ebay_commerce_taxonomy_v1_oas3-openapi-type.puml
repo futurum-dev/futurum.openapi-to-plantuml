@@ -7,7 +7,6 @@ hide empty methods
 hide empty fields
 set namespaceSeparator none
 
-!theme blueprint
 title Taxonomy API v1.0.0
 footer OpenApi Type diagram - futurum.openapi-to-plantuml
 class "GET /category_tree/{category_tree_id}/fetch_item_aspects" <<Path>> {

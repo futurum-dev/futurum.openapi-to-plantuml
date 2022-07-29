@@ -7,7 +7,6 @@ hide empty methods
 hide empty fields
 set namespaceSeparator none
 
-!theme blueprint
 title Swagger Petstore v1.0.6
 footer OpenApi Type diagram - futurum.openapi-to-plantuml
 class "POST /pet/{petId}/uploadImage" <<Path>> {

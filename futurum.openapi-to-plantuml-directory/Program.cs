@@ -1,4 +1,6 @@
-﻿using Futurum.OpenApiToPlantuml;
+﻿using System.CommandLine;
+
+using Futurum.OpenApiToPlantuml;
 using Futurum.OpenApiToPlantumlDirectory;
 
 using Microsoft.OpenApi.Models;
@@ -6,11 +8,25 @@ using Microsoft.OpenApi.Readers;
 
 try
 {
-    await ProcessDirectoryAsync(new DirectoryInfo(FileConstants.Directory));
+    var rootCommand = new RootCommand("Futurum.OpenApiToPlantuml Directory");
 
-    return 0;
+    var themeOption = new Option<string>(name: "--theme", description: "PlantUml theme");
+    var showNotesOption = new Option<bool>(name: "--shownotes", description: "Show notes in PlantUml");
+    
+    rootCommand.AddOption(themeOption);
+    rootCommand.AddOption(showNotesOption);
+    rootCommand.SetHandler(async (theme, showNotes) =>
+    {
+        var configuration = DiagramConfiguration.Default;
+        configuration.Theme = theme;
+        configuration.ShowNotes = showNotes;
 
-    async Task ProcessFileAsync(FileInfo fileInfo)
+        await ProcessDirectoryAsync(new DirectoryInfo(FileConstants.Directory), configuration);
+    }, themeOption, showNotesOption);
+
+    return await rootCommand.InvokeAsync(args);
+
+    async Task ProcessFileAsync(FileInfo fileInfo, DiagramConfiguration configuration)
     {
         Console.WriteLine($"Processing file : '{fileInfo.FullName}'");
 
@@ -26,14 +42,14 @@ try
         };
         var openApiDocument = new OpenApiStreamReader(openApiReaderSettings).Read(stream, out var diagnostic);
 
-        await CreateOpenApiDiagram(openApiDocument, filePathWithoutFileExtension);
+        await CreateOpenApiDiagram(openApiDocument, filePathWithoutFileExtension, configuration);
 
-        await CreateOpenApiTypeDiagram(openApiDocument, filePathWithoutFileExtension);
+        await CreateOpenApiTypeDiagram(openApiDocument, filePathWithoutFileExtension, configuration);
 
         Console.WriteLine($"Processed file : '{fileInfo.FullName}'");
     }
 
-    async Task ProcessDirectoryAsync(DirectoryInfo directoryInfo)
+    async Task ProcessDirectoryAsync(DirectoryInfo directoryInfo, DiagramConfiguration configuration)
     {
         Console.WriteLine($"Processing directory : '{directoryInfo.FullName}'");
 
@@ -42,15 +58,15 @@ try
 
         foreach (var fileInfo in fileInfos)
         {
-            await ProcessFileAsync(fileInfo);
+            await ProcessFileAsync(fileInfo, configuration);
         }
 
         Console.WriteLine($"Processed directory : '{directoryInfo.FullName}'");
     }
 
-    async Task CreateOpenApiDiagram(OpenApiDocument openApiDocument, string filePathWithoutFileExtension)
+    async Task CreateOpenApiDiagram(OpenApiDocument openApiDocument, string filePathWithoutFileExtension, DiagramConfiguration configuration)
     {
-        var diagram = OpenApiDiagram.Create(openApiDocument, DiagramConfiguration.Default);
+        var diagram = OpenApiDiagram.Create(openApiDocument, configuration);
 
         var plantUmlFilePath = $"{filePathWithoutFileExtension}-openapi.puml";
 
@@ -62,9 +78,9 @@ try
         await File.WriteAllTextAsync(plantUmlFilePath, diagram);
     }
 
-    async Task CreateOpenApiTypeDiagram(OpenApiDocument openApiDocument, string filePathWithoutFileExtension)
+    async Task CreateOpenApiTypeDiagram(OpenApiDocument openApiDocument, string filePathWithoutFileExtension, DiagramConfiguration configuration)
     {
-        var diagram = OpenApiTypeDiagram.Create(openApiDocument, DiagramConfiguration.Default);
+        var diagram = OpenApiTypeDiagram.Create(openApiDocument, configuration);
 
         var plantUmlFilePath = $"{filePathWithoutFileExtension}-openapi-type.puml";
 

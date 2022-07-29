@@ -7,7 +7,6 @@ hide empty methods
 hide empty fields
 set namespaceSeparator none
 
-!theme blueprint
 title Browse API v1.16.0
 footer OpenApi Type diagram - futurum.openapi-to-plantuml
 class "GET /item_summary/search" <<Path>> {
