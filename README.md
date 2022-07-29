@@ -62,17 +62,43 @@ docker run --rm -it -v $(pwd)/openapi:/openapi futurum.openapi-to-plantuml-direc
 ### Docker - Use with individual OpenApi spec files
 #### OpenApi diagram
 ```
-cat ./openapi/openapi-petstore.json | docker run --rm -a stdin -a stdout -i futurum.openapi-to-plantuml-std-in-out-openapi |> ./openapi/openapi-petstore-openapi.puml
+cat ./openapi/openapi-petstore.json | docker run --rm -a stdin -a stdout -i futurum.openapi-to-plantuml-std-in-out openapi |> ./openapi/openapi-petstore-openapi.puml
 ```
 ```
-cat ./openapi/openapi-petstore-simple.yaml | docker run --rm -a stdin -a stdout -i futurum.openapi-to-plantuml-std-in-out-openapi |> ./openapi/openapi-petstore-simple-openapi.puml
+cat ./openapi/openapi-petstore-simple.yaml | docker run --rm -a stdin -a stdout -i futurum.openapi-to-plantuml-std-in-out openapi |> ./openapi/openapi-petstore-simple-openapi.puml
 ```
+
 #### OpenApi Type diagram
 ```
-cat ./openapi/openapi-petstore.json | docker run --rm -a stdin -a stdout -i futurum.openapi-to-plantuml-std-in-out-openapi-type |> ./openapi/openapi-petstore-openapi-type.puml
+cat ./openapi/openapi-petstore.json | docker run --rm -a stdin -a stdout -i futurum.openapi-to-plantuml-std-in-out openapi-type |> ./openapi/openapi-petstore-openapi-type.puml
 ```
 ```
-cat ./openapi/openapi-petstore-simple.yaml | docker run --rm -a stdin -a stdout -i futurum.openapi-to-plantuml-std-in-out-openapi-type |> ./openapi/openapi-petstore-simple-openapi-type.puml
+cat ./openapi/openapi-petstore-simple.yaml | docker run --rm -a stdin -a stdout -i futurum.openapi-to-plantuml-std-in-out openapi-type |> ./openapi/openapi-petstore-simple-openapi-type.puml
+```
+
+#### Diagram Configuration
+#### Theme
+Use *--theme* to specify the PlantUml theme
+```
+--theme "blueprint"
+```
+*NOTE - defaults to no theme*
+
+e.g.
+```
+cat ./openapi/openapi-petstore.json | docker run --rm -a stdin -a stdout -i futurum.openapi-to-plantuml-std-in-out openapi --theme "blueprint" |> ./openapi/openapi-petstore-openapi.puml
+```
+
+#### Show notes
+Use *--shownotes* to specify if PlantUml should show notes
+```
+--shownotes "true"
+```
+*NOTE - defaults to no notes*
+
+e.g.
+```
+cat ./openapi/openapi-petstore.json | docker run --rm -a stdin -a stdout -i futurum.openapi-to-plantuml-std-in-out openapi --shownotes "true" |> ./openapi/openapi-petstore-openapi.puml
 ```
 
 ## Docker
@@ -82,10 +108,7 @@ cat ./openapi/openapi-petstore-simple.yaml | docker run --rm -a stdin -a stdout 
 docker build -t futurum.openapi-to-plantuml-directory -f futurum.openapi-to-plantuml-directory/Dockerfile .
 ```
 ```
-docker build -t futurum.openapi-to-plantuml-std-in-out-openapi -f futurum.openapi-to-plantuml-std-in-out/Dockerfile-openapi .
-```
-```
-docker build -t futurum.openapi-to-plantuml-std-in-out-openapi-type -f futurum.openapi-to-plantuml-std-in-out/Dockerfile-openapi-type .
+docker build -t futurum.openapi-to-plantuml-std-in-out -f futurum.openapi-to-plantuml-std-in-out/Dockerfile .
 ```
 
 ### Remove images
@@ -93,8 +116,5 @@ docker build -t futurum.openapi-to-plantuml-std-in-out-openapi-type -f futurum.o
 docker rmi futurum.openapi-to-plantuml-directory
 ```
 ```
-docker rmi futurum.openapi-to-plantuml-std-in-out-openapi
-```
-```
-docker rmi futurum.openapi-to-plantuml-std-in-out-openapi-type
+docker rmi futurum.openapi-to-plantuml-std-in-out
 ```

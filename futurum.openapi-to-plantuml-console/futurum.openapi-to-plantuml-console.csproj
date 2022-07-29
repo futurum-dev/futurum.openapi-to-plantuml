@@ -14,12 +14,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="openapi-pet.yaml">
-        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      </None>
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\futurum.openapi-to-plantuml\futurum.openapi-to-plantuml.csproj" />
     </ItemGroup>
 

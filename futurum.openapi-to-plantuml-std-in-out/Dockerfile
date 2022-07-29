@@ -15,4 +15,4 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/runtime:6.0
 WORKDIR /app/futurum.openapi-to-plantuml-std-in-out
 COPY --from=build-env /app/futurum.openapi-to-plantuml-std-in-out/out .
-ENTRYPOINT ["dotnet", "Futurum.OpenApiToPlantumlStdInOut.dll", "openapi-type"]
+ENTRYPOINT ["dotnet", "Futurum.OpenApiToPlantumlStdInOut.dll"]

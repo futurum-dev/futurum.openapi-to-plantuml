@@ -1,16 +1,27 @@
-﻿using Futurum.OpenApiToPlantuml;
+﻿using System.CommandLine;
+
+using Futurum.OpenApiToPlantuml;
 
 using Microsoft.OpenApi.Readers;
 
 var standardOutWriter = Console.Out;
 
-const string openapiCommand = "openapi";
-const string openApiTypeCommand = "openapi-type";
-
 try
 {
-    if (args.Length > 0)
+    var rootCommand = new RootCommand("Futurum.OpenApiToPlantuml Standard In Standard Out");
+
+    var themeOption = new Option<string>(name: "--theme", description: "PlantUml theme");
+    var showNotesOption = new Option<bool>(name: "--shownotes", description: "Show notes in PlantUml");
+
+    var openApiDiagramCommand = new Command("openapi", "Create OpenApi diagram");
+    openApiDiagramCommand.AddOption(themeOption);
+    openApiDiagramCommand.AddOption(showNotesOption);
+    openApiDiagramCommand.SetHandler((theme, showNotes) =>
     {
+        var configuration = DiagramConfiguration.Default;
+        configuration.Theme = theme;
+        configuration.ShowNotes = showNotes;
+
         var standardInputStream = Console.OpenStandardInput();
 
         var openApiReaderSettings = new OpenApiReaderSettings
@@ -19,32 +30,40 @@ try
         };
         var openApiDocument = new OpenApiStreamReader(openApiReaderSettings).Read(standardInputStream, out var diagnostic);
 
-        switch (args[0])
-        {
-            case openapiCommand:
-            {
-                var diagram = OpenApiDiagram.Create(openApiDocument, DiagramConfiguration.Default);
+        var diagram = OpenApiDiagram.Create(openApiDocument, configuration);
 
-                standardOutWriter.Write(diagram);
+        standardOutWriter.Write(diagram);
+    }, themeOption, showNotesOption);
+    rootCommand.AddCommand(openApiDiagramCommand);
 
-                break;
-            }
-            case openApiTypeCommand:
-            {
-                var diagram = OpenApiTypeDiagram.Create(openApiDocument, DiagramConfiguration.Default);
-
-                standardOutWriter.Write(diagram);
-
-                break;
-            }
-        }
-    }
-    else
+    var openApiTypeDiagramCommand = new Command("openapi-type", "Create OpenApi Type diagram");
+    openApiTypeDiagramCommand.AddOption(themeOption);
+    openApiTypeDiagramCommand.AddOption(showNotesOption);
+    openApiTypeDiagramCommand.SetHandler((theme, showNotes) =>
     {
-        standardOutWriter.Write($"Please specify type of diagram - '{openapiCommand}', '{openApiTypeCommand}'");
-    }
+        var configuration = DiagramConfiguration.Default;
+        configuration.Theme = theme;
+        configuration.ShowNotes = showNotes;
+
+        var standardInputStream = Console.OpenStandardInput();
+
+        var openApiReaderSettings = new OpenApiReaderSettings
+        {
+            ReferenceResolution = ReferenceResolutionSetting.DoNotResolveReferences
+        };
+        var openApiDocument = new OpenApiStreamReader(openApiReaderSettings).Read(standardInputStream, out var diagnostic);
+
+        var diagram = OpenApiTypeDiagram.Create(openApiDocument, configuration);
+
+        standardOutWriter.Write(diagram);
+    }, themeOption, showNotesOption);
+    rootCommand.AddCommand(openApiTypeDiagramCommand);
+
+    return await rootCommand.InvokeAsync(args);
 }
 catch (Exception exception)
 {
     standardOutWriter.Write(exception.Message);
+
+    return 1;
 }

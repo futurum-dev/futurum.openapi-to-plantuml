@@ -2,7 +2,6 @@
 
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
-!theme blueprint
 title Swagger Petstore v1.0.6
 footer OpenApi diagram - futurum.openapi-to-plantuml
 Container_Boundary(pet_petId_uploadImage, "/pet/{petId}/uploadImage") {
