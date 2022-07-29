@@ -50,7 +50,7 @@ try
 
     async Task CreateOpenApiDiagram(OpenApiDocument openApiDocument, string filePathWithoutFileExtension)
     {
-        var diagram = OpenApiDiagram.Create(openApiDocument);
+        var diagram = OpenApiDiagram.Create(openApiDocument, DiagramConfiguration.Default);
 
         var plantUmlFilePath = $"{filePathWithoutFileExtension}-openapi.puml";
 
@@ -64,7 +64,7 @@ try
 
     async Task CreateOpenApiTypeDiagram(OpenApiDocument openApiDocument, string filePathWithoutFileExtension)
     {
-        var diagram = OpenApiTypeDiagram.Create(openApiDocument);
+        var diagram = OpenApiTypeDiagram.Create(openApiDocument, DiagramConfiguration.Default);
 
         var plantUmlFilePath = $"{filePathWithoutFileExtension}-openapi-type.puml";
 

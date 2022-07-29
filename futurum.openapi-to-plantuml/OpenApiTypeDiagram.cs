@@ -7,7 +7,6 @@ namespace Futurum.OpenApiToPlantuml;
 public class OpenApiTypeDiagram
 {
     private const string BoilerplateStart = @"@startuml OpenApi Type diagram
-'!theme blueprint
 
 hide <<Path>> circle
 hide <<Response>> circle
@@ -22,10 +21,15 @@ set namespaceSeparator none
 
 @enduml";
         
-    public static string Create(OpenApiDocument openApiDocument)
+    public static string Create(OpenApiDocument openApiDocument, DiagramConfiguration configuration)
     {
         var stringBuilder = new StringBuilder();
         stringBuilder.Append(BoilerplateStart);
+
+        if (!string.IsNullOrEmpty(configuration.Theme))
+        {
+            stringBuilder.Write(new DiagramTheme(configuration.Theme));
+        }
 
         stringBuilder.Write(new DiagramTitle(openApiDocument));
         stringBuilder.Write(new DiagramFooter("OpenApi Type"));
@@ -118,7 +122,7 @@ set namespaceSeparator none
 
             stringBuilder.Write(classType);
 
-            if (!string.IsNullOrEmpty(openApiSchema.Description))
+            if (configuration.ShowNotes && !string.IsNullOrEmpty(openApiSchema.Description))
             {
                 stringBuilder.Write(new Note(SanitiseOpenApiSchemaKey(openApiSchemaKey), SanitiseOpenApiOperationDescription(openApiSchema.Description)));
             }

@@ -27,16 +27,31 @@ Creates [PlantUml](https://plantuml.com) diagrams from [OpenApi](https://www.ope
 Use *futurum.openapi-to-plantuml-console* project
 
 #### File
-Use *--file* followed by file path
+Use *file* followed by file path
 ```
---file "../../../../openapi/openapi-petstore.yaml"
+file --path "../../../../openapi/openapi-petstore.json"
 ```
 
 #### Directory
-Use *--directory* followed by directory path
+Use *directory* followed by directory path
 ```
---directory "../../../../openapi"
+directory --path "../../../../openapi"
 ```
+
+#### Diagram Configuration
+#### Theme
+Use *--theme* to specify the PlantUml theme
+```
+--theme "blueprint"
+```
+*NOTE - defaults to no theme*
+
+#### Show notes
+Use *--shownotes* to specify if PlantUml should show notes
+```
+--shownotes "true"
+```
+*NOTE - defaults to no notes*
 
 ### Docker - Use with multiple OpenApi spec files
 

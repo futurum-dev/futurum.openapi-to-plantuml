@@ -1,8 +1,8 @@
 @startuml OpenApi diagram
-'!theme blueprint
 
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
+!theme blueprint
 title Swagger Petstore v1.0.0
 footer OpenApi diagram - futurum.openapi-to-plantuml
 Container_Boundary(pets, "/pets") {

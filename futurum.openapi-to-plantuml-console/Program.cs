@@ -8,39 +8,55 @@ using Microsoft.OpenApi.Readers;
 
 try
 {
-    var fileOption = new Option<FileInfo?>(name: "--file", description: "The OpenApi file to use.");
+    var rootCommand = new RootCommand("Futurum.OpenApiToPlantuml console");
 
-    var directoryOption = new Option<DirectoryInfo?>(name: "--directory", description: "The directory containing the OpenApi files to use.");
+    var themeOption = new Option<string>(name: "--theme", description: "PlantUml theme");
+    var showNotesOption = new Option<bool>(name: "--shownotes", description: "Show notes in PlantUml");
 
-    var rootCommand = new RootCommand("Futurum.OpenApiToPlantuml");
-    rootCommand.AddOption(fileOption);
-    rootCommand.AddOption(directoryOption);
+    var fileCommand = new Command("file", "Process a OpenApi file");
+    var fileOption = new Option<FileInfo?>(name: "--path", description: "File path");
+    fileCommand.AddOption(fileOption);
+    fileCommand.AddOption(themeOption);
+    fileCommand.AddOption(showNotesOption);
+    fileCommand.SetHandler(async (fileInfo, theme, showNotes) =>
+    {
+        if (fileInfo == null)
+        {
+            return;
+        }
 
-    rootCommand.SetHandler(async fileInfo =>
-                           {
-                               if (fileInfo == null)
-                               {
-                                   return;
-                               }
+        var configuration = DiagramConfiguration.Default;
+        configuration.Theme = theme;
+        configuration.ShowNotes = showNotes;
 
-                               await ProcessFileAsync(fileInfo);
-                           },
-                           fileOption);
+        await ProcessFileAsync(fileInfo, configuration);
+    }, fileOption, themeOption, showNotesOption);
+    rootCommand.AddCommand(fileCommand);
 
-    rootCommand.SetHandler(async directoryInfo =>
-                           {
-                               if (directoryInfo == null)
-                               {
-                                   return;
-                               }
+    var directoryCommand = new Command("directory", "Process a directory containing OpenApi files");
+    var directoryOption = new Option<DirectoryInfo?>(name: "--path", description: "Directory path");
+    directoryCommand.AddOption(directoryOption);
+    directoryCommand.AddOption(themeOption);
+    directoryCommand.AddOption(showNotesOption);
+    directoryCommand.SetHandler(async (directoryInfo, theme, showNotes) =>
+                                {
+                                    if (directoryInfo == null)
+                                    {
+                                        return;
+                                    }
 
-                               await ProcessDirectoryAsync(directoryInfo);
-                           },
-                           directoryOption);
+                                    var configuration = DiagramConfiguration.Default;
+                                    configuration.Theme = theme;
+                                    configuration.ShowNotes = showNotes;
+
+                                    await ProcessDirectoryAsync(directoryInfo, configuration);
+                                },
+                                directoryOption, themeOption, showNotesOption);
+    rootCommand.AddCommand(directoryCommand);
 
     return await rootCommand.InvokeAsync(args);
 
-    async Task ProcessFileAsync(FileInfo fileInfo)
+    async Task ProcessFileAsync(FileInfo fileInfo, DiagramConfiguration configuration)
     {
         Console.WriteLine($"Processing file : '{fileInfo.FullName}'");
 
@@ -56,14 +72,14 @@ try
         };
         var openApiDocument = new OpenApiStreamReader(openApiReaderSettings).Read(stream, out var diagnostic);
 
-        await CreateOpenApiDiagram(openApiDocument, filePathWithoutFileExtension);
+        await CreateOpenApiDiagram(openApiDocument, filePathWithoutFileExtension, configuration);
 
-        await CreateOpenApiTypeDiagram(openApiDocument, filePathWithoutFileExtension);
+        await CreateOpenApiTypeDiagram(openApiDocument, filePathWithoutFileExtension, configuration);
 
         Console.WriteLine($"Processed file : '{fileInfo.FullName}'");
     }
 
-    async Task ProcessDirectoryAsync(DirectoryInfo directoryInfo)
+    async Task ProcessDirectoryAsync(DirectoryInfo directoryInfo, DiagramConfiguration configuration)
     {
         Console.WriteLine($"Processing directory : '{directoryInfo.FullName}'");
 
@@ -72,15 +88,15 @@ try
 
         foreach (var fileInfo in fileInfos)
         {
-            await ProcessFileAsync(fileInfo);
+            await ProcessFileAsync(fileInfo, configuration);
         }
 
         Console.WriteLine($"Processed directory : '{directoryInfo.FullName}'");
     }
 
-    async Task CreateOpenApiDiagram(OpenApiDocument openApiDocument, string filePathWithoutFileExtension)
+    async Task CreateOpenApiDiagram(OpenApiDocument openApiDocument, string filePathWithoutFileExtension, DiagramConfiguration configuration)
     {
-        var diagram = OpenApiDiagram.Create(openApiDocument);
+        var diagram = OpenApiDiagram.Create(openApiDocument, configuration);
 
         var plantUmlFilePath = $"{filePathWithoutFileExtension}-openapi.puml";
 
@@ -92,9 +108,9 @@ try
         await File.WriteAllTextAsync(plantUmlFilePath, diagram);
     }
 
-    async Task CreateOpenApiTypeDiagram(OpenApiDocument openApiDocument, string filePathWithoutFileExtension)
+    async Task CreateOpenApiTypeDiagram(OpenApiDocument openApiDocument, string filePathWithoutFileExtension, DiagramConfiguration configuration)
     {
-        var diagram = OpenApiTypeDiagram.Create(openApiDocument);
+        var diagram = OpenApiTypeDiagram.Create(openApiDocument, configuration);
 
         var plantUmlFilePath = $"{filePathWithoutFileExtension}-openapi-type.puml";
 

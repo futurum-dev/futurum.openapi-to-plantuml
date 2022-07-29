@@ -1,5 +1,4 @@
 @startuml OpenApi Type diagram
-'!theme blueprint
 
 hide <<Path>> circle
 hide <<Response>> circle
@@ -8,6 +7,7 @@ hide empty methods
 hide empty fields
 set namespaceSeparator none
 
+!theme blueprint
 title Taxonomy API v1.0.0
 footer OpenApi Type diagram - futurum.openapi-to-plantuml
 class "GET /category_tree/{category_tree_id}/fetch_item_aspects" <<Path>> {
@@ -93,20 +93,12 @@ class "AncestorReference" {
 {field} categoryTreeNodeLevel : integer
 }
 
-note bottom of AncestorReference
-This type contains information about one of the ancestors of a suggested category. An ordered list of these references describes the path from the suggested category to the root of the category tree it belongs to.
-end note
-
 class "Aspect" {
 {field} aspectConstraint : 
 {field} aspectValues : array<AspectValue>
 {field} localizedAspectName : string
 {field} relevanceIndicator : 
 }
-
-note bottom of Aspect
-This type contains information about an item attribute (for example, color) that is appropriate or necessary for accurately describing items in a particular leaf category. Sellers are required or encouraged to provide one or more values of this aspect when offering an item in that category on eBay.
-end note
 
 class "AspectConstraint" {
 {field} aspectApplicableTo : array<string>
@@ -121,44 +113,24 @@ class "AspectConstraint" {
 {field} itemToAspectCardinality : string
 }
 
-note bottom of AspectConstraint
-This type contains information about the formatting, occurrence, and support of an aspect.
-end note
-
 class "AspectMetadata" {
 {field} aspects : array<Aspect>
 }
-
-note bottom of AspectMetadata
-This type is the container type for the response payload of the <b>getItemAspectsForCategory</b> call.
-end note
 
 class "AspectValue" {
 {field} localizedValue : string
 {field} valueConstraints : array<ValueConstraint>
 }
 
-note bottom of AspectValue
-This type contains a valid value for an aspect, along with any constraints on the occurrence of that value.
-end note
-
 class "BaseCategoryTree" {
 {field} categoryTreeId : string
 {field} categoryTreeVersion : string
 }
 
-note bottom of BaseCategoryTree
-This type contains identifying information for the category tree associated with a particular eBay marketplace.
-end note
-
 class "Category" {
 {field} categoryId : string
 {field} categoryName : string
 }
-
-note bottom of Category
-This type contains information about a particular eBay category.
-end note
 
 class "CategoryAspect" {
 {field} category : 
@@ -171,10 +143,6 @@ class "CategorySubtree" {
 {field} categoryTreeVersion : string
 }
 
-note bottom of CategorySubtree
-This type contains information about a particular subtree of a specified eBay category tree. A category subtree consists of a non-root node of the category tree, and all of its descendants down to the leaf nodes.
-end note
-
 class "CategorySuggestion" {
 {field} category : 
 {field} categoryTreeNodeAncestors : array<AncestorReference>
@@ -182,19 +150,11 @@ class "CategorySuggestion" {
 {field} relevancy : string
 }
 
-note bottom of CategorySuggestion
-This type contains information about a suggested category tree leaf node that corresponds to keywords provided in the request. It includes details about each of the category's ancestor nodes extending up to the root of the category tree.
-end note
-
 class "CategorySuggestionResponse" {
 {field} categorySuggestions : array<CategorySuggestion>
 {field} categoryTreeId : string
 {field} categoryTreeVersion : string
 }
-
-note bottom of CategorySuggestionResponse
-This type contains an array of suggested category tree nodes that are considered by eBay to most closely correspond to the keywords provided in a query string, from a specified category tree.
-end note
 
 class "CategoryTree" {
 {field} applicableMarketplaceIds : array<string>
@@ -202,10 +162,6 @@ class "CategoryTree" {
 {field} categoryTreeVersion : string
 {field} rootCategoryNode : 
 }
-
-note bottom of CategoryTree
-This type contains information about all nodes of a specified eBay category tree.
-end note
 
 class "CategoryTreeNode" {
 {field} category : 
@@ -215,26 +171,14 @@ class "CategoryTreeNode" {
 {field} parentCategoryTreeNodeHref : string
 }
 
-note bottom of CategoryTreeNode
-This type contains information about all nodes of a category tree or subtree hierarchy, including and below the specified <b>Category</b>, down to the leaf nodes. It is a recursive structure.
-end note
-
 class "CompatibilityProperty" {
 {field} name : string
 {field} localizedName : string
 }
 
-note bottom of CompatibilityProperty
-This type is used by the <strong>compatibilityProperties</strong> array that is returned in the <strong>getCompatibilityProperties</strong> call. The <strong>compatibilityProperties</strong> container consists of an array of all compatible vehicle properties applicable to the specified eBay marketplace and eBay category ID.
-end note
-
 class "CompatibilityPropertyValue" {
 {field} value : string
 }
-
-note bottom of CompatibilityPropertyValue
-This type is used by the <strong>compatibilityPropertyValues</strong> array that is returned in the <strong>getCompatibilityPropertyValues</strong> response. The <strong>compatibilityPropertyValues</strong> array contains all compatible vehicle property values that match the specified eBay marketplace, specified eBay category, and filters in the request. If the <strong>compatibility_property</strong> parameter value in the request is 'Trim', each value returned in each <strong>value</strong> field will be a different vehicle trim, applicable to any filters that are set in the <string>filter</string> query parameter of the request, and also based on the eBay marketplace and category specified in the call request.
-end note
 
 class "Error" {
 {field} category : string
@@ -247,10 +191,6 @@ class "Error" {
 {field} parameters : array<ErrorParameter>
 {field} subdomain : string
 }
-
-note bottom of Error
-This type defines the fields that can be returned in an error.
-end note
 
 class "ErrorParameter" {
 {field} name : string
@@ -267,34 +207,18 @@ class "GetCompatibilityMetadataResponse" {
 {field} compatibilityProperties : array<CompatibilityProperty>
 }
 
-note bottom of GetCompatibilityMetadataResponse
-This type is used by the base response of the <strong>getCompatibilityProperties</strong> method.
-end note
-
 class "GetCompatibilityPropertyValuesResponse" {
 {field} compatibilityPropertyValues : array<CompatibilityPropertyValue>
 }
-
-note bottom of GetCompatibilityPropertyValuesResponse
-The base response type of the <strong>getCompatibilityPropertyValues</strong> method.
-end note
 
 class "RelevanceIndicator" {
 {field} searchCount : integer
 }
 
-note bottom of RelevanceIndicator
-The relevance of this aspect. This field is returned if eBay has data on how many searches have been performed for listings in the category using this item aspect.<br /><br /><span class="tablenote"> <strong>Note:</strong> This container is restricted to applications that have been granted permission to access this feature. You must submit an <a href="https://developer.ebay.com/my/support/tickets?tab=app-check">App Check ticket</a> to request this access. In the App Check form, add a note to the <b>Application Title/Summary</b> and/or <b>Application Details</b> fields that you want access to 'Buyer Demand Data' in the Taxonomy API.</span>
-end note
-
 class "ValueConstraint" {
 {field} applicableForLocalizedAspectName : string
 {field} applicableForLocalizedAspectValues : array<string>
 }
-
-note bottom of ValueConstraint
-This type contains a list of the dependencies that identify when a particular value is available for a given aspect of a given category. Each dependency specifies the values of another aspect of the same category (the <i>control</i> aspect), for which the given value of the given aspect can also be selected by the seller. This container consists of constraint information for the corresponding product aspect value.
-end note
 
 "GET /category_tree/{category_tree_id}/fetch_item_aspects" ..> "1" "GET /category_tree/{category_tree_id}/fetch_item_aspects 200" : "200"
 "GET /category_tree/{category_tree_id}/fetch_item_aspects 200" ..> "1" "GetCategoriesAspectResponse"

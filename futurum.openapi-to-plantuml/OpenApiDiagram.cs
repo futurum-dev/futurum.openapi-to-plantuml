@@ -7,7 +7,6 @@ namespace Futurum.OpenApiToPlantuml;
 public class OpenApiDiagram
 {
     private const string BoilerplateStart = @"@startuml OpenApi diagram
-'!theme blueprint
 
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
@@ -17,10 +16,15 @@ public class OpenApiDiagram
 
 @enduml";
     
-    public static string Create(OpenApiDocument openApiDocument)
+    public static string Create(OpenApiDocument openApiDocument, DiagramConfiguration configuration)
     {
         var stringBuilder = new StringBuilder();
         stringBuilder.Append(BoilerplateStart);
+
+        if (!string.IsNullOrEmpty(configuration.Theme))
+        {
+            stringBuilder.Write(new DiagramTheme(configuration.Theme));
+        }
 
         stringBuilder.Write(new DiagramTitle(openApiDocument));
         stringBuilder.Write(new DiagramFooter("OpenApi"));
@@ -43,7 +47,7 @@ public class OpenApiDiagram
 
                 var component = new Component(componentId, title, protocol);
 
-                if (!string.IsNullOrEmpty(openApiOperation.Description))
+                if (configuration.ShowNotes && !string.IsNullOrEmpty(openApiOperation.Description))
                 {
                     component.AddNote(new Note(componentId, SanitiseNote(openApiOperation)));
                 }

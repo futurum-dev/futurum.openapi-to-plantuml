@@ -1,8 +1,8 @@
 @startuml OpenApi diagram
-'!theme blueprint
 
 !include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
 
+!theme blueprint
 title Swagger Petstore v1.0.6
 footer OpenApi diagram - futurum.openapi-to-plantuml
 Container_Boundary(pet_petId_uploadImage, "/pet/{petId}/uploadImage") {
@@ -19,28 +19,16 @@ Component(pet_put, "Update an existing pet\r[updatePet]", "REST ApiEndpoint - PU
 
 Container_Boundary(pet_findByStatus, "/pet/findByStatus") {
 Component(pet_findByStatus_get, "Finds Pets by status\r[findPetsByStatus]", "REST ApiEndpoint - GET", "")
-note bottom of pet_findByStatus_get
-Multiple status values can be provided with comma separated strings
-end note
-
 
 }
 
 Container_Boundary(pet_findByTags, "/pet/findByTags") {
 Component(pet_findByTags_get, "Finds Pets by tags\r[findPetsByTags]", "REST ApiEndpoint - GET", "")
-note bottom of pet_findByTags_get
-Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.
-end note
-
 
 }
 
 Container_Boundary(pet_petId, "/pet/{petId}") {
 Component(pet_petId_get, "Find pet by ID\r[getPetById]", "REST ApiEndpoint - GET", "")
-note bottom of pet_petId_get
-Returns a single pet
-end note
-
 
 Component(pet_petId_post, "Updates a pet in the store with form data\r[updatePetWithForm]", "REST ApiEndpoint - POST", "")
 
@@ -55,25 +43,13 @@ Component(store_order_post, "Place an order for a pet\r[placeOrder]", "REST ApiE
 
 Container_Boundary(store_order_orderId, "/store/order/{orderId}") {
 Component(store_order_orderId_get, "Find purchase order by ID\r[getOrderById]", "REST ApiEndpoint - GET", "")
-note bottom of store_order_orderId_get
-For valid response try integer IDs with value >= 1 and <= 10. Other values will generated exceptions
-end note
-
 
 Component(store_order_orderId_delete, "Delete purchase order by ID\r[deleteOrder]", "REST ApiEndpoint - DELETE", "")
-note bottom of store_order_orderId_delete
-For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors
-end note
-
 
 }
 
 Container_Boundary(store_inventory, "/store/inventory") {
 Component(store_inventory_get, "Returns pet inventories by status\r[getInventory]", "REST ApiEndpoint - GET", "")
-note bottom of store_inventory_get
-Returns a map of status codes to quantities
-end note
-
 
 }
 
@@ -91,16 +67,8 @@ Container_Boundary(user_username, "/user/{username}") {
 Component(user_username_get, "Get user by user name\r[getUserByName]", "REST ApiEndpoint - GET", "")
 
 Component(user_username_put, "Updated user\r[updateUser]", "REST ApiEndpoint - PUT", "")
-note bottom of user_username_put
-This can only be done by the logged in user.
-end note
-
 
 Component(user_username_delete, "Delete user\r[deleteUser]", "REST ApiEndpoint - DELETE", "")
-note bottom of user_username_delete
-This can only be done by the logged in user.
-end note
-
 
 }
 
@@ -116,10 +84,6 @@ Component(user_logout_get, "Logs out current logged in user session\r[logoutUser
 
 Container_Boundary(user, "/user") {
 Component(user_post, "Create user\r[createUser]", "REST ApiEndpoint - POST", "")
-note bottom of user_post
-This can only be done by the logged in user.
-end note
-
 
 }
 

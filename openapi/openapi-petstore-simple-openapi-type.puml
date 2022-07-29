@@ -1,5 +1,4 @@
 @startuml OpenApi Type diagram
-'!theme blueprint
 
 hide <<Path>> circle
 hide <<Response>> circle
@@ -8,6 +7,7 @@ hide empty methods
 hide empty fields
 set namespaceSeparator none
 
+!theme blueprint
 title Swagger Petstore v1.0.0
 footer OpenApi Type diagram - futurum.openapi-to-plantuml
 class "GET /pets" <<Path>> {

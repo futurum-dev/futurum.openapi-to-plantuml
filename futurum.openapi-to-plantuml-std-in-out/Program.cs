@@ -23,7 +23,7 @@ try
         {
             case openapiCommand:
             {
-                var diagram = OpenApiDiagram.Create(openApiDocument);
+                var diagram = OpenApiDiagram.Create(openApiDocument, DiagramConfiguration.Default);
 
                 standardOutWriter.Write(diagram);
 
@@ -31,7 +31,7 @@ try
             }
             case openApiTypeCommand:
             {
-                var diagram = OpenApiTypeDiagram.Create(openApiDocument);
+                var diagram = OpenApiTypeDiagram.Create(openApiDocument, DiagramConfiguration.Default);
 
                 standardOutWriter.Write(diagram);
 
