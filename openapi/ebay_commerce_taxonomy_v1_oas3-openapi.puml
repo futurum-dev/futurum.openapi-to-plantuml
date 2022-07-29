@@ -8,7 +8,9 @@ footer OpenApi diagram - futurum.openapi-to-plantuml
 Container_Boundary(category_tree_category_tree_id_fetch_item_aspects, "/category_tree/{category_tree_id}/fetch_item_aspects") {
 Component(category_tree_category_tree_id_fetch_item_aspects_get, "Get Aspects for All Leaf Categories in a Marketplace\r[fetchItemAspects]", "REST ApiEndpoint - GET", "")
 note bottom of category_tree_category_tree_id_fetch_item_aspects_get
-This call returns a complete list of aspects for all of the leaf categories that belong to an eBay marketplace. The eBay marketplace is specified through the <b>category_tree_id</b> URI parameter.<br /><br /><span class="tablenote"> <strong>Note:</strong> A successful call returns a payload as a gzipped JSON file sent as a binary file using the content-type:application/octet-stream in the response. This file may be large (over 100 MB, compressed). Extract the JSON file from the compressed file with a utility that handles .gz or .gzip. The open source <a href="https://github.com/eBay/taxonomy-sdk" target="_blank">Taxonomy SDK</a> can be used to compare the aspect metadata that is returned in this response. The <b>Taxonomy SDK</b> uses this method to surface changes (new, modified, and removed entities) between an updated version of a bulk downloaded file relative to a previous version.</span>
+This call returns a complete list of aspects for all of the leaf categories that belong to an eBay marketplace. The eBay marketplace is specified through the <b>category_tree_id</b> URI parameter.
+
+<span class="tablenote"> **Note:** A successful call returns a payload as a gzipped JSON file sent as a binary file using the content-type:application/octet-stream in the response. This file may be large (over 100 MB, compressed). Extract the JSON file from the compressed file with a utility that handles .gz or .gzip. The open source <a href="https://github.com/eBay/taxonomy-sdk" target="_blank">Taxonomy SDK</a> can be used to compare the aspect metadata that is returned in this response. The <b>Taxonomy SDK</b> uses this method to surface changes (new, modified, and removed entities) between an updated version of a bulk downloaded file relative to a previous version.</span>
 end note
 
 
@@ -26,7 +28,13 @@ end note
 Container_Boundary(category_tree_category_tree_id, "/category_tree/{category_tree_id}") {
 Component(category_tree_category_tree_id_get, "Get a Category Tree\r[getCategoryTree]", "REST ApiEndpoint - GET", "")
 note bottom of category_tree_category_tree_id_get
-This call retrieves the complete category tree that is identified by the <b>category_tree_id</b> parameter. The value of <b>category_tree_id</b> was returned by the <b>getDefaultCategoryTreeId</b> call in the <b>categoryTreeId</b> field. The response contains details of all nodes of the specified eBay category tree, as well as the eBay marketplaces that use this category tree.      <br /><br />            <span class="tablenote"> <strong>Note:</strong> This call can return a very large payload, so you are strongly advised to submit the request with the following HTTP header:       <br /><br />     <code>&nbsp;&nbsp;Accept-Encoding: application/gzip</code>       <br /><br />             With this header (in addition to the required headers described under <a href="/api-docs/static/rest-request-components.html#HTTP">HTTP Request Headers</a>), the call returns the response with <b>gzip</b> compression.</span>
+This call retrieves the complete category tree that is identified by the <b>category_tree_id</b> parameter. The value of <b>category_tree_id</b> was returned by the <b>getDefaultCategoryTreeId</b> call in the <b>categoryTreeId</b> field. The response contains details of all nodes of the specified eBay category tree, as well as the eBay marketplaces that use this category tree.      
+
+            <span class="tablenote"> **Note:** This call can return a very large payload, so you are strongly advised to submit the request with the following HTTP header:       
+
+     <code>&nbsp;&nbsp;Accept-Encoding: application/gzip</code>       
+
+             With this header (in addition to the required headers described under <a href="/api-docs/static/rest-request-components.html#HTTP">HTTP Request Headers</a>), the call returns the response with <b>gzip</b> compression.</span>
 end note
 
 
@@ -35,7 +43,13 @@ end note
 Container_Boundary(category_tree_category_tree_id_get_category_subtree, "/category_tree/{category_tree_id}/get_category_subtree") {
 Component(category_tree_category_tree_id_get_category_subtree_get, "Get a Category Subtree\r[getCategorySubtree]", "REST ApiEndpoint - GET", "")
 note bottom of category_tree_category_tree_id_get_category_subtree_get
-This call retrieves the details of all nodes of the category tree hierarchy (the subtree) below a specified category of a category tree. You identify the tree using the <b>category_tree_id</b> parameter, which was returned by the <b>getDefaultCategoryTreeId</b> call in the <b>categoryTreeId</b> field.<br /><br /><span class="tablenote"> <strong>Note:</strong> This call can return a very large payload, so you are strongly advised to submit the request with the following HTTP header:       <br /><br /><code>&nbsp;&nbsp;Accept-Encoding: application/gzip</code>       <br /><br />With this header (in addition to the required headers described under <a href="/api-docs/static/rest-request-components.html#HTTP">HTTP Request Headers</a>), the call returns the response with <b>gzip</b> compression. </span>
+This call retrieves the details of all nodes of the category tree hierarchy (the subtree) below a specified category of a category tree. You identify the tree using the <b>category_tree_id</b> parameter, which was returned by the <b>getDefaultCategoryTreeId</b> call in the <b>categoryTreeId</b> field.
+
+<span class="tablenote"> **Note:** This call can return a very large payload, so you are strongly advised to submit the request with the following HTTP header:       
+
+<code>&nbsp;&nbsp;Accept-Encoding: application/gzip</code>       
+
+With this header (in addition to the required headers described under <a href="/api-docs/static/rest-request-components.html#HTTP">HTTP Request Headers</a>), the call returns the response with <b>gzip</b> compression. </span>
 end note
 
 
@@ -44,7 +58,17 @@ end note
 Container_Boundary(category_tree_category_tree_id_get_category_suggestions, "/category_tree/{category_tree_id}/get_category_suggestions") {
 Component(category_tree_category_tree_id_get_category_suggestions_get, "Get Suggested Categories\r[getCategorySuggestions]", "REST ApiEndpoint - GET", "")
 note bottom of category_tree_category_tree_id_get_category_suggestions_get
-This call returns an array of category tree leaf nodes in the specified category tree that are considered by eBay to most closely correspond to the query string <b>q</b>. Returned with each suggested node is a localized name for that category (based on the <b>Accept-Language</b> header specified for the call), and details about each of the category's ancestor nodes, extending from its immediate parent up to the root of the category tree.<br /><br /><span class="tablenote"> <strong>Note:</strong> This call can return a large payload, so you are advised to submit the request with the following HTTP header:<br /><br /><code>&nbsp;&nbsp;Accept-Encoding: application/gzip</code><br /><br />              With this header (in addition to the required headers described under <a href="/api-docs/static/rest-request-components.html#HTTP">HTTP Request Headers</a>), the call returns the response with <b>gzip</b> compression. </span><br /><br />You identify the tree using the <b>category_tree_id</b> parameter, which was returned by the <b>getDefaultCategoryTreeId</b> call in the <b>categoryTreeId</b> field.<br /><br /><span class="tablenote"> <strong><span style="color:red">Important:</span></strong> This call is not supported in the Sandbox environment. It will return a response payload in which the <b>categoryName</b> fields contain random or boilerplate text regardless of the query submitted. </span>
+This call returns an array of category tree leaf nodes in the specified category tree that are considered by eBay to most closely correspond to the query string <b>q</b>. Returned with each suggested node is a localized name for that category (based on the <b>Accept-Language</b> header specified for the call), and details about each of the category's ancestor nodes, extending from its immediate parent up to the root of the category tree.
+
+<span class="tablenote"> **Note:** This call can return a large payload, so you are advised to submit the request with the following HTTP header:
+
+<code>&nbsp;&nbsp;Accept-Encoding: application/gzip</code>
+
+              With this header (in addition to the required headers described under <a href="/api-docs/static/rest-request-components.html#HTTP">HTTP Request Headers</a>), the call returns the response with <b>gzip</b> compression. </span>
+
+You identify the tree using the <b>category_tree_id</b> parameter, which was returned by the <b>getDefaultCategoryTreeId</b> call in the <b>categoryTreeId</b> field.
+
+<span class="tablenote"> **<span style="color:red">Important:</span>** This call is not supported in the Sandbox environment. It will return a response payload in which the <b>categoryName</b> fields contain random or boilerplate text regardless of the query submitted. </span>
 end note
 
 
@@ -53,7 +77,9 @@ end note
 Container_Boundary(category_tree_category_tree_id_get_item_aspects_for_category, "/category_tree/{category_tree_id}/get_item_aspects_for_category") {
 Component(category_tree_category_tree_id_get_item_aspects_for_category_get, "getItemAspectsForCategory", "REST ApiEndpoint - GET", "")
 note bottom of category_tree_category_tree_id_get_item_aspects_for_category_get
-This call returns a list of <i>aspects</i> that are appropriate or necessary for accurately describing items in the specified leaf category. Each aspect identifies an item attribute (for example, color) for which the seller will be required or encouraged to provide a value (or variation values) when offering an item in that category on eBay.<br /><br />For each aspect, <b>getItemAspectsForCategory</b> provides complete metadata, including: <ul> <li>The aspect's data type, format, and entry mode</li> <li>Whether the aspect is required in listings</li> <li>Whether the aspect can be used for item variations</li> <li>Whether the aspect accepts multiple values for an item</li> <li>Allowed values for the aspect</li> </ul> Use this information to construct an interface through which sellers can enter or select the appropriate values for their items or item variations. Once you collect those values, include them as product aspects when creating inventory items using the Inventory API.
+This call returns a list of <i>aspects</i> that are appropriate or necessary for accurately describing items in the specified leaf category. Each aspect identifies an item attribute (for example, color) for which the seller will be required or encouraged to provide a value (or variation values) when offering an item in that category on eBay.
+
+For each aspect, <b>getItemAspectsForCategory</b> provides complete metadata, including:  *The aspect's data type, format, and entry mode *Whether the aspect is required in listings *Whether the aspect can be used for item variations *Whether the aspect accepts multiple values for an item *Allowed values for the aspect  Use this information to construct an interface through which sellers can enter or select the appropriate values for their items or item variations. Once you collect those values, include them as product aspects when creating inventory items using the Inventory API.
 end note
 
 
@@ -62,7 +88,11 @@ end note
 Container_Boundary(category_tree_category_tree_id_get_compatibility_properties, "/category_tree/{category_tree_id}/get_compatibility_properties") {
 Component(category_tree_category_tree_id_get_compatibility_properties_get, "Get Compatibility Properties\r[getCompatibilityProperties]", "REST ApiEndpoint - GET", "")
 note bottom of category_tree_category_tree_id_get_compatibility_properties_get
-This call retrieves the compatible vehicle aspects that are used to define a motor vehicle that is compatible with a motor vehicle part or accessory. The values that are retrieved here might include motor vehicle aspects such as 'Make', 'Model', 'Year', 'Engine', and 'Trim', and each of these aspects are localized for the eBay marketplace.<br/><br/> The <strong>category_tree_id</strong> value is passed in as a path parameter, and this value identifies the eBay category tree. The <strong>category_id</strong> value is passed in as a query parameter, as this parameter is also required. The specified category must be a category that supports parts compatibility.<br/><br/> At this time, this operation only supports parts and accessories listings for cars, trucks, and motorcycles (not boats,  power sports, or any other vehicle types). Only the following eBay marketplaces support parts compatibility:<ul><li>eBay US (Motors and non-Motors categories)</li><li>eBay Canada (Motors and non-Motors categories)</li><li>eBay UK</li><li>eBay Germany</li><li>eBay Australia</li><li>eBay France</li><li>eBay Italy</li><li>eBay Spain</li></ul>
+This call retrieves the compatible vehicle aspects that are used to define a motor vehicle that is compatible with a motor vehicle part or accessory. The values that are retrieved here might include motor vehicle aspects such as 'Make', 'Model', 'Year', 'Engine', and 'Trim', and each of these aspects are localized for the eBay marketplace.
+
+ The **category_tree_id** value is passed in as a path parameter, and this value identifies the eBay category tree. The **category_id** value is passed in as a query parameter, as this parameter is also required. The specified category must be a category that supports parts compatibility.
+
+ At this time, this operation only supports parts and accessories listings for cars, trucks, and motorcycles (not boats,  power sports, or any other vehicle types). Only the following eBay marketplaces support parts compatibility:*eBay US (Motors and non-Motors categories)*eBay Canada (Motors and non-Motors categories)*eBay UK*eBay Germany*eBay Australia*eBay France*eBay Italy*eBay Spain
 end note
 
 
@@ -71,7 +101,11 @@ end note
 Container_Boundary(category_tree_category_tree_id_get_compatibility_property_values, "/category_tree/{category_tree_id}/get_compatibility_property_values") {
 Component(category_tree_category_tree_id_get_compatibility_property_values_get, "Get Compatibility Property Values\r[getCompatibilityPropertyValues]", "REST ApiEndpoint - GET", "")
 note bottom of category_tree_category_tree_id_get_compatibility_property_values_get
-This call retrieves applicable compatible vehicle property values based on the specified eBay marketplace, specified eBay category, and filters used in the request. Compatible vehicle properties are returned in the <strong>compatibilityProperties.name</strong> field of a <strong>getCompatibilityProperties</strong> response. <br/><br/> One compatible vehicle property applicable to the specified eBay marketplace and eBay category is specified through the required <strong>compatibility_property</strong> filter. Then, the user has the option of further restricting the compatible vehicle property values that are returned in the response by specifying one or more compatible vehicle property name/value pairs through the <strong>filter</strong> query parameter.<br/><br/> See the documentation in <strong>URI parameters</strong> section for more information on using the <strong>compatibility_property</strong> and <strong>filter</strong> query parameters together to customize the data that is retrieved.
+This call retrieves applicable compatible vehicle property values based on the specified eBay marketplace, specified eBay category, and filters used in the request. Compatible vehicle properties are returned in the **compatibilityProperties.name** field of a **getCompatibilityProperties** response. 
+
+ One compatible vehicle property applicable to the specified eBay marketplace and eBay category is specified through the required **compatibility_property** filter. Then, the user has the option of further restricting the compatible vehicle property values that are returned in the response by specifying one or more compatible vehicle property name/value pairs through the **filter** query parameter.
+
+ See the documentation in **URI parameters** section for more information on using the **compatibility_property** and **filter** query parameters together to customize the data that is retrieved.
 end note
 
 

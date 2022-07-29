@@ -74,6 +74,16 @@ public class OpenApiDiagram
     }
 
     private static string SanitiseNote(OpenApiOperation openApiOperation) =>
+        // TODO : We should transform HTML to markdown and not do this hack stuff
         openApiOperation.Description
-                        .Replace(Environment.NewLine, " ");
+                        .Replace("<br />", Environment.NewLine)
+                        .Replace("<br/>", Environment.NewLine)
+                        .Replace("<strong>", "**")
+                        .Replace("</strong>", "**")
+                        .Replace("<ul>", "")
+                        .Replace("</ul>", "")
+                        .Replace("</ ul>", "")
+                        .Replace("<li>", "\r*")
+                        .Replace("</li>", "")
+                        .Replace("</ li>", "");
 }
