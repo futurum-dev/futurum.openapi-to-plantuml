@@ -17,10 +17,22 @@ class "POST /pet/{petId}/uploadImage" <<Path>> {
 
 class "POST /pet/{petId}/uploadImage 200" <<Response>> { }
 class "POST /pet" <<Path>> {
+{field} id : integer
+{field} category : object
+{field} name : string
+{field} photoUrls : array<string>
+{field} tags : array<Tag>
+{field} status : string
 }
 
 class "POST /pet 405" <<Response>> { }
 class "PUT /pet" <<Path>> {
+{field} id : integer
+{field} category : object
+{field} name : string
+{field} photoUrls : array<string>
+{field} tags : array<Tag>
+{field} status : string
 }
 
 class "PUT /pet 400" <<Response>> { }
@@ -60,6 +72,12 @@ class "DELETE /pet/{petId}" <<Path>> {
 class "DELETE /pet/{petId} 400" <<Response>> { }
 class "DELETE /pet/{petId} 404" <<Response>> { }
 class "POST /store/order" <<Path>> {
+{field} id : integer
+{field} petId : integer
+{field} quantity : integer
+{field} shipDate : string
+{field} status : string
+{field} complete : boolean
 }
 
 class "POST /store/order 200" <<Response>> { }
@@ -98,6 +116,14 @@ class "GET /user/{username} 400" <<Response>> { }
 class "GET /user/{username} 404" <<Response>> { }
 class "PUT /user/{username}" <<Path>> {
 {field} username : string
+{field} id : integer
+{field} username : string
+{field} firstName : string
+{field} lastName : string
+{field} email : string
+{field} password : string
+{field} phone : string
+{field} userStatus : integer
 }
 
 class "PUT /user/{username} 400" <<Response>> { }
@@ -120,6 +146,14 @@ class "GET /user/logout" <<Path>> {
 
 class "GET /user/logout default" <<Response>> { }
 class "POST /user" <<Path>> {
+{field} id : integer
+{field} username : string
+{field} firstName : string
+{field} lastName : string
+{field} email : string
+{field} password : string
+{field} phone : string
+{field} userStatus : integer
 }
 
 class "POST /user default" <<Response>> { }
@@ -136,7 +170,7 @@ class "Category" {
 
 class "Pet" {
 {field} id : integer
-{field} category : 
+{field} category : Category
 {field} name : string
 {field} photoUrls : array<string>
 {field} tags : array<Tag>
@@ -217,6 +251,8 @@ class "User" {
 "GET /user/login" ..> "1" "GET /user/login 400" : "400"
 "GET /user/logout" ..> "1" "GET /user/logout default" : "default"
 "POST /user" ..> "1" "POST /user default" : "default"
+"Pet" ..> "1" "Category" : "category"
+"Pet" ..> "1" "Tag" : "tags"
 "POST /pet" ..> "1" "Pet" : "application/json"
 "POST /pet" ..> "1" "Pet" : "application/xml"
 "PUT /pet" ..> "1" "Pet" : "application/json"

@@ -7,7 +7,6 @@ public static class OpenApiConstants
         "integer",
         "number",
         "boolean",
-        "object",
     };
 
     public const string ArrayType = "array";

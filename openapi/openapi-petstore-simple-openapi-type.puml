@@ -42,7 +42,7 @@ class "Error" {
 }
 
 "GET /pets" ..> "1" "GET /pets 200" : "200"
-"GET /pets 200" ..> "1" "Pets"
+"GET /pets 200" ..> "*" "Pet"
 "GET /pets" ..> "1" "GET /pets default" : "default"
 "GET /pets default" ..> "1" "Error"
 "POST /pets" ..> "1" "POST /pets 201" : "201"

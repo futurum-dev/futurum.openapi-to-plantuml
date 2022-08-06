@@ -73,7 +73,7 @@ OpenApiDocument CreateOpenApiDocument()
 
     var openApiReaderSettings = new OpenApiReaderSettings
     {
-        ReferenceResolution = ReferenceResolutionSetting.DoNotResolveReferences
+        ReferenceResolution = ReferenceResolutionSetting.ResolveLocalReferences
     };
 
     return new OpenApiStreamReader(openApiReaderSettings).Read(standardInputStream, out var diagnostic);

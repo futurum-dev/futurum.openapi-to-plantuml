@@ -85,7 +85,7 @@ async Task ProcessFileAsync(FileInfo fileInfo, DiagramConfiguration configuratio
     var stream = File.OpenRead(openApiFilePath);
     var openApiReaderSettings = new OpenApiReaderSettings
     {
-        ReferenceResolution = ReferenceResolutionSetting.DoNotResolveReferences
+        ReferenceResolution = ReferenceResolutionSetting.ResolveLocalReferences
     };
     var openApiDocument = new OpenApiStreamReader(openApiReaderSettings).Read(stream, out var diagnostic);
 

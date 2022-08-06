@@ -93,10 +93,10 @@ class "AncestorReference" {
 }
 
 class "Aspect" {
-{field} aspectConstraint : 
+{field} aspectConstraint : AspectConstraint
 {field} aspectValues : array<AspectValue>
 {field} localizedAspectName : string
-{field} relevanceIndicator : 
+{field} relevanceIndicator : RelevanceIndicator
 }
 
 class "AspectConstraint" {
@@ -132,18 +132,18 @@ class "Category" {
 }
 
 class "CategoryAspect" {
-{field} category : 
+{field} category : Category
 {field} aspects : array<Aspect>
 }
 
 class "CategorySubtree" {
-{field} categorySubtreeNode : 
+{field} categorySubtreeNode : CategoryTreeNode
 {field} categoryTreeId : string
 {field} categoryTreeVersion : string
 }
 
 class "CategorySuggestion" {
-{field} category : 
+{field} category : Category
 {field} categoryTreeNodeAncestors : array<AncestorReference>
 {field} categoryTreeNodeLevel : integer
 {field} relevancy : string
@@ -159,11 +159,11 @@ class "CategoryTree" {
 {field} applicableMarketplaceIds : array<string>
 {field} categoryTreeId : string
 {field} categoryTreeVersion : string
-{field} rootCategoryNode : 
+{field} rootCategoryNode : CategoryTreeNode
 }
 
 class "CategoryTreeNode" {
-{field} category : 
+{field} category : Category
 {field} categoryTreeNodeLevel : integer
 {field} childCategoryTreeNodes : array<CategoryTreeNode>
 {field} leafCategoryTreeNode : boolean
@@ -263,6 +263,24 @@ class "ValueConstraint" {
 "GET /category_tree/{category_tree_id}/get_compatibility_property_values" ..> "1" "GET /category_tree/{category_tree_id}/get_compatibility_property_values 400" : "400"
 "GET /category_tree/{category_tree_id}/get_compatibility_property_values" ..> "1" "GET /category_tree/{category_tree_id}/get_compatibility_property_values 404" : "404"
 "GET /category_tree/{category_tree_id}/get_compatibility_property_values" ..> "1" "GET /category_tree/{category_tree_id}/get_compatibility_property_values 500" : "500"
+"Aspect" ..> "1" "AspectConstraint" : "aspectConstraint"
+"Aspect" ..> "1" "AspectValue" : "aspectValues"
+"Aspect" ..> "1" "RelevanceIndicator" : "relevanceIndicator"
+"AspectMetadata" ..> "1" "Aspect" : "aspects"
+"AspectValue" ..> "1" "ValueConstraint" : "valueConstraints"
+"CategoryAspect" ..> "1" "Category" : "category"
+"CategoryAspect" ..> "1" "Aspect" : "aspects"
+"CategorySubtree" ..> "1" "CategoryTreeNode" : "categorySubtreeNode"
+"CategorySuggestion" ..> "1" "Category" : "category"
+"CategorySuggestion" ..> "1" "AncestorReference" : "categoryTreeNodeAncestors"
+"CategorySuggestionResponse" ..> "1" "CategorySuggestion" : "categorySuggestions"
+"CategoryTree" ..> "1" "CategoryTreeNode" : "rootCategoryNode"
+"CategoryTreeNode" ..> "1" "Category" : "category"
+"CategoryTreeNode" ..> "1" "CategoryTreeNode" : "childCategoryTreeNodes"
+"Error" ..> "1" "ErrorParameter" : "parameters"
+"GetCategoriesAspectResponse" ..> "1" "CategoryAspect" : "categoryAspects"
+"GetCompatibilityMetadataResponse" ..> "1" "CompatibilityProperty" : "compatibilityProperties"
+"GetCompatibilityPropertyValuesResponse" ..> "1" "CompatibilityPropertyValue" : "compatibilityPropertyValues"
 
 
 @enduml

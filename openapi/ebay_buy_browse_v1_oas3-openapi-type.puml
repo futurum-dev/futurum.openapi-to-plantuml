@@ -38,6 +38,7 @@ class "POST /item_summary/search_by_image" <<Path>> {
 {field} limit : string {O}
 {field} offset : string {O}
 {field} sort : string {O}
+{field} image : string
 }
 
 class "POST /item_summary/search_by_image 200" <<Response>> { }
@@ -88,6 +89,7 @@ class "GET /item/get_items_by_item_group 500" <<Response>> { }
 class "POST /item/{item_id}/check_compatibility" <<Path>> {
 {field} item_id : string
 {field} X-EBAY-C-MARKETPLACE-ID : string
+{field} compatibilityProperties : array<AttributeNameValue>
 }
 
 class "POST /item/{item_id}/check_compatibility 200" <<Response>> { }
@@ -96,6 +98,8 @@ class "POST /item/{item_id}/check_compatibility 404" <<Response>> { }
 class "POST /item/{item_id}/check_compatibility 409" <<Response>> { }
 class "POST /item/{item_id}/check_compatibility 500" <<Response>> { }
 class "POST /shopping_cart/add_item" <<Path>> {
+{field} itemId : string
+{field} quantity : integer
 }
 
 class "POST /shopping_cart/add_item 200" <<Response>> { }
@@ -114,6 +118,7 @@ class "GET /shopping_cart/ 403" <<Response>> { }
 class "GET /shopping_cart/ 404" <<Response>> { }
 class "GET /shopping_cart/ 500" <<Response>> { }
 class "POST /shopping_cart/remove_item" <<Path>> {
+{field} cartItemId : string
 }
 
 class "POST /shopping_cart/remove_item 200" <<Response>> { }
@@ -123,6 +128,8 @@ class "POST /shopping_cart/remove_item 403" <<Response>> { }
 class "POST /shopping_cart/remove_item 409" <<Response>> { }
 class "POST /shopping_cart/remove_item 500" <<Response>> { }
 class "POST /shopping_cart/update_quantity" <<Path>> {
+{field} cartItemId : string
+{field} quantity : integer
 }
 
 class "POST /shopping_cart/update_quantity 200" <<Response>> { }
@@ -141,7 +148,7 @@ class "AdditionalProductIdentity" {
 
 class "AddonService" {
 {field} selection : string
-{field} serviceFee : 
+{field} serviceFee : ConvertedAmount
 {field} serviceId : string
 {field} serviceType : string
 }
@@ -202,8 +209,8 @@ class "AutoCorrections" {
 }
 
 class "AvailableCoupon" {
-{field} constraint : 
-{field} discountAmount : 
+{field} constraint : CouponConstraint
+{field} discountAmount : Amount
 {field} discountType : string
 {field} message : string
 {field} redemptionCode : string
@@ -218,11 +225,11 @@ class "BuyingOptionDistribution" {
 
 class "CartItem" {
 {field} cartItemId : string
-{field} cartItemSubtotal : 
-{field} image : 
+{field} cartItemSubtotal : Amount
+{field} image : Image
 {field} itemId : string
 {field} itemWebUrl : string
-{field} price : 
+{field} price : Price
 {field} quantity : integer
 {field} title : string
 }
@@ -276,8 +283,8 @@ class "CoreItem" {
 {field} additionalImages : array<Image>
 {field} adultOnly : boolean
 {field} ageGroup : string
-{field} authenticityGuarantee : 
-{field} authenticityVerification : 
+{field} authenticityGuarantee : AuthenticityGuaranteeProgram
+{field} authenticityVerification : AuthenticityVerificationProgram
 {field} availableCoupons : array<AvailableCoupon>
 {field} bidCount : integer
 {field} brand : string
@@ -288,7 +295,7 @@ class "CoreItem" {
 {field} condition : string
 {field} conditionDescription : string
 {field} conditionId : string
-{field} currentBidPrice : 
+{field} currentBidPrice : ConvertedAmount
 {field} description : string
 {field} eligibleForInlineCheckout : boolean
 {field} enabledForGuestCheckout : boolean
@@ -297,38 +304,38 @@ class "CoreItem" {
 {field} estimatedAvailabilities : array<EstimatedAvailability>
 {field} gender : string
 {field} gtin : string
-{field} image : 
+{field} image : Image
 {field} inferredEpid : string
 {field} itemAffiliateWebUrl : string
 {field} itemCreationDate : string
 {field} itemEndDate : string
 {field} itemId : string
-{field} itemLocation : 
+{field} itemLocation : Address
 {field} itemWebUrl : string
 {field} legacyItemId : string
 {field} localizedAspects : array<TypedNameValue>
 {field} lotSize : integer
-{field} marketingPrice : 
+{field} marketingPrice : MarketingPrice
 {field} material : string
-{field} minimumPriceToBid : 
+{field} minimumPriceToBid : ConvertedAmount
 {field} mpn : string
 {field} pattern : string
 {field} paymentMethods : array<PaymentMethod>
-{field} price : 
+{field} price : ConvertedAmount
 {field} priceDisplayCondition : string
-{field} primaryItemGroup : 
-{field} primaryProductReviewRating : 
+{field} primaryItemGroup : ItemGroupSummary
+{field} primaryProductReviewRating : ReviewRating
 {field} priorityListing : boolean
-{field} product : 
+{field} product : Product
 {field} productFicheWebUrl : string
 {field} qualifiedPrograms : array<string>
 {field} quantityLimitPerBuyer : integer
 {field} reservePriceMet : boolean
-{field} returnTerms : 
-{field} seller : 
+{field} returnTerms : ItemReturnTerms
+{field} seller : SellerDetail
 {field} sellerItemRevision : string
 {field} shippingOptions : array<ShippingOption>
-{field} shipToLocations : 
+{field} shipToLocations : ShipToLocations
 {field} shortDescription : string
 {field} size : string
 {field} sizeSystem : string
@@ -339,7 +346,7 @@ class "CoreItem" {
 {field} topRatedBuyingExperience : boolean
 {field} tyreLabelImageUrl : string
 {field} uniqueBidderCount : integer
-{field} unitPrice : 
+{field} unitPrice : ConvertedAmount
 {field} unitPricingMeasure : string
 }
 
@@ -384,8 +391,8 @@ class "Item" {
 {field} addonServices : array<AddonService>
 {field} adultOnly : boolean
 {field} ageGroup : string
-{field} authenticityGuarantee : 
-{field} authenticityVerification : 
+{field} authenticityGuarantee : AuthenticityGuaranteeProgram
+{field} authenticityVerification : AuthenticityVerificationProgram
 {field} availableCoupons : array<AvailableCoupon>
 {field} bidCount : integer
 {field} brand : string
@@ -397,9 +404,9 @@ class "Item" {
 {field} condition : string
 {field} conditionDescription : string
 {field} conditionId : string
-{field} currentBidPrice : 
+{field} currentBidPrice : ConvertedAmount
 {field} description : string
-{field} ecoParticipationFee : 
+{field} ecoParticipationFee : ConvertedAmount
 {field} eligibleForInlineCheckout : boolean
 {field} enabledForGuestCheckout : boolean
 {field} energyEfficiencyClass : string
@@ -407,40 +414,40 @@ class "Item" {
 {field} estimatedAvailabilities : array<EstimatedAvailability>
 {field} gender : string
 {field} gtin : string
-{field} image : 
+{field} image : Image
 {field} inferredEpid : string
 {field} itemAffiliateWebUrl : string
 {field} itemCreationDate : string
 {field} itemEndDate : string
 {field} itemId : string
-{field} itemLocation : 
+{field} itemLocation : Address
 {field} itemWebUrl : string
 {field} legacyItemId : string
 {field} listingMarketplaceId : string
 {field} localizedAspects : array<TypedNameValue>
 {field} lotSize : integer
-{field} marketingPrice : 
+{field} marketingPrice : MarketingPrice
 {field} material : string
-{field} minimumPriceToBid : 
+{field} minimumPriceToBid : ConvertedAmount
 {field} mpn : string
 {field} pattern : string
 {field} paymentMethods : array<PaymentMethod>
-{field} price : 
+{field} price : ConvertedAmount
 {field} priceDisplayCondition : string
-{field} primaryItemGroup : 
-{field} primaryProductReviewRating : 
+{field} primaryItemGroup : ItemGroupSummary
+{field} primaryProductReviewRating : ReviewRating
 {field} priorityListing : boolean
-{field} product : 
+{field} product : Product
 {field} productFicheWebUrl : string
 {field} qualifiedPrograms : array<string>
 {field} quantityLimitPerBuyer : integer
 {field} reservePriceMet : boolean
-{field} returnTerms : 
-{field} seller : 
+{field} returnTerms : ItemReturnTerms
+{field} seller : SellerDetail
 {field} sellerCustomPolicies : array<SellerCustomPolicy>
 {field} sellerItemRevision : string
 {field} shippingOptions : array<ShippingOption>
-{field} shipToLocations : 
+{field} shipToLocations : ShipToLocations
 {field} shortDescription : string
 {field} size : string
 {field} sizeSystem : string
@@ -451,7 +458,7 @@ class "Item" {
 {field} topRatedBuyingExperience : boolean
 {field} tyreLabelImageUrl : string
 {field} uniqueBidderCount : integer
-{field} unitPrice : 
+{field} unitPrice : ConvertedAmount
 {field} unitPricingMeasure : string
 {field} warnings : array<Error>
 {field} watchCount : integer
@@ -467,7 +474,7 @@ class "ItemGroupSummary" {
 {field} itemGroupAdditionalImages : array<Image>
 {field} itemGroupHref : string
 {field} itemGroupId : string
-{field} itemGroupImage : 
+{field} itemGroupImage : Image
 {field} itemGroupTitle : string
 {field} itemGroupType : string
 }
@@ -488,7 +495,7 @@ class "ItemReturnTerms" {
 {field} restockingFeePercentage : string
 {field} returnInstructions : string
 {field} returnMethod : string
-{field} returnPeriod : 
+{field} returnPeriod : TimeDuration
 {field} returnsAccepted : boolean
 {field} returnShippingCostPayer : string
 }
@@ -504,11 +511,11 @@ class "ItemSummary" {
 {field} compatibilityProperties : array<CompatibilityProperty>
 {field} condition : string
 {field} conditionId : string
-{field} currentBidPrice : 
-{field} distanceFromPickupLocation : 
+{field} currentBidPrice : ConvertedAmount
+{field} distanceFromPickupLocation : TargetLocation
 {field} energyEfficiencyClass : string
 {field} epid : string
-{field} image : 
+{field} image : Image
 {field} itemAffiliateWebUrl : string
 {field} itemCreationDate : string
 {field} itemEndDate : string
@@ -516,24 +523,24 @@ class "ItemSummary" {
 {field} itemGroupType : string
 {field} itemHref : string
 {field} itemId : string
-{field} itemLocation : 
+{field} itemLocation : ItemLocationImpl
 {field} itemWebUrl : string
 {field} legacyItemId : string
 {field} listingMarketplaceId : string
-{field} marketingPrice : 
+{field} marketingPrice : MarketingPrice
 {field} pickupOptions : array<PickupOptionSummary>
-{field} price : 
+{field} price : ConvertedAmount
 {field} priceDisplayCondition : string
 {field} priorityListing : boolean
 {field} qualifiedPrograms : array<string>
-{field} seller : 
+{field} seller : Seller
 {field} shippingOptions : array<ShippingOptionSummary>
 {field} shortDescription : string
 {field} thumbnailImages : array<Image>
 {field} title : string
 {field} topRatedBuyingExperience : boolean
 {field} tyreLabelImageUrl : string
-{field} unitPrice : 
+{field} unitPrice : ConvertedAmount
 {field} unitPricingMeasure : string
 {field} watchCount : integer
 }
@@ -556,9 +563,9 @@ class "LegalAddress" {
 }
 
 class "MarketingPrice" {
-{field} discountAmount : 
+{field} discountAmount : ConvertedAmount
 {field} discountPercentage : string
-{field} originalPrice : 
+{field} originalPrice : ConvertedAmount
 {field} priceTreatment : string
 }
 
@@ -571,7 +578,7 @@ class "PaymentMethod" {
 
 class "PaymentMethodBrand" {
 {field} paymentMethodBrandType : string
-{field} logoImage : 
+{field} logoImage : Image
 }
 
 class "PickupOptionSummary" {
@@ -592,7 +599,7 @@ class "Product" {
 {field} brand : string
 {field} description : string
 {field} gtins : array<string>
-{field} image : 
+{field} image : Image
 {field} mpns : array<string>
 {field} title : string
 }
@@ -622,7 +629,7 @@ class "Region" {
 
 class "RemoteShopcartResponse" {
 {field} cartItems : array<CartItem>
-{field} cartSubtotal : 
+{field} cartSubtotal : Amount
 {field} cartWebUrl : string
 {field} unavailableCartItems : array<CartItem>
 {field} warnings : array<Error>
@@ -643,14 +650,14 @@ class "SearchByImageRequest" {
 }
 
 class "SearchPagedCollection" {
-{field} autoCorrections : 
+{field} autoCorrections : AutoCorrections
 {field} href : string
 {field} itemSummaries : array<ItemSummary>
 {field} limit : integer
 {field} next : string
 {field} offset : integer
 {field} prev : string
-{field} refinement : 
+{field} refinement : Refinement
 {field} total : integer
 {field} warnings : array<Error>
 }
@@ -672,7 +679,7 @@ class "SellerDetail" {
 {field} feedbackPercentage : string
 {field} feedbackScore : integer
 {field} sellerAccountType : string
-{field} sellerLegalInfo : 
+{field} sellerLegalInfo : SellerLegalInfo
 {field} username : string
 }
 
@@ -685,7 +692,7 @@ class "SellerLegalInfo" {
 {field} name : string
 {field} phone : string
 {field} registrationNumber : string
-{field} sellerProvidedLegalAddress : 
+{field} sellerProvidedLegalAddress : LegalAddress
 {field} termsOfService : string
 {field} vatDetails : array<VatDetail>
 }
@@ -707,19 +714,19 @@ class "ShipToRegion" {
 }
 
 class "ShippingOption" {
-{field} additionalShippingCostPerUnit : 
+{field} additionalShippingCostPerUnit : ConvertedAmount
 {field} cutOffDateUsedForEstimate : string
 {field} fulfilledThrough : string
 {field} guaranteedDelivery : boolean
-{field} importCharges : 
+{field} importCharges : ConvertedAmount
 {field} maxEstimatedDeliveryDate : string
 {field} minEstimatedDeliveryDate : string
 {field} quantityUsedForEstimate : integer
 {field} shippingCarrierCode : string
-{field} shippingCost : 
+{field} shippingCost : ConvertedAmount
 {field} shippingCostType : string
 {field} shippingServiceCode : string
-{field} shipToLocationUsedForEstimate : 
+{field} shipToLocationUsedForEstimate : ShipToLocation
 {field} trademarkSymbol : string
 {field} type : string
 }
@@ -728,7 +735,7 @@ class "ShippingOptionSummary" {
 {field} guaranteedDelivery : boolean
 {field} maxEstimatedDeliveryDate : string
 {field} minEstimatedDeliveryDate : string
-{field} shippingCost : 
+{field} shippingCost : ConvertedAmount
 {field} shippingCostType : string
 }
 
@@ -738,7 +745,7 @@ class "TargetLocation" {
 }
 
 class "TaxJurisdiction" {
-{field} region : 
+{field} region : Region
 {field} taxJurisdictionId : string
 }
 
@@ -746,7 +753,7 @@ class "Taxes" {
 {field} ebayCollectAndRemitTax : boolean
 {field} includedInPrice : boolean
 {field} shippingAndHandlingTaxed : boolean
-{field} taxJurisdiction : 
+{field} taxJurisdiction : TaxJurisdiction
 {field} taxPercentage : string
 {field} taxType : string
 }
@@ -839,6 +846,121 @@ class "VatDetail" {
 "POST /shopping_cart/update_quantity" ..> "1" "POST /shopping_cart/update_quantity 403" : "403"
 "POST /shopping_cart/update_quantity" ..> "1" "POST /shopping_cart/update_quantity 409" : "409"
 "POST /shopping_cart/update_quantity" ..> "1" "POST /shopping_cart/update_quantity 500" : "500"
+"AdditionalProductIdentity" ..> "1" "ProductIdentity" : "productIdentity"
+"AddonService" ..> "1" "ConvertedAmount" : "serviceFee"
+"AspectDistribution" ..> "1" "AspectValueDistribution" : "aspectValueDistributions"
+"AspectGroup" ..> "1" "Aspect" : "aspects"
+"AvailableCoupon" ..> "1" "CouponConstraint" : "constraint"
+"AvailableCoupon" ..> "1" "Amount" : "discountAmount"
+"CartItem" ..> "1" "Amount" : "cartItemSubtotal"
+"CartItem" ..> "1" "Image" : "image"
+"CartItem" ..> "1" "Price" : "price"
+"CompatibilityPayload" ..> "1" "AttributeNameValue" : "compatibilityProperties"
+"CompatibilityResponse" ..> "1" "Error" : "warnings"
+"CoreItem" ..> "1" "Image" : "additionalImages"
+"CoreItem" ..> "1" "AuthenticityGuaranteeProgram" : "authenticityGuarantee"
+"CoreItem" ..> "1" "AuthenticityVerificationProgram" : "authenticityVerification"
+"CoreItem" ..> "1" "AvailableCoupon" : "availableCoupons"
+"CoreItem" ..> "1" "ConvertedAmount" : "currentBidPrice"
+"CoreItem" ..> "1" "EstimatedAvailability" : "estimatedAvailabilities"
+"CoreItem" ..> "1" "Image" : "image"
+"CoreItem" ..> "1" "Address" : "itemLocation"
+"CoreItem" ..> "1" "TypedNameValue" : "localizedAspects"
+"CoreItem" ..> "1" "MarketingPrice" : "marketingPrice"
+"CoreItem" ..> "1" "ConvertedAmount" : "minimumPriceToBid"
+"CoreItem" ..> "1" "PaymentMethod" : "paymentMethods"
+"CoreItem" ..> "1" "ConvertedAmount" : "price"
+"CoreItem" ..> "1" "ItemGroupSummary" : "primaryItemGroup"
+"CoreItem" ..> "1" "ReviewRating" : "primaryProductReviewRating"
+"CoreItem" ..> "1" "Product" : "product"
+"CoreItem" ..> "1" "ItemReturnTerms" : "returnTerms"
+"CoreItem" ..> "1" "SellerDetail" : "seller"
+"CoreItem" ..> "1" "ShippingOption" : "shippingOptions"
+"CoreItem" ..> "1" "ShipToLocations" : "shipToLocations"
+"CoreItem" ..> "1" "Taxes" : "taxes"
+"CoreItem" ..> "1" "ConvertedAmount" : "unitPrice"
+"Error" ..> "1" "ErrorParameter" : "parameters"
+"Item" ..> "1" "Image" : "additionalImages"
+"Item" ..> "1" "AddonService" : "addonServices"
+"Item" ..> "1" "AuthenticityGuaranteeProgram" : "authenticityGuarantee"
+"Item" ..> "1" "AuthenticityVerificationProgram" : "authenticityVerification"
+"Item" ..> "1" "AvailableCoupon" : "availableCoupons"
+"Item" ..> "1" "ConvertedAmount" : "currentBidPrice"
+"Item" ..> "1" "ConvertedAmount" : "ecoParticipationFee"
+"Item" ..> "1" "EstimatedAvailability" : "estimatedAvailabilities"
+"Item" ..> "1" "Image" : "image"
+"Item" ..> "1" "Address" : "itemLocation"
+"Item" ..> "1" "TypedNameValue" : "localizedAspects"
+"Item" ..> "1" "MarketingPrice" : "marketingPrice"
+"Item" ..> "1" "ConvertedAmount" : "minimumPriceToBid"
+"Item" ..> "1" "PaymentMethod" : "paymentMethods"
+"Item" ..> "1" "ConvertedAmount" : "price"
+"Item" ..> "1" "ItemGroupSummary" : "primaryItemGroup"
+"Item" ..> "1" "ReviewRating" : "primaryProductReviewRating"
+"Item" ..> "1" "Product" : "product"
+"Item" ..> "1" "ItemReturnTerms" : "returnTerms"
+"Item" ..> "1" "SellerDetail" : "seller"
+"Item" ..> "1" "SellerCustomPolicy" : "sellerCustomPolicies"
+"Item" ..> "1" "ShippingOption" : "shippingOptions"
+"Item" ..> "1" "ShipToLocations" : "shipToLocations"
+"Item" ..> "1" "Taxes" : "taxes"
+"Item" ..> "1" "ConvertedAmount" : "unitPrice"
+"Item" ..> "1" "Error" : "warnings"
+"ItemGroup" ..> "1" "CommonDescriptions" : "commonDescriptions"
+"ItemGroup" ..> "1" "Item" : "items"
+"ItemGroup" ..> "1" "Error" : "warnings"
+"ItemGroupSummary" ..> "1" "Image" : "itemGroupAdditionalImages"
+"ItemGroupSummary" ..> "1" "Image" : "itemGroupImage"
+"ItemReturnTerms" ..> "1" "TimeDuration" : "returnPeriod"
+"ItemSummary" ..> "1" "Image" : "additionalImages"
+"ItemSummary" ..> "1" "Category" : "categories"
+"ItemSummary" ..> "1" "CompatibilityProperty" : "compatibilityProperties"
+"ItemSummary" ..> "1" "ConvertedAmount" : "currentBidPrice"
+"ItemSummary" ..> "1" "TargetLocation" : "distanceFromPickupLocation"
+"ItemSummary" ..> "1" "Image" : "image"
+"ItemSummary" ..> "1" "ItemLocationImpl" : "itemLocation"
+"ItemSummary" ..> "1" "MarketingPrice" : "marketingPrice"
+"ItemSummary" ..> "1" "PickupOptionSummary" : "pickupOptions"
+"ItemSummary" ..> "1" "ConvertedAmount" : "price"
+"ItemSummary" ..> "1" "Seller" : "seller"
+"ItemSummary" ..> "1" "ShippingOptionSummary" : "shippingOptions"
+"ItemSummary" ..> "1" "Image" : "thumbnailImages"
+"ItemSummary" ..> "1" "ConvertedAmount" : "unitPrice"
+"Items" ..> "1" "CoreItem" : "items"
+"Items" ..> "1" "Error" : "warnings"
+"MarketingPrice" ..> "1" "ConvertedAmount" : "discountAmount"
+"MarketingPrice" ..> "1" "ConvertedAmount" : "originalPrice"
+"PaymentMethod" ..> "1" "PaymentMethodBrand" : "paymentMethodBrands"
+"PaymentMethodBrand" ..> "1" "Image" : "logoImage"
+"Product" ..> "1" "Image" : "additionalImages"
+"Product" ..> "1" "AdditionalProductIdentity" : "additionalProductIdentities"
+"Product" ..> "1" "AspectGroup" : "aspectGroups"
+"Product" ..> "1" "Image" : "image"
+"Refinement" ..> "1" "AspectDistribution" : "aspectDistributions"
+"Refinement" ..> "1" "BuyingOptionDistribution" : "buyingOptionDistributions"
+"Refinement" ..> "1" "CategoryDistribution" : "categoryDistributions"
+"Refinement" ..> "1" "ConditionDistribution" : "conditionDistributions"
+"RemoteShopcartResponse" ..> "1" "CartItem" : "cartItems"
+"RemoteShopcartResponse" ..> "1" "Amount" : "cartSubtotal"
+"RemoteShopcartResponse" ..> "1" "CartItem" : "unavailableCartItems"
+"RemoteShopcartResponse" ..> "1" "Error" : "warnings"
+"ReviewRating" ..> "1" "RatingHistogram" : "ratingHistograms"
+"SearchPagedCollection" ..> "1" "AutoCorrections" : "autoCorrections"
+"SearchPagedCollection" ..> "1" "ItemSummary" : "itemSummaries"
+"SearchPagedCollection" ..> "1" "Refinement" : "refinement"
+"SearchPagedCollection" ..> "1" "Error" : "warnings"
+"SellerDetail" ..> "1" "SellerLegalInfo" : "sellerLegalInfo"
+"SellerLegalInfo" ..> "1" "LegalAddress" : "sellerProvidedLegalAddress"
+"SellerLegalInfo" ..> "1" "VatDetail" : "vatDetails"
+"ShipToLocations" ..> "1" "ShipToRegion" : "regionExcluded"
+"ShipToLocations" ..> "1" "ShipToRegion" : "regionIncluded"
+"ShippingOption" ..> "1" "ConvertedAmount" : "additionalShippingCostPerUnit"
+"ShippingOption" ..> "1" "ConvertedAmount" : "importCharges"
+"ShippingOption" ..> "1" "ConvertedAmount" : "shippingCost"
+"ShippingOption" ..> "1" "ShipToLocation" : "shipToLocationUsedForEstimate"
+"ShippingOptionSummary" ..> "1" "ConvertedAmount" : "shippingCost"
+"TaxJurisdiction" ..> "1" "Region" : "region"
+"Taxes" ..> "1" "TaxJurisdiction" : "taxJurisdiction"
 "POST /item_summary/search_by_image" ..> "1" "SearchByImageRequest"
 "POST /item/{item_id}/check_compatibility" ..> "1" "CompatibilityPayload"
 "POST /shopping_cart/add_item" ..> "1" "AddCartItemInput"
